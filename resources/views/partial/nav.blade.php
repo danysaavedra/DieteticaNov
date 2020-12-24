@@ -29,7 +29,16 @@
     <div class="container-fluid">
 
       <nav class="navbar navbar-expand-lg navbar-muted">
-      <a href="/" class="logoMigue"></a>
+
+ <form  class="buscador" action="/listaProductos" method="get">
+  <div class="input-group mt-3">
+    <input type="text" name="name" class="form-control" placeholder="¿QUE ESTÁS BUSCANDO?" aria-label="¿QUE ESTÁS BUSCANDO?" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+            <button class="input-group-text" id="basic-addon2" type="submit"><i class="fas fa-search"></i></button>
+        </div>
+  </div>
+</form>
+
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <i class="fas fa-bars"></i>
       </button>

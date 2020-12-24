@@ -16,11 +16,11 @@ class PrincipalController extends Controller
 
   public function buscador()
   {
-    if(isset($_GET['name'])){
+   /*  if(isset($_GET['name'])){
       $productos = Product::where('name', 'LIKE', '%'.$_GET['name'].'%')->get();
     } else{
       $productos = Product::orderBy('name', 'asc')->get();
-    }
+    } */
       return view('/index')->with( ['productos' => $productos] );
   }
 

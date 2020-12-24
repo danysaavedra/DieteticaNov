@@ -31,6 +31,8 @@ class ProductoController extends Controller
         return view('product.listaProductos')->with( ['productos' => $productos] );
     }
 
+
+    
     public function precMay(){
       $productos = Product::orderBy('price','desc')->paginate(18);
       return view('product.listaProductos')->with( ['productos' => $productos] );

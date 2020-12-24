@@ -5,14 +5,14 @@
 
 
 <div class="container">
-  <form  class="buscador" action="/listaProductos" method="get">
+<!--   <form  class="buscador" action="/listaProductos" method="get">
     <div class="input-group mt-3">
       <input type="text" name="name" class="form-control" placeholder="¿¿QUE ESTÁS BUSCANDO??" aria-label="¿¿QUE ESTÁS BUSCANDO??" aria-describedby="basic-addon2">
           <div class="input-group-append">
               <button class="input-group-text" id="basic-addon2" type="submit"><i class="fas fa-search"></i></button>
           </div>
     </div>
-  </form>
+  </form> -->
   <a class="ir-arriba"  javascript:void(0) title="Volver arriba">
     <span class="fa-stack">
       <i class="fa fa-circle fa-stack-2x"></i>
