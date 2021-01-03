@@ -1,7 +1,7 @@
-@extends('layouts.app')
+@extends('layouts.plantilla')
 
-@section('content')
-<div class="container">
+@section('contenido')
+<div class="reg">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -234,4 +234,5 @@
         </div>
     </div>
 </div>
+<script type="text/javascript" src="/js/register.js"></script>
 @endsection
