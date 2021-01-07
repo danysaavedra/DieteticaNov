@@ -139,10 +139,10 @@ Route::get('/pedidosMail', function(){
   return view('pedidosMail');
 });
 
-Auth::routes();
 
 
-Route::get('/home', 'HomeController@index')->name('home');
 
-Auth::routes();
+Route::get('/home', 'HomeController@index')->middleware(['auth','verified']);
+
+Auth::routes(['verify' => true]);
 

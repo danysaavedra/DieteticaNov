@@ -16,7 +16,7 @@
    <strong>{{ session('mensaje') }}</strong>
   </div>
   @endif
-
+  
 <!-- buscador -->
 <!-- <form  class="buscador" action="/listaProductos" method="get">
   <div class="input-group mt-3">

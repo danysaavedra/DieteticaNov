@@ -1,11 +1,11 @@
-@extends('layouts.app')
+@extends('layouts.navFootHomeandVerify')
 
-@section('content')
+@section('contenido')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
+                <div class="card-header">{{ __('DieteticaNov') }}</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -14,7 +14,11 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    {{ __('Has iniciado sesión!') }}
+
+                    <div class="verMas">
+<a href="/"> <button type="button" class="btnon"> Ir al Home</button></a>
+</div>
                 </div>
             </div>
         </div>
