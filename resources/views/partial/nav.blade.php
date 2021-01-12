@@ -50,49 +50,19 @@
       <ul>
 
           <li>
-            <a href="/productos/com">Comestibles</a>
+            <a href="/productos/com">Fideos</a>
           <ul>
-              <li><a class="" href="{{route('fiambres')}}">Fiambres y Quesos</a></li>
-              <li><a class="" href="{{route('aceitesYvinagres')}}">Aceites Y Vinagres</a></li>
-              <li><a class="" href="/productos/detallesSub/com/dulces">Dulces y Mermeladas</a></li>
-              <li><a class="" href="/productos/detallesSub/com/condimentos">Condimentos y Aderezos</a></li>
-              <li><a class="" href="/productos/detallesSub/com/galletitas">Galletitas</a></li>
-              <li><a class="" href="/productos/detallesSub/com/infusiones">Infusiones y Endulzantes</a></li>
-              <li><a class="" href="/productos/detallesSub/com/yerbas">Yerbas</a></li>
-              <li><a class="" href="/productos/detallesSub/com/conservas">Conservas y Legumbres</a></li>
-              <li><a class="" href="/productos/detallesSub/com/rebozadores">Rebozadores/Pan Rallado</a></li>
-              <li><a class="" href="/productos/detallesSub/com/harinas">Harinas y Premezclas</a></li>
-              <li><a class="" href="/productos/detallesSub/com/arroz">Arroz</a></li>
-              <li><a class="" href="/productos/detallesSub/com/fideos">Fideos</a></li>
-              <li><a class="" href="/productos/detallesSub/com/snacks">Snacks</a></li>
-              <li>
-                <a class="" href="/productos/detallesSub/com/reposteria">Repostería</a>
-              </li>
-              <li><a class="" href="/productos/detallesSub/com/lacteos">Lacteos</a></li>
-              <li><a class="" href="/productos/detallesSub/com/panes">Panes</a></li>
-              <li><a class="" href="/productos/detallesSub/com/cereales">Cereales</a></li>
-              <li>
-                <a class="" href="/productos/detallesSub/com/congelados">Congelados</a>
-              </li>
+              <li><a class="" href="{{route('soperos')}}">Soperos</a></li>
+              <li><a class="" href="{{route('guiseros')}}">Guiseros</a></li>
+              <li><a class="" href="{{route('monitos')}}">Moñitos</a></li>
+              <li><a class="" href="{{route('nidos')}}">Nidos</a></li>
+
+              <li><a class="" href="{{route('tricolor')}}">Tricolor</a></li>
+
           </ul>
 
           </li>
-          <li><a href="/productos/limp">Perfumería <br>y Limpieza</a>
-            <ul>
-                  <li><a class="" href="/productos/detallesSub/limp/super">Superficies y Pisos</a></li>
-                  <li><a class="" href="/productos/detallesSub/limp/repelentes">Repelentes</a></li>
-                  <li><a class="" href="/productos/detallesSub/limp/ropa">Ropa</a></li>
-                  <li>
-                    <a class="" href="/productos/detallesSub/limp/higiene">Higiene Personal</a>
-                  </li>
-                </ul>
-          </li>
-          <li><a href="/productos/beb">Bebidas</a>
-              <ul>
-                  <li><a class="" href="/productos/detallesSub/beb/alcohol">Con Alcohol</a></li>
-                  <li><a class="" href="/productos/detallesSub/beb/sinAlcohol">Sin Alcohol</a></li>
-              </ul>
-          </li>
+
       </ul>
   </li>
 

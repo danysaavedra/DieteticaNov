@@ -19,26 +19,9 @@
       </div>
   @endif
 
-  <!-- buscador -->
-
- <!--  <form  class="buscador" action="" method="get">
-    <div class="input-group mt-3">
-      <input type="text" name="name" class="form-control" placeholder="¡QUE ESTÁS BUSCANDO??" aria-label="¡QUE ESTÁS BUSCANDO??" aria-describedby="basic-addon2">
-          <div class="input-group-append">
-              <button class="input-group-text" id="basic-addon2" type="submit"><i class="fas fa-search"></i></button>
-          </div>
-    </div>
-  </form> -->
 
 <br>
 <h2 style="text-align :center" class="titulo-productos">Encontrá acá Todos tus Productos</h2>
-
-<ol class="breadcrumb">
-  <li class="breadcrumb-item"><a href="/productos/limp">Perfumería y Limpieza</a></li>
-  <li class="breadcrumb-item"><a href="/productos/beb">Bebidas</a></li>
-  <li class="breadcrumb-item"><a href="/productos/com">Comestibles</a></li>
-</ol>
-
 
 <div class="dropdown">
   <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -125,9 +108,7 @@
 
 
         <div class="titulo">
-            <a href="/productos/detalles/{{$product->id}}"><h5>{{$product->name}}
-            <br>
-            {{$product->dameSubCategoria()}}</h5></a>
+            <a href="/productos/detalles/{{$product->id}}"><h5>{{$product->name}}</h5></a>
             <p style="color:black; font-size:1em"><em> @if($product->stock > 0)
                   Cuántos querés?         <input style="text-align:center;margin-left: 5%;width:10%"type="number" min =1  name="quantity" placeholder="0" required>
               @endif <br> Precio: $ {{$product->price}} </em></p>
@@ -137,32 +118,6 @@
         </div>
       </div>
 
-    <!-- <div class="modal fade" id="producto{{$product->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-
-          <form class="modal-eliminar" id="form-{{$product->id}}" action="/productos/delete/{{$product->id}}" method="post">
-          @csrf
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Seguro querés eliminar este producto?</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body" style="color: black;">
-              {{$product->name}}
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-danger" data-dismiss="modal">Volver</button>
-
-              <input type="hidden" name="id" value="{{$product->id}}">
-              <input type="submit" class="btn btn-danger" name="" value="Borrar Producto">
-            </div>
-          </form>
-
-        </div>
-      </div>
-    </div> -->
       @endforeach
 {{$productos->links()}}
 @endif

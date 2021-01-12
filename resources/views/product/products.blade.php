@@ -28,19 +28,7 @@
 
   <br>
 
-<h2 style="text-align :center" class="titulo-productos"><strong>Comestibles</strong></h2>
-
-<ol  id="linkCat"
- class="breadcrumb">
-  <li class="breadcrumb-item"><a href="/productos/limp">Perfumería y Limpieza</a></li>
-  <li class="breadcrumb-item"><a href="/productos/beb">Bebidas</a></li>
-  <li class="breadcrumb-item active" aria-current="page">Comestibles</li>
-</ol>
-
-
-
-
-
+<h2 style="text-align :center" class="titulo-productos"><strong>Nuestros Fideos</strong></h2>
 
 
 <div style="display:flex" class="botoncat">
@@ -50,30 +38,16 @@
 
       <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
       aria-haspopup="true" aria-expanded="false">
-      Categorías
+      Fideos
       </a>
 
   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
 
-
-    <a class="dropdown-item" href="{{route('fiambres')}}">Fiambres y Quesos</a>
-    <a class="dropdown-item" href="{{route('aceitesYvinagres')}}">Aceites y Vinagres</a>
-    <a class="dropdown-item" href="/productos/detallesSub/com/dulces">Dulces y Mermeladas</a>
-    <a class="dropdown-item" href="/productos/detallesSub/com/condimentos">Condimentos y Aderezos</a>
-    <a class="dropdown-item" href="/productos/detallesSub/com/galletitas">Galletitas</a>
-    <a class="dropdown-item" href="/productos/detallesSub/com/infusiones">Infusiones y Endulzantes</a>
-    <a class="dropdown-item" href="/productos/detallesSub/com/conservas">Conservas y Legumbres</a>
-    <a class="dropdown-item" href="/productos/detallesSub/com/rebozadores">Rebozadores</a>
-    <a class="dropdown-item" href="/productos/detallesSub/com/arroz">Arroz</a>
-    <a class="dropdown-item" href="/productos/detallesSub/com/fideos">Fideos</a>
-    <a class="dropdown-item" href="/productos/detallesSub/com/snacks">Snacks</a>
-    <a class="dropdown-item" href="/productos/detallesSub/com/reposteria">Repostería</a>
-    <a class="dropdown-item" href="/productos/detallesSub/com/lacteos">Lácteos</a>
-    <a class="dropdown-item" href="/productos/detallesSub/com/panes">Panes</a>
-
-    <a class="dropdown-item" href="/productos/detallesSub/com/cereales">Cereales</a>
-    <a class="dropdown-item" href="/productos/detallesSub/com/congelados">Congelados</a>
-
+  <a class="dropdown-item" href="{{route('soperos')}}">Soperos</a>
+  <a class="dropdown-item" href="{{route('guiseros')}}">Guiseros</a>
+  <a class="dropdown-item" href="{{route('monitos')}}">Moñitos</a>
+  <a class="dropdown-item" href="{{route('nidos')}}">Nidos</a>
+  <a class="dropdown-item" href="{{route('tricolor')}}">Tricolor</a>
 
   </div>
 </div>
@@ -170,9 +144,7 @@
 
 
             <div class="titulo">
-                <a href="/productos/detalles/{{$product->id}}"><h5>{{$product->name}}
-                <br>
-                {{$product->dameSubCategoria()}}</h5></a>
+                <a href="/productos/detalles/{{$product->id}}"><h5>{{$product->name}}</h5></a>
                 <p style="color:black; font-size:1em"><em> @if($product->stock > 0)
                     Cuántos querés?         <input style="text-align:center;margin-left: 5%;width:10%"type="number" min =1  name="quantity" placeholder="0" required>
                 @endif <br> Precio: $ {{$product->price}} </em></p>
