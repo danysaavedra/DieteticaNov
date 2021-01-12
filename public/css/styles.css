@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 ::-moz-selection {
   color: red;
@@ -52,10 +53,14 @@ a{
     list-style-type: none;
 
 }
+h2{
+    font-family: 'Charm', cursive;
+}
+
+
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Fredoka One', cursive;
-  color: #597aa6;
-  font-weight: 400;
+  font-family: ;
 }
 .btn-primary {
   background-color: #64a19d;
@@ -74,38 +79,25 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Estilos del Nav */
 
-.logoMigue {
-    background-image: url(..\img\miguelogocnro.png);
-    background-repeat: no-repeat;
-    background-size:contain;
+.logo-nav {
+    max-width: 200px;
     position: absolute;
-    top: 30px;
-    left: 24px;
-    width: 35%;
-    height: auto;
-    margin: 15px 15px 14px 67px;
-    padding: 65px 0px 68px 20px;
+    top: 15px;
+    left: 45%;
 }
+
 nav{
-  border: #007ECF;
-  background-color:#007ECF;
+  background: rgb(0,81,159);
+  background: linear-gradient(90deg, rgba(0,81,159,1) 0%, rgba(71,166,240,1) 50%, rgba(0,81,159,1) 100%);
   height: 128px;
   z-index: 1000;
-
 }
 .navbar {
-  height: 150px;
+  height: 90px;
   padding: 0;
+    
 }
-.navbar-expand-lg .navbar-nav {
-  background-color: #007ECF;
-  width: 100%;
-  padding: 1% 1% 1% 1%;
-  font-size: 10px;
-  font-weight: bold;
-  justify-content: flex-end;
-  text-align: center;
-}
+
 .navbar-dark .navbar-toggler {
   position: absolute;
   right: 15px;
@@ -118,10 +110,7 @@ nav{
 .navbar-collapse {
   padding-top: 0px;
 }
-.navbar-expand-lg .navbar-nav {
-  margin-left: 0px;
-  margin-right: 10px;
-}
+
 
 
 
@@ -139,8 +128,7 @@ font-size: 4em;
 }
 
 nav ul {
-  border: #007ECF;
-  background-color:#007ECF;
+ 
 }
 
 nav ul li a{
@@ -158,7 +146,6 @@ nav ul li a :hover{
 nav i{
   font-size: 1.5em;
   color: #597aa6;
-  margin-bottom: 6px;
 }
 
 nav ul li{
@@ -177,8 +164,7 @@ img.foto{
 
 
 .nav > li {
-  border: #007ECF;
-  background-color:#007ECF;
+
 float:left;
 }
 
@@ -263,7 +249,8 @@ color: #597aa6;
 }
 
 footer {
-    background-color: #007ECF;
+    background: rgb(0,81,159);
+    background: linear-gradient(90deg, rgba(0,81,159,1) 0%, rgba(71,166,240,1) 50%, rgba(0,81,159,1) 100%);
     padding-top: 5px;
     text-align: center;
     bottom: 0;
@@ -374,21 +361,6 @@ footer .btn {
 
   }
 
-    .logoMigue {
-      background-image: url(../img/miguelogocnro.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    align-items: center;
-    top: 13px;
-    left: 69px;
-    width: 61%;
-    height: auto;
-    margin: 4px 4px 2px 2px;
-    padding: 0px 4px 110px 2px;
-  }
-
-
     .logo-footer {
         width: 258px;
         height: auto;
@@ -422,17 +394,7 @@ footer .btn {
       top:1px;
 
     }
-    .navbar-expand-lg .navbar-nav {
-      border: #007ECF;
-      background-color:#007ECF;
-      width: 100%;
-      margin-top: 10%;
-      padding: 0% 2% 2% 2%;
-      font-size: 10px;
-      font-weight: bold;
-      justify-content: flex-end;
-      text-align: center;
-  }
+
     nav h1 {
       padding: 12px 0px 0 15px;
     }
@@ -457,20 +419,6 @@ footer .btn {
   width: 90%;
 
   }
-  .logoMigue {
-    background-image: url(../img/miguelogocnro.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    align-items: center;
-    top: 5px;
-    left: 84px;
-    width: 61%;
-    height: auto;
-    margin: 4px 4px 2px 2px;
-    padding: 0px 4px 110px 2px;
-  }
-
 
     .logo-footer {
         width: 258px;
@@ -513,16 +461,7 @@ footer .btn {
       top:1px;
 
     }
-    .navbar-expand-lg .navbar-nav {
-      border: #007ECF;
-      background-color:#007ECF;
-      width: 100%;
-      padding: 0% 2% 2% 2%;
-      font-size: 10px;
-      font-weight: bold;
-      justify-content: flex-end;
-      text-align: center;
-  }
+
     nav h1 {
       padding: 12px 0px 0 15px;
     }
@@ -546,20 +485,6 @@ footer .btn {
   width: 100%;
 
   }
-  .logoMigue {
-
-    background-image: url(../img/miguelogocnro.png);
-    background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        position: absolute;
-        top: 21px;
-        left: 52px;
-        width: 82%;
-        height: auto;
-        margin: 2px 2px 14px 4px;
-        padding: 1px 2px 94px 4px;
-    }
 
   .logo-footer {
       width: 258px;
@@ -585,16 +510,7 @@ footer .btn {
   top:3px;
 
   }
-  .navbar-expand-lg .navbar-nav {
-    border: #007ECF;
-    background-color:#007ECF;
-    width: 100%;
-    padding: 0% 2% 2% 2%;
-    font-size: 11px;
-    font-weight: bold;
-    justify-content: flex-end;
-    text-align: center;
-}
+
 
 .w-100 {
     height: 100%;
@@ -663,21 +579,6 @@ footer.logo-footer {
       margin: 0 0 10px 0px;
   }
 
-  nav .logoMigue{
-    background-image: url(../img/miguelogocnro.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    top: 1px;
-    left: 6px;
-    width: 50%;
-    height: auto;
-    margin: 17px 4px 8px 17px;
-    padding: 14px 0px 89px 14px;
-
-
-  }
-
   nav ul li a{
     font-family: 'Krona One', sans-serif;
     font-size: 1.3em;
@@ -698,44 +599,23 @@ footer.logo-footer {
   .dropdown-menu.show{
     display: inline-block;
   }
-  .navbar-expand-lg .navbar-collapse {
+  .navbar-collapse {
   display: flex!important;
   flex-basis: auto;
-  }
-  .navbar-collapse {
-      padding-top: 0px;
-      margin-left:00px;
-      margin-right:  00px;
-  }
-  .navbar-collapse {
   padding-top: 0!important;
   padding-right: 15px;
   }
-  .navbar-expand-lg .navbar-toggler {
+  .navbar-toggler {
   display: none;
   }
-  .navbar-expand-lg .navbar-nav {
+  .navbar-nav {
    margin-left: 0px;
     flex-direction: row;
     margin-top: 0px;
 
 
   }
-  .navbar-expand-lg .navbar-nav {
-    font-size: 6.5px;
-        width: 100%;
-        padding-top: 2%;
-        justify-content: flex-end;
-        text-align: center;
-  }
-  /* .navbar-expand-lg .navbar-nav {
-      width: 100%;
-      padding: 3% 3% 3% 2%;
-      justify-content: center;
 
-      text-align: center;
-
-  } */
   /* ICONOS DEL NAV BOOT */
   .navbar-nav .nav-link {
       padding: 10px 12px;
@@ -852,18 +732,6 @@ footer.logo-footer {
       line-height: 25px;
   }
 
-nav .logoMigue {
-  background-image: url(../img/miguelogocnro.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: absolute;
-  top: 5px;
-  left: 12px;
-  width: 45%;
-  height: 90%;
-  margin: 2px 14px 2px 70px;
-  padding: 53px 1px 68px 0px;
-  }
 
 nav ul li a{
     font-family: 'Krona One', sans-serif;
@@ -873,182 +741,19 @@ nav ul li a{
     margin-top: 5px;
 }
 
-    .navbar-expand-lg .navbar-nav .nav-link {
+    .nav-link {
       padding: 10px 12px;
   }
 
-  .navbar-expand-lg .navbar-nav {
-      width: 100%;
-      padding: 0% 10% 1% 15%;
-      justify-content: flex-end;
-      text-align: center;
-
-  }
   .navbar-collapse {
     padding-top: -10px;
     margin-left:0px;
     margin-right:  00px;
   }
 }
-/*
-@media (min-width: 1365px){
-
-  .logoHoridex{
-  width: 45%;
-
-  }
 
 
-  nav .logoMigue {
-    background-image: url(../img/miguelogocnro.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    top: 3px;
-    left: 46px;
-    width: 35%;
-    height: auto;
-    margin: 1px 15px 1px 116px;
-    padding: 22px 0px 68px 20px;
-}
-
-  footer {
-      background-color: #e2efee;
-
-      padding-top: 5px;
-      text-align: center;
-      bottom: 0;
-  }
-  footer .container {
-      margin: 5px auto 5px;
-  }
-  footer .footer-copyright {
-      background-color: #597aa6;
-      padding-top: 3px;
-      padding-bottom: 3px;
-
-  }
-  footer .footer-copyright p {
-      font-size: 0.8em;
-      margin: 10px;
-      color: #ccc;
-  }
-  footer ul {
-      font-size:1.3em;
-      list-style-type: none;
-      padding-left: 0;
-      line-height: 1.7;
-  }
-
-  footer .logo-footer {
-    width: 481px;
-    height: auto;
-    margin: 5px 0 10px -90px;
-  }
-
-  footer h5 {
-      font-size: 2.1em;
-
-      margin-top: 15px;
-      text-transform: uppercase;
-  }
-  footer a {
-      color: #597aa6;
-      text-decoration: none;
-      list-style-type: none;
-  }
-  footer a:hover, footer a:active {
-      text-decoration: none;
-      color: white;
-  }
-  footer h1 a{
-      font-size: 50px;
-      text-align: center;
-      color: #fff;
-  }
-  footer .iconos-redes {
-      display: inline;
-      text-align: center;
-      padding-top: 30px;
-      padding-bottom: 16px;
-  }
-
-  footer .iconos-redes a {
-
-      color: #e2efee;
-      padding: 5px;
-      transition: 0.2s;
-  }
-  footer .iconos-redes a ion-icon
-  {
-    font-size: 3.2em;
-  }
-
-  footer .iconos-redes a:hover {
-      background-color: #fff;
-      text-decoration: none;
-      color: #64a19d;
-  }
-
-  footer .btn {
-      color: white;
-      background-color: #597aa6;
-      border-radius: 20px;
-      border: none;
-      width: 220px;
-      display: block;
-      margin: 0 auto;
-      margin-top: 10px;
-      line-height: 25px;
-  }
-
-  ion-icon {
-  color: #597aa6;
-  font-size: 3em;
-  }
-
-  nav ul li a {
-      font-size: 12px;
-  }
-
-
-.navbar-expand-lg .navbar-nav {
-    width: 100%;
-    padding: 0% 3% 1% 15%;
-    justify-content: flex-end;
-    text-align: center;
-
-}
-.navbar-collapse {
-  padding-top: -10px;
-  margin-left:0px;
-  margin-right:  00px;
-}
-
-} */
 @media (min-width: 1399px){
-
-/* .nav li ul li ul {
-  margin-left: 210px;
-  right:-175px;
-} */
-
-
-  nav .logoMigue {
-    background-image: url(../img/miguelogocnro.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    top: 5px;
-    left: 14px;
-    width: 45%;
-    height: 90%;
-    margin: 2px 14px 2px 70px;
-    padding: 53px 1px 68px 0px;
-    }
-
-
-
 
   footer {
       border: #007ECF;
@@ -1149,14 +854,6 @@ nav ul li a{
       font-size: 12px;
   }
 
-
-.navbar-expand-lg .navbar-nav {
-    width: 100%;
-    padding: 0% 7% 1% 15%;
-    justify-content: flex-end;
-    text-align: center;
-
-}
 .navbar-collapse {
   padding-top: -10px;
   margin-left:0px;
@@ -1194,26 +891,6 @@ nav ul li a{
     font-weight: bold;
 }
 
-.navbar-expand-lg .navbar-nav {
-  width: 100%;
-  padding: 0% 16% 0% 0%;
-  justify-content: flex-end;
-  text-align: center;
-}
-
-nav .logoMigue {
-      background-image: url(../img/miguelogocnro.png);
-      background-repeat: no-repeat;
-      background-size: contain;
-      position: absolute;
-      top: 3px;
-      left: 14px;
-      width: 30%;
-      height: auto;
-      margin: 1px 1px 1px 1px;
-      margin: 3px 14px 2px 230px;
-
-  }
 
 footer {
   border: #007ECF;
@@ -1316,27 +993,6 @@ nav ul li a {
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1554,7 +1210,6 @@ form-check {
 div.col-sm-6{
   margin: 0 auto;
 }
-.navbar-expand-lg .navbar-nav .dropdown-menu {
-
+.dropdown-menu {
   font-size: inherit;
 }

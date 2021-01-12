@@ -1,5 +1,28 @@
+.banner1{
+    background-image: url(../img/fondo-banner1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    }
+.carousel-item{
+    height: 400px;
+} 
+.carousel-caption{
+    text-align: left;
+    max-width: 600px;
+}
+.carousel-caption h2{
+    font-size: 4rem;
+    color: #8C654B;
+}
 
 
+
+
+
+
+
+    
 .fondo{
   width: 50vw;
   height: 25vh;
@@ -73,10 +96,7 @@ background: transparent;
 
 .buscador{
 width: 30%;
-margin-left: 10%;
 padding: 2px 2px 2px 2px;
-background-color: #346397;
-
 }
 
 .divisor{
@@ -104,31 +124,7 @@ footer h5{
 h2{
   font-size: 2rem;
 }
-@media (min-width: 200px) {
-.elh1{
-  color: white;
-    margin: 0px 5px;
-    padding-top: 0.5rem;
-    font-size: 26px;
-}
-.elh3MP{
-  font-size: 21px;
-  margin-left: 10px;
-color: white;
-}
-  #inf{
-    height: 80px;
-  }
 
-  .divisor{
-    width: 100%;
-    height: 100%;
-  }
-  .carousel-item {
-    height: 177px;
-
-  }
-}
 
     @media (min-width: 424px) {
       .elh1{
@@ -144,10 +140,7 @@ color: white;
       #inf{
         height: 108px;
       }
-      .carousel-item {
-        height: 210px;
 
-      }
     }
       @media (min-width: 767px) {
       #productosDestacados  .verMas{
@@ -166,11 +159,6 @@ color: white;
         #inf{
           height: 191px;
         }
-
-      .carousel-item {
-      height: 212px;
-
-  }
 }
 
 
@@ -1032,11 +1020,6 @@ section {
   height: 257px;
 }
 
-.carousel-item {
-
-height: 237px;
-
-}
 
 }
 
@@ -1068,10 +1051,6 @@ height: 237px;
         height: 307px;
       }
 
-    .carousel-item {
-    height: 320px;
-
-    }
 
     }
 

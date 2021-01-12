@@ -2,7 +2,7 @@
 
 @section('contenido')
 
-<div class="container">
+<div class="container-fluid">
     <!-- volverArriba -->
     <a class="ir-arriba"  javascript:void(0) title="Volver arriba">
       <span class="fa-stack">
@@ -29,7 +29,6 @@
 
 <!-- fin-buscador -->
 
-    <!-- Elegi como hacer tus compras en tu SuperMigue -->
 
   <!--     <div id="inf" >
 
@@ -37,15 +36,15 @@
  -->
  <!-- Elegi como hacer tus compras en tu SuperMigue -->
 
- <!-- botonera productos -->
+ <!-- botonera productos
 <ol class="breadcrumb">
   <li class="breadcrumb-item"><a href="/productos/limp">Perfumería y Limpieza</a></li>
   <li class="breadcrumb-item"><a href="/productos/beb">Bebidas</a></li>
   <li class="breadcrumb-item"><a href="/productos/com">Comestibles</a></li>
 </ol>
-<!-- botonera productos -->
+botonera productos -->
 
- <!-- promociones -->
+ <!-- promociones
   <section id="productosDestacados">
     <div class="titulo-productos">
         <h3>PROMOCIONES <br>Semana del 3/7 al 10/7</h3>
@@ -70,7 +69,7 @@
 
                   <!-- https://fullstacklima2.slack.com/files/U6G1JK4KX/FRWDVE1UG/mercadopago_edit.mp4 -->
 
-            @elseif( $producto->promo === 1 && $producto->stock < 50 )
+   <!--         @elseif( $producto->promo === 1 && $producto->stock < 50 )
             <div style="text-align:center">
               <a href="/productos/detalles/{{$producto->id}}">
               <ul class="list-group">
@@ -101,7 +100,7 @@
         </div>
       @endif
   </section>
-<!-- promo -->
+ promo -->
 
 <!-- primer carrusel -->
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -111,12 +110,16 @@
         <!--   <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
       </ol>
       <div class="carousel-inner">
-        <div class="carousel-item active">
-        <img src="\img\bannerMigue.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-item active banner1">
+            <div class="carousel-caption">
+                <h2>Elaboradas con 
+                100% trigo candeal 
+                de la más alta calidad.</h2>
+            </div>
         </div>
 
           <div class="carousel-item">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52512.53898028717!2d-58.59321136907228!3d-34.653852189889605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7d93bab75a3%3A0xaafe140bc9dea3db!2sRamos%20Mej%C3%ADa%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1603384577977!5m2!1ses-419!2sar" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          
             </div>
 <!--
           <div class="carousel-item">
