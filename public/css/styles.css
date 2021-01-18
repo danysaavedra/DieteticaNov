@@ -20,6 +20,17 @@
   position: relative;
 }
 
+.form-control {
+    background-color: transparent !important;
+    border: 1px solid #D1A158;
+    
+}
+
+.input-group-text {
+    background-color: transparent !important;
+    border: 1px solid #D1A158;
+}
+
 .dropdown-item:focus, .dropdown-item:hover {
     text-decoration: none;
     background-color: rgb(56,182,255);
@@ -123,8 +134,8 @@ ul.nav ul {
 }
 
 ion-icon {
-color: #F7F1C4;
-font-size: 4em;
+color: white;
+font-size: 2em;
 }
 
 nav ul {
@@ -132,20 +143,15 @@ nav ul {
 }
 
 nav ul li a{
-  font-family: 'Krona One', sans-serif;
   font-size: 0.8em;
   color: #597aa6;
   list-style-type: none;
-  text-transform: uppercase;
   margin-top: 5px;
 }
-nav ul li a :hover{
-  background-color: rgb(56,182,255);
-  color: #F7F1C4;
-}
+
 nav i{
   font-size: 1.5em;
-  color: #597aa6;
+  color: white;
 }
 
 nav ul li{
@@ -171,14 +177,14 @@ float:left;
 .nav li a {
   text-decoration: none;
   list-style-type: none;
-color: #F7F1C4;
-display:block;
-padding:10px 12px;
+    color: #D1A158;
+    display:block;
+    padding:10px 12px;
+    font-size: 1rem;
 }
 
 .nav li a:hover {
-  background-color: rgb(56,182,255);
-  color: #F7F1C4;
+  color: white;
 }
 .nav li ul {
 display:none;
@@ -194,26 +200,26 @@ position:relative;
 }
 
 .nav li ul li ul {
-list-style-type: none;
-margin-left: 210px;
-right:-140px;
-top:0;
+    list-style-type: none;
+    margin-left: 210px;
+    right:-140px;
+    top:0;
 }
 .nav li .flecha{
-font-size: 9px;
-padding-left: 6px;
-display: none;
+    font-size: 9px;
+    padding-left: 6px;
+    display: none;
 }
 .nav li a:not(:last-child) .flecha {
-display: inline;
+    display: inline;
 }
 
 
 
 
 .enlace_desactivado {
-pointer-events: none!important;
-cursor: default!important;
+    pointer-events: none!important;
+    cursor: default!important;
 }
 
 
@@ -580,10 +586,7 @@ footer.logo-footer {
   }
 
   nav ul li a{
-    font-family: 'Krona One', sans-serif;
     font-size: 1.3em;
-    color: #F7F1C4;
-    text-transform: uppercase;
     margin-top: 5px;
   }
 
@@ -734,10 +737,7 @@ footer.logo-footer {
 
 
 nav ul li a{
-    font-family: 'Krona One', sans-serif;
     font-size: 1.4em;
-
-    text-transform: uppercase;
     margin-top: 5px;
 }
 
@@ -843,11 +843,6 @@ nav ul li a{
       margin: 0 auto;
       margin-top: 10px;
       line-height: 25px;
-  }
-
-  ion-icon {
-  color: #F7F1C4;
-  font-size: 3em;
   }
 
   nav ul li a {
@@ -981,10 +976,6 @@ footer .btn {
     line-height: 25px;
 }
 
-ion-icon {
-color: #F7F1C4;
-font-size: 3em;
-}
 
 nav ul li a {
     font-size: 12px;

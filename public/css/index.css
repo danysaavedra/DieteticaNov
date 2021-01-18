@@ -5,11 +5,12 @@
     background-position: center center;
     }
 .carousel-item{
-    height: 400px;
+    height: 500px;
 } 
 .carousel-caption{
     text-align: left;
     max-width: 600px;
+    bottom: 20%;
 }
 .carousel-caption h2{
     font-size: 4rem;
@@ -1291,7 +1292,7 @@ section {
   -ms-flex-align: stretch;
   align-items: stretch;
   width: 85%;
-  left: 8%;
+  left: 15px;
 }
 
 .mt-3, .my-3 {

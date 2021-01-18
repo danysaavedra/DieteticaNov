@@ -24,10 +24,10 @@
 
   <body>
 
-    <div class="container-fluid">
+    
      
-      <nav class="navbar">
-        
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
          
              <form  class="buscador" action="/listaProductos" method="get">
               <div class="input-group mt-3">
@@ -42,7 +42,7 @@
          
 
          <div class="logo">
-             <img src="/img/barletta-productos.png" class="logo-nav" alt="">
+             <a href="/"><img src="/img/barletta-productos.png" class="logo-nav" alt=""></a>
          </div>
           
           
@@ -52,10 +52,10 @@
           <i class="fas fa-bars"></i>
           </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav ml-auto">
       <ul class="nav">
   <li>
-      <a href=""><ion-icon name="beer-outline"></ion-icon><br>Productos<span class="flecha">&#9660;</span></a>
+      <a href=""><ion-icon name="beer-outline"></ion-icon>Productos<span class="flecha">&#9660;</span></a>
       <ul>
 
           <li>
@@ -105,7 +105,7 @@
       </ul>
   </li>
 
-  <li><a href="/"><ion-icon name="home-outline"></ion-icon> <br> Home</a></li>
+  <li><a href="/"><ion-icon name="home-outline"></ion-icon>Home</a></li>
 
             @if((Auth::user()) && (Auth::user()->admin))
   <li>
@@ -130,10 +130,10 @@
 
   @guest
   <li class="nav-item active">
-    <a  href="/register"><ion-icon name="pencil-outline"></ion-icon></i><br>Registrate</a>
+    <a  href="/register"><ion-icon name="pencil-outline"></ion-icon>Registrate</a>
   </li>
   <li class="nav-item active">
-    <a href="/login"><ion-icon name="person-outline"></ion-icon><br>Login</a>
+    <a href="/login"><ion-icon name="person-outline"></ion-icon>Login</a>
   </li>
 
     @else
@@ -193,6 +193,6 @@
   </div>
 
 
-
-</nav>
 </div>
+</nav>
+
