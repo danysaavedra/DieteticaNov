@@ -25,46 +25,22 @@
         @endif
 
 <br>
-        @if(isset($categorias))
-  @foreach($categorias as $categoria)
-  @if($categoria->name == "Higiene Personal"||$categoria->name=="Superficies y Pisos"||$categoria->name=="Repelentes"||$categoria->name=="Ropa"||$categoria->name=="Varios")
-      <h2 style="text-align :center" class="titulo-productos">Perfumería y Limpieza</h2>
-  @elseif($categoria->name=="Con Alcohol"||$categoria->name=="Sin Alcohol")
-    <h2 style="text-align :center" class="titulo-productos">Bebidas</h2>
-      @elseif($categoria->name=="Fiambres y Quesos"||$categoria->name=="Aceites y Vinagres"||$categoria->name=="Dulces y Mermeladas"||$categoria->name=="Condimentos y Aderezos"||$categoria->name=="Galletitas"||$categoria->name=="Infusiones y Endulzantes"||$categoria->name=="Conservas y Legumbres"||$categoria->name=="Rebozadores"||$categoria->name=="Harinas y Premezclas"||$categoria->name=="Arroz"||$categoria->name=="Fideos"||$categoria->name=="Snacks"||$categoria->name=="Repostería"||$categoria->name=="Lácteos"||$categoria->name=="Panes"||$categoria->name=="Cereales"||$categoria->name=="Congelados")
-      <h2 style="text-align :center" class="titulo-productos">Comestibles</h2>
+    @if(isset($categorias))
+      @foreach($categorias as $categoria)
+      @if($categoria->name == "Soperos")
+      <h2 style="text-align :center" class="titulo-productos">Fideos Soperos</h2>
+      @elseif($categoria->name=="Guiseros")
+      <h2 style="text-align :center" class="titulo-productos">Fideos Guiseros</h2>
+      @elseif($categoria->name=="Moñitos")
+      <h2 style="text-align :center" class="titulo-productos">Fideos Moñitos</h2>
+      @elseif($categoria->name=="Nidos")
+      <h2 style="text-align :center" class="titulo-productos">Fideos Nidos</h2>
+      @else($categoria->name=="Tricolor")
+      <h2 style="text-align :center" class="titulo-productos">Fideos Tricolor</h2>
       @endif
   @endforeach
-
-
-    @foreach($categorias as $categoria)
-    @if($categoria->name=="Higiene Personal"||$categoria->name=="Superficies y Pisos"||$categoria->name=="Repelentes"||$categoria->name=="Ropa"||$categoria->name=="Varios")
-    <ol style='padding-left:18%' class="breadcrumb">
-      <li class="breadcrumb-item"><a href="/productos/com">Comestibles</a></li>
-      <li class="breadcrumb-item"><a href="/productos/beb">Bebidas</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Perfumería y Limpieza</li>
-    </ol>
-    @elseif($categoria->name=="Con Alcohol"||$categoria->name=="Sin Alcohol")
-    <ol style='padding-left:18%' class="breadcrumb">
-      <li class="breadcrumb-item"><a href="/productos/com">Comestibles</a></li>
-      <li class="breadcrumb-item"><a href="/productos/limp">Perfumería y Limpieza</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Bebidas</li>
-    </ol>
-    @elseif($categoria->name=="Fiambres y Quesos"||$categoria->name=="Aceites y Vinagres"||$categoria->name=="Dulces y Mermeladas"||$categoria->name=="Condimentos y Aderezos"||$categoria->name=="Galletitas"||$categoria->name=="Infusiones y Endulzantes"||$categoria->name=="Conservas y Legumbres"||$categoria->name=="Rebozadores"||$categoria->name=="Harinas y Premezclas"||$categoria->name=="Arroz"||$categoria->name=="Fideos"||$categoria->name=="Snacks"||$categoria->name=="Repostería"||$categoria->name=="Lácteos"||$categoria->name=="Panes"||$categoria->name=="Cereales"||$categoria->name=="Congelados")
-    <ol style='padding-left:18%' class="breadcrumb">
-    <li class="breadcrumb-item"><a href="/productos/limp">Perfumería y Limpieza</a></li>
-      <li class="breadcrumb-item"><a href="/productos/beb">Bebidas</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Comestibles</li>
-    </ol>
-    @endif
-    @endforeach
-
-
-
-@foreach($categorias as $categoria)
-<h2>{{$categoria->name}}</h2>
-@endforeach
 @endif
+
 
 @if(isset($categorias))
   <div class="dropdown">
@@ -77,36 +53,15 @@
     </a>
 
     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-      @if($categoria->name=="Con Alcohol"||$categoria->name=="Sin Alcohol")
-      <a class="dropdown-item" href="/productos/detallesSub/beb/alcohol">Con Alcohol</a>
-      <a class="dropdown-item" href="/productos/detallesSub/beb/sinAlcohol">Sin Alcohol</a>
 
-      @elseif($categoria->name=="Higiene Personal"||$categoria->name=="Superficies y Pisos"||$categoria->name=="Repelentes"||$categoria->name=="Ropa"||$categoria->name=="Varios")
-      <a class="dropdown-item" href="/productos/detallesSub/limp/higiene">Higiene Personal</a>
-      <a class="dropdown-item" href="/productos/detallesSub/limp/super">Superficies y Pisos</a>
-      <a class="dropdown-item" href="/productos/detallesSub/limp/repelentes">Repelentes</a>
-      <a class="dropdown-item" href="/productos/detallesSub/limp/ropa">Ropa</a>
-      <a class="dropdown-item" href="/productos/detallesSub/limp/varios">Varios</a>
-     @elseif($categoria->name=="Fiambres y Quesos"||$categoria->name=="Aceites y Vinagres"||$categoria->name=="Dulces y Mermeladas"||$categoria->name=="Condimentos y Aderezos"||$categoria->name=="Galletitas"||$categoria->name=="Infusiones y Endulzantes"||$categoria->name=="Yerbas"||$categoria->name=="Conservas y Legumbres"||$categoria->name=="Rebozadores"||$categoria->name=="Harinas y Premezclas"||$categoria->name=="Arroz"||$categoria->name=="Fideos"||$categoria->name=="Snacks"||$categoria->name=="Repostería"||$categoria->name=="Lácteos"||$categoria->name=="Panes"||$categoria->name=="Cereales"||$categoria->name=="Congelados")
+      <a class="dropdown-item" href="{{route('soperos')}}">Soperos</a>
+      <a class="dropdown-item" href="{{route('guiseros')}}">Guiseros</a>
 
-      <a class="dropdown-item" href="{{route('fiambres')}}">Fiambres y Quesos</a>
-      <a class="dropdown-item" href="{{route('aceitesYvinagres')}}">Aceites y Vinagres</a>
-      <a class="dropdown-item" href="/productos/detallesSub/com/dulces">Dulces y Mermeladas</a>
-      <a class="dropdown-item" href="/productos/detallesSub/com/condimentos">Condimentos y Aderezos</a>
-      <a class="dropdown-item" href="/productos/detallesSub/com/galletitas">Galletitas</a>
-      <a class="dropdown-item" href="/productos/detallesSub/com/infusiones">Infusiones y Endulzantes</a>
-      <a class="dropdown-item" href="/productos/detallesSub/com/yerbas">Yerbas</a>
-      <a class="dropdown-item" href="/productos/detallesSub/com/conservas">Conservas y Legumbres</a>
-      <a class="dropdown-item" href="/productos/detallesSub/com/rebozadores">Rebozadores</a>
-      <a class="dropdown-item" href="/productos/detallesSub/com/arroz">Arroz</a>
-      <a class="dropdown-item" href="/productos/detallesSub/com/fideos">Fideos</a>
-      <a class="dropdown-item" href="/productos/detallesSub/com/snacks">Snacks</a>
-      <a class="dropdown-item" href="/productos/detallesSub/com/reposteria">Repostería</a>
-      <a class="dropdown-item" href="/productos/detallesSub/com/lacteos">Lácteos</a>
-      <a class="dropdown-item" href="/productos/detallesSub/com/panes">Panes</a>
-      <a class="dropdown-item" href="/productos/detallesSub/com/cereales">Cereales</a>
-      <a class="dropdown-item" href="/productos/detallesSub/com/congelados">Congelados</a>
-      @endif
+
+      <a class="dropdown-item" href="{{route('monitos')}}">Moñitos</a>
+      <a class="dropdown-item" href="{{route('nidos')}}">Nidos</a>
+      <a class="dropdown-item" href="{{route('tricolor')}}">Tricolor</a>
+
       @endforeach
     </div>
   </div>

@@ -16,6 +16,7 @@
    <strong>{{ session('mensaje') }}</strong>
   </div>
   @endif
+
   
 <!-- buscador -->
 <!-- <form  class="buscador" action="/listaProductos" method="get">
@@ -30,17 +31,15 @@
 <!-- fin-buscador -->
 
 
-  <!--     <div id="inf" >
 
-      </div>
- -->
- <!-- Elegi como hacer tus compras en tu SuperMigue -->
 
  <!-- botonera productos
 <ol class="breadcrumb">
-  <li class="breadcrumb-item"><a href="/productos/limp">Perfumería y Limpieza</a></li>
-  <li class="breadcrumb-item"><a href="/productos/beb">Bebidas</a></li>
-  <li class="breadcrumb-item"><a href="/productos/com">Comestibles</a></li>
+  <li class="breadcrumb-item"><a href="{{route('soperos')}}">Soperos</a></li>
+  <li class="breadcrumb-item"><a href="{{route('guiseros')}}">Guiseros</a></li>
+  <li class="breadcrumb-item"><a href="{{route('monitos')}}">Moñitos</a></li>
+  <li class="breadcrumb-item"><a href="{{route('nidos')}}">Nidos</a></li>
+  <li class="breadcrumb-item"><a href="{{route('tricolor')}}">Tricolor</a></li>
 </ol>
 botonera productos -->
 
@@ -141,15 +140,14 @@ botonera productos -->
   <!-- seccion Comestibles-->
   <section id="productosDestacados">
       <div class="titulo-productos">
-          <h3>Comestibles// <br>
-          Infusiones y Endulzantes</h3>
+          <h3>Fideos Nidos</h3>
         <hr>
       </div>
         @if(isset($productos))
       <div class="container-productos">
           @foreach ($productos as $producto)
-          @if($producto->category->dameSubCategoria() == 'Comestibles' && $producto->dameCategoria() == 'Infusiones y Endulzantes')
-          @if($loop->odd)
+          @if($producto->category->dameSubCategoria() == 'Comestibles' && $producto->dameCategoria() == 'Nidos')
+
           <article class="producto">
             <a href="/productos/detalles/{{$producto->id}}">
               <div class="producto-hover">
@@ -167,11 +165,11 @@ botonera productos -->
 
               <div class="titulo">
             <a href="/productos/detalles/{{$producto->id}}"><h5>{{$producto->name}}</h5>
-            </div>
+            
 
                   <img src="/storage/{{$producto->avatar}}"alt="Comestible">
                   </a>
-
+            </div>
 
                   @if($producto->stock == 0)
 
@@ -214,7 +212,7 @@ botonera productos -->
         @endif
             </article>
           @endif
-          @endif
+
           @endforeach
           </div>
           @endif
@@ -223,7 +221,7 @@ botonera productos -->
 
 <!-- botonVerMas -->
 <div class="verMas">
-<a href='/productos/detallesSub/com/infusiones'> <button type="button" class="btnon">Ver Más</button></a>
+<a href="{{route('nidos')}}"> <button type="button" class="btnon">Ver Más</button></a>
 </div>
 <!-- botonVerMas -->
 
@@ -280,14 +278,13 @@ botonera productos -->
 
     <section id="productosDestacados">
       <div class="titulo-productos">
-          <h3>Perfumería y Limpieza //<br> Higiene Personal
-        </h3>
+          <h3>Fideos Tricolor</h3>
         <hr>
       </div>
       @if(isset($productos))
       <div class="container-productos">
         @foreach ($productos as $producto)
-        @if($producto->category->dameSubCategoria() == 'Perfumería y Limpieza' && $producto->dameCategoria() == 'Higiene Personal')
+        @if($producto->category->dameSubCategoria() == 'Comestibles' && $producto->dameCategoria() == 'Tricolor')
 
         <article class="producto">
 
@@ -306,12 +303,12 @@ botonera productos -->
               </a>
 
               <div class="titulo">
-            <a href="/productos/detalles/{{$producto->id}}"><h5>{{$producto->name}}</h5>
-            </div>
+                  <a href="/productos/detalles/{{$producto->id}}"><h5>{{$producto->name}}</h5>
+            
 
                   <img src="/storage/{{$producto->avatar}}"alt="Comestible">
                   </a>
-
+                </div>
 
                   @if($producto->stock == 0)
 
@@ -365,7 +362,7 @@ botonera productos -->
      <!-- botonVerMas -->
 
     <div class="verMas">
-      <a href='/productos/detallesSub/limp/higiene'> <button type="button" class="btnon">Ver Más</button></a>
+      <a href="{{route('tricolor')}}"> <button type="button" class="btnon">Ver Más</button></a>
     </div>
 
 <!-- botonVerMas -->

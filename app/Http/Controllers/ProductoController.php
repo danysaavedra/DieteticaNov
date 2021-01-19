@@ -32,7 +32,7 @@ class ProductoController extends Controller
     }
 
 
-    
+
     public function precMay(){
       $productos = Product::orderBy('price','desc')->paginate(18);
       return view('product.listaProductos')->with( ['productos' => $productos] );
@@ -193,106 +193,27 @@ class ProductoController extends Controller
       return view('detallesSub', compact('categorias'));
     }
 
-    public function subHig(){
-      $categorias = Category::where('name','=','Higiene Personal')->get();
-      return view('detallesSub', compact('categorias'));
-    }
-    public function subSuper(){
-      $categorias = Category::where('name','=','Superficies y Pisos')->get();
-      return view('detallesSub', compact('categorias'));
-    }
-    public function subRepe(){
-      $categorias = Category::where('name','=','Repelentes')->get();
-      return view('detallesSub', compact('categorias'));
-    }
-    public function subRopa(){
-      $categorias = Category::where('name','=','Ropa')->get();
-      return view('detallesSub', compact('categorias'));
-    }
-    public function subCA(){
-      $categorias = Category::where('name','=','Con Alcohol')->get();
-      return view('detallesSub', compact('categorias'));
-    }
-    public function subSA(){
-      $categorias = Category::where('name','=','Sin Alcohol')->get();
-      return view('detallesSub', compact('categorias'));
-    }
     public function subFiam(){
-      $categorias = Category::where('name','=','Fiambres y Quesos')->get();
+      $categorias = Category::where('name','=','Soperos')->get();
       return view('detallesSub', compact('categorias'));
     }
     public function subAcei(){
-      $categorias = Category::where('name','=','Aceites y Vinagres')->get();
+      $categorias = Category::where('name','=','Guiseros')->get();
       return view('detallesSub', compact('categorias'));
     }
     public function subDul(){
-      $categorias = Category::where('name','=','Dulces y Mermeladas')->get();
+      $categorias = Category::where('name','=','Moñitos')->get();
       return view('detallesSub', compact('categorias'));
     }
     public function subCon(){
-      $categorias = Category::where('name','=','Condimentos y Aderezos')->get();
+      $categorias = Category::where('name','=','Nidos')->get();
       return view('detallesSub', compact('categorias'));
     }
     public function subGalle(){
-      $categorias = Category::where('name','=','Galletitas')->get();
+      $categorias = Category::where('name','=','Tricolor')->get();
       return view('detallesSub', compact('categorias'));
     }
-    public function subInf(){
-      $categorias = Category::where('name','=','Infusiones y Endulzantes')->get();
-      return view('detallesSub', compact('categorias'));
-    }
-    public function subYer(){
-      $categorias = Category::where('name','=','Yerbas')->get();
-      return view('detallesSub', compact('categorias'));
-    }
-    public function subCons(){
-      $categorias = Category::where('name','=','Conservas y Legumbres')->get();
-      return view('detallesSub', compact('categorias'));
-    }
-    public function subRebo(){
-      $categorias = Category::where('name','=','Rebozadores')->get();
-      return view('detallesSub', compact('categorias'));
-    }
-    public function subHari(){
-      $categorias = Category::where('name','=','Harinas y Premezclas')->get();
-      return view('detallesSub', compact('categorias'));
-    }
-    public function subArroz(){
-      $categorias = Category::where('name','=','Arroz')->get();
-      return view('detallesSub', compact('categorias'));
-    }
-    public function subFid(){
-      $categorias = Category::where('name','=','Fideos')->get();
-      return view('detallesSub', compact('categorias'));
-    }
-    public function subSnacks(){
-      $categorias = Category::where('name','=','Snacks')->get();
-      return view('detallesSub', compact('categorias'));
-    }
-    public function subRepo(){
-      $categorias = Category::where('name','=','Repostería')->get();
-      return view('detallesSub', compact('categorias'));
-    }
-    public function subLac(){
-      $categorias = Category::where('name','=','Lácteos')->get();
-      return view('detallesSub', compact('categorias'));
-    }
-    public function subPan(){
-      $categorias = Category::where('name','=','Panes')->get();
-      return view('detallesSub', compact('categorias'));
-    }
-    public function subCere(){
-      $categorias = Category::where('name','=','Cereales')->get();
-      return view('detallesSub', compact('categorias'));
-    }
-    public function subCong(){
-      $categorias = Category::where('name','=','Congelados')->get();
-      return view('detallesSub', compact('categorias'));
-    }
-    public function subVar(){
-      $categorias = Category::where('name','=','Varios')->get();
-      return view('detallesSub', compact('categorias'));
-    }
+   
 
 
 

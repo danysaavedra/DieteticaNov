@@ -73,7 +73,7 @@
 
 
 <!-- NO INVERTIR ORDEN DE LOS INPUTS -->
-      @if(isset($detalles))
+      @if(isset($detalle))
       <form action="/pedidos" method="post">
       @csrf
       @foreach($detalles as $detalle)
@@ -102,8 +102,12 @@
           </ul>
         </div>
       </div>
-      </form>
+      @else
+      <h1>No hay Productos en tu Carrito</h1>
       @endif
+      </form>
+
+
 
 </div>
 </div>

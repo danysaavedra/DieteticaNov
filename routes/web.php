@@ -33,65 +33,18 @@ Route::get('detalles/{id}', 'ProductoController@detalle');
 //CATEGORIAS
 Route::get('detallesSub', 'ProductoController@sub');
 
-//Perfumería y Limpieza
-Route::get('detallesSub/limp/higiene', 'ProductoController@subHig');
-Route::get('detallesSub/limp/super', 'ProductoController@subSuper');
-Route::get('detallesSub/limp/repelentes', 'ProductoController@subRepe');
-Route::get('detallesSub/limp/ropa', 'ProductoController@subRopa');
-Route::get('detallesSub/limp/varios', 'ProductoController@subVar');
-
-//limpiezaFiltrado
-Route::get('limp', 'ProductoController@catProdLimpi');
-
-Route::get('limp/Mayor-Lim', 'ProductoController@precLimMay');
-Route::get('limp/Menor-Lim', 'ProductoController@precLimMen');
-Route::get('limp/a-z-Lim', 'ProductoController@azLim');
-Route::get('limp/z-a-Lim', 'ProductoController@zaLim');
-Route::get('limp/Desc-Lim', 'ProductoController@stockMayLim');
-Route::get('limp/Asc-Lim', 'ProductoController@stockMenLim');
-Route::get('/imp/promo-Lim', 'ProductoController@promoLim');
-
-//Bebidas
-Route::get('detallesSub/beb/alcohol', 'ProductoController@subCA');
-Route::get('detallesSub/beb/sinAlcohol', 'ProductoController@subSA');
-
-//bebidasFiltrado
-Route::get('beb', 'ProductoController@catProdBeb');
-
-Route::get('beb/Mayor-Beb', 'ProductoController@precBebMay');
-Route::get('beb/Menor-Beb', 'ProductoController@precBebMen');
-Route::get('beb/a-z-Beb', 'ProductoController@azBeb');
-Route::get('beb/z-a-Beb', 'ProductoController@zaBeb');
-Route::get('beb/Desc-Beb', 'ProductoController@stockMayBeb');
-Route::get('beb/Asc-Beb', 'ProductoController@stockMenBeb');
-Route::get('beb/promo-Beb', 'ProductoController@promoBeb');
-
 
 //ComestiblesCat
 
-Route::get('/fiambresQuesos', 'ProductoController@subFiam')->name('fiambres');
+Route::get('/fideosSoperos', 'ProductoController@subFiam')->name('soperos');
 
-Route::get('/aceitesVinagres', 'ProductoController@subAcei')->name('aceitesYvinagres');
-Route::get('detallesSub/com/dulces', 'ProductoController@subDul');
-Route::get('detallesSub/com/condimentos', 'ProductoController@subCon');
-Route::get('detallesSub/com/galletitas', 'ProductoController@subGalle');
-Route::get('detallesSub/com/infusiones', 'ProductoController@subInf');
-Route::get('detallesSub/com/yerbas', 'ProductoController@subYer');
+Route::get('/fideosGuiseros', 'ProductoController@subAcei')->name('guiseros');
 
-Route::get('detallesSub/com/conservas', 'ProductoController@subCons');
-Route::get('detallesSub/com/rebozadores', 'ProductoController@subRebo');
-Route::get('detallesSub/com/harinas', 'ProductoController@subHari');
-Route::get('detallesSub/com/arroz', 'ProductoController@subArroz');
+Route::get('/fideosMonitos', 'ProductoController@subDul')->name('monitos');
 
-Route::get('detallesSub/com/fideos', 'ProductoController@subFid');
-Route::get('detallesSub/com/snacks', 'ProductoController@subSnacks');
-Route::get('detallesSub/com/reposteria', 'ProductoController@subRepo');
-Route::get('detallesSub/com/lacteos', 'ProductoController@subLac');
+Route::get('fideosNidos', 'ProductoController@subCon')->name('nidos');
 
-Route::get('detallesSub/com/panes', 'ProductoController@subPan');
-Route::get('detallesSub/com/cereales', 'ProductoController@subCere');
-Route::get('detallesSub/com/congelados', 'ProductoController@subCong');
-
+Route::get('fideosTricolor', 'ProductoController@subGalle')->name('tricolor');
 
 
 
