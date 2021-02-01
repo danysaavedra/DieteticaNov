@@ -29,7 +29,7 @@
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
          
-             <form  class="buscador" action="/listaProductos" method="get">
+             <form class="buscador" action="/listaProductos" method="get">
               <div class="input-group mt-3">
                 <input type="text" name="name" class="form-control" placeholder="¿Qué estás buscando?" aria-label="¿QUE ESTÁS BUSCANDO?" aria-describedby="basic-addon2">
                     <div class="input-group-append">
@@ -52,30 +52,29 @@
           <i class="fas fa-bars"></i>
           </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
-      <ul class="nav">
-  <li>
-      <a href=""><ion-icon name="beer-outline"></ion-icon>Productos<span class="flecha">&#9660;</span></a>
-      <ul>
+    <ul class="navbar-nav nav ml-auto">
 
-          <li>
-            <a href="/productos/com">Fideos</a>
-          <ul>
-              <li><a class="" href="{{route('soperos')}}">Soperos</a></li>
-              <li><a class="" href="{{route('guiseros')}}">Guiseros</a></li>
-              <li><a class="" href="{{route('monitos')}}">Moñitos</a></li>
-              <li><a class="" href="{{route('nidos')}}">Nidos</a></li>
+  <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><ion-icon name="restaurant-outline"></ion-icon>Productos</a>
+      <div class="dropdown-menu">
+	<a class="dropdown-item" href="/productos/com">Todos los fideos</a>
+      <div class="dropdown-divider"></div>
 
-              <li><a class="" href="{{route('tricolor')}}">Tricolor</a></li>
+              <a class="dropdown-item" href="{{route('soperos')}}">Soperos</a>
+              <a class="dropdown-item" href="{{route('guiseros')}}">Guiseros</a>
+              <a class="dropdown-item" href="{{route('monitos')}}">Moñitos</a>
+              <a class="dropdown-item" href="{{route('nidos')}}">Nidos</a>
+              <a class="dropdown-item" href="{{route('tricolor')}}">Tricolor</a>
 
-          </ul>
-
-          </li>
-
-      </ul>
+          
+      </div>
+      
   </li>
 
-  <li><a href="/"><ion-icon name="home-outline"></ion-icon>Home</a></li>
+
+
+
+  <li><a href="/"><ion-icon name="chatbubbles-outline"></ion-icon>Ayuda</a></li>
 
             @if((Auth::user()) && (Auth::user()->admin))
   <li>
@@ -103,7 +102,7 @@
     <a  href="/register"><ion-icon name="pencil-outline"></ion-icon>Registrate</a>
   </li>
   <li class="nav-item active">
-    <a href="/login"><ion-icon name="person-outline"></ion-icon>Login</a>
+    <a href="/login"><ion-icon name="person-outline"></ion-icon>Ingresar</a>
   </li>
 
     @else
@@ -158,7 +157,7 @@
     </li> -->
 
       @endguest
-      </ul>
+      
     </ul>
   </div>
 

@@ -140,7 +140,7 @@ botonera productos -->
   <!-- seccion Comestibles-->
   <section id="productosDestacados">
       <div class="titulo-productos">
-          <h3>Fideos Nidos</h3>
+          <h3>SELECCION&Aacute; UNA CATEGOR&Iacute;A</h3>
         <hr>
       </div>
         @if(isset($productos))
@@ -225,51 +225,42 @@ botonera productos -->
 </div>
 <!-- botonVerMas -->
 
+<!-- La Pasta familias -->
+
+<div class="container pasta-familiar">
+      <div class="row">
+          <div class="col-lg-12 cuadro-borde text-center">
+              <p>La pasta familiar desde 1888</p>
+          </div>
+      </div>
+    </div>
+<!-- La pasta familiar -->
+
 <!-- Tipo de envio -->
 
 <div class="barra">
-      <div class="row-barra">
-        <div class="col-12 col-sm-2 col-md-2 col-lg-1" id="relativo">
-          <a href="/" id="enlace"></a>
-          <img class="creditcard" src="/img/wspBlanco.png" alt="">
-        </div>
-        <div class="col-12 col-sm-4 col-md-4 col-lg-2" id="relativo">
-          <a href="/" id="enlace"></a>
-          <p class="texto1">¡TAMBIÉN POR WHATSAPP!</p>
-          <p class="texto2">Para todas tus compras</p>
-        </div>
-
-        <div class="col-12 col-sm-2 col-md-2 col-lg-1" id="relativo">
-          <a href="/" id="enlace"></a>
-          <img class="delivery" src="/img/truck.png" alt="">
-        </div>
-        <div class="col-12 col-sm-4 col-md-4 col-lg-2" id="relativo">
-          <a href="/" id="enlace"></a>
-          <p class="texto1">ENVIOS A DOMICILIO</p>
-          <p class="texto2">¡Rápido,sin vueltas!</p>
-        </div>
-
-        <div class="col-12 col-sm-2 col-md-2 col-lg-1" id="relativo">
-          <a href="/" id="enlace"></a>
-          <img class="location" src="/img/barbijo.png" alt="">
-        </div>
-        <div class="col-12 col-sm-4 col-md-4 col-lg-2" id="relativo">
-          <a href="/" id="enlace"></a>
-          <p class="texto1">¡PREVENCIÓN COVID-19!</p>
-          <p class="texto2">Cumplimos requerimientos <br>
-             sanitarios y de higiene</p>
-        </div>
-
-        <div class="col-12 col-sm-2 col-md-2 col-lg-1" id="relativo">
-          <a href="/" id="enlace"></a>
-          <img class="ok" src="/img/ok.png" alt="">
-        </div>
-        <div class="col-12 col-sm-4 col-md-4 col-lg-2" id="relativo">
-          <a href="/c"  id="enlace"></a>
-          <p class="texto1">COMPRA 100% SEGURA</p>
-          <p class="texto2">Hasta la puerta de tu casa!</p>
-        </div>
+     <div class="container">
+      <div class="row">
+      
+        <div class="col-lg-4 text-center">
+            <img src="/img/metodos-de-pago.png">
+            <h5>MÉTODOS DE PAGO</h5>
+            <p>Conocé nuestros métodos de pago <u><strong>
+Elegí método que quieras</strong></u></p>
+        </div>  
+        <div class="col-lg-4 text-center">
+            <img src="/img/metodos-de-envio.png">
+            <h5>MÉTODOS DE ENVÍO</h5>
+            <p>Envíos a domicilio a todo el país <u><strong>Calculá el costo de envío!</strong></u></p>
+        </div> 
+        <div class="col-lg-4 text-center">
+            <img src="/img/como-comprar.png">
+            <h5>CÓMO COMPRAR</h5>
+            <p>Te ayudamos con tus compras <u><strong>Cómo compro?</strong></u></p>
+        </div>        
+        
       </div>
+    </div>
     </div>
 <!-- Tipo de envio -->
 

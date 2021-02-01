@@ -100,27 +100,10 @@ h1, h2, h3, h4, h5, h6 {
 nav{
   background: rgb(0,81,159);
   background: linear-gradient(90deg, rgba(0,81,159,1) 0%, rgba(71,166,240,1) 50%, rgba(0,81,159,1) 100%);
-  height: 128px;
   z-index: 1000;
 }
-.navbar {
-  height: 90px;
-  padding: 0;
-    
-}
 
-.navbar-dark .navbar-toggler {
-  position: absolute;
-  right: 15px;
-  border: 2px solid rgba(255, 255, 255);
-}
-.navbar-dark i.fa-bars {
-  font-size: 1em;
-  margin-top: 6px;
-}
-.navbar-collapse {
-  padding-top: 0px;
-}
+
 
 
 
@@ -134,20 +117,16 @@ ul.nav ul {
 }
 
 ion-icon {
-color: white;
-font-size: 2em;
+    color: white;
+    font-size: 2em;
+    margin-right: 10px;
 }
 
 nav ul {
  
 }
 
-nav ul li a{
-  font-size: 0.8em;
-  color: #597aa6;
-  list-style-type: none;
-  margin-top: 5px;
-}
+
 
 nav i{
   font-size: 1.5em;
@@ -175,28 +154,31 @@ float:left;
 }
 
 .nav li a {
-  text-decoration: none;
-  list-style-type: none;
+    text-decoration: none;
+    list-style-type: none;
     color: #D1A158;
-    display:block;
+    display:flex;
     padding:10px 12px;
     font-size: 1rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav li a:hover {
-  color: white;
+    color: white;
 }
 .nav li ul {
-display:none;
-position:absolute;
-min-width:140px;
+    display:none;
+    position:absolute;
+    min-width:140px;
 }
 .nav li:hover > ul {
-  list-style-type: none;
-display:block;
+    list-style-type: none;
+    display:block;
 }
 .nav li ul li {
-position:relative;
+    position:relative;
+    background-color: #eee;
 }
 
 .nav li ul li ul {
@@ -215,8 +197,6 @@ position:relative;
 }
 
 
-
-
 .enlace_desactivado {
     pointer-events: none!important;
     cursor: default!important;
@@ -224,7 +204,7 @@ position:relative;
 
 
 .dropdown-menu{
-  color: #007ECF;
+  color: #0a5daa;
   min-width: 2rem;
   padding: 0.5rem;
 }
@@ -255,14 +235,16 @@ color: #597aa6;
 }
 
 footer {
-    background: rgb(0,81,159);
-    background: linear-gradient(90deg, rgba(0,81,159,1) 0%, rgba(71,166,240,1) 50%, rgba(0,81,159,1) 100%);
+    background: #D1A158;
     padding-top: 5px;
     text-align: center;
     bottom: 0;
 }
 footer .container {
-    margin: 3px auto 2px auto;
+    padding: 20px 0px 25px 0px;
+}
+footer .container p{
+    color: #292E2C;
 }
 footer .footer-copyright {
     background-color: #346397;
@@ -281,11 +263,6 @@ footer ul {
     line-height: 1.7;
 }
 
-footer .logo-footer {
-  width: 100%;
-  height: auto;
-  margin: 0 0 10px 0px;
-}
 
 footer h5 {
     font-size: 1.3em;
@@ -344,646 +321,28 @@ footer .btn {
     line-height: 25px;
 }
 
-/* @media screen and (max-width: 767px) {
-    footer {
-        text-align: center;
-    }
-    footer .logo-footer {
-      width: 350px;
-      height: auto;
-      margin: 0 0 10px 0px;
-    } */
 
-
-@media (min-width:200px)
+@media (max-width:767px)
 {
-
-
-  footer a {
-  font-size: x-large;
-  }
-  .logoHoridex{
-  width: 80%;
-
-  }
-
-    .logo-footer {
-        width: 258px;
-        height: auto;
-        margin: 0 0 10px 0px;
-    }
-    .nav {
-    display: -ms-flexbox;
-    display: flex;
-    justify-content: space-evenly;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap-reverse;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
-}
-
-    nav {
-      border: #007ECF;
-      background-color:#007ECF;
-    height: 89px;
-    z-index: 1000;
-  }
-    .nav li ul {
-    display:none;
-    position:absolute;
-    min-width:155px;
-    }
-    .nav li ul li ul {
-      margin-right: 1px;
-      margin-left: 130px;
-      top:1px;
-
-    }
-
-    nav h1 {
-      padding: 12px 0px 0 15px;
-    }
-    .navbar-toggler {
-      padding: 1.25rem .75rem;
-      font-size: 1.25rem;
-      line-height: 1;
-      background-color: transparent;
-      border: 1px solid transparent;
-      border-radius: .25rem;
-  }
-  .w-100 {
-      height: 100%;
-      width: 100%;
-  }
-
-}
-
-@media (min-width:374px)
-{
-  .logoHoridex{
-  width: 90%;
-
-  }
-
-    .logo-footer {
-        width: 258px;
-        height: auto;
-        margin: 0 0 10px 0px;
-    }
-
-    /* .navbar-collapse {
-        padding-top: 0px;
-        margin-left:340px;
-        margin-right:  00px;
-        border-radius: 20px;
-        border-style: solid 5px;
-    } */
-    .nav {
-    padding-top: 0px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap-reverse;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
-}
-
-    nav {
-    border: #007ECF;
-    background-color:#007ECF;
-    height: 89px;
-    z-index: 1000;
-  }
-    .nav li ul {
-    display:none;
-    position:absolute;
-    min-width:170px;
-    }
-    .nav li ul li ul {
-      margin-right: -14px;
-      margin-left: 205px;
-      top:1px;
-
-    }
-
-    nav h1 {
-      padding: 12px 0px 0 15px;
-    }
-    .navbar-toggler {
-      padding: 1.25rem .75rem;
-      font-size: 1.25rem;
-      line-height: 1;
-      background-color: transparent;
-      border: 1px solid transparent;
-      border-radius: .25rem;
-  }
-  .w-100 {
-      height: 100%;
-      width: 100%;
-  }
-}
-
-@media (min-width:424px)
-{
-  .logoHoridex{
-  width: 100%;
-
-  }
-
-  .logo-footer {
-      width: 258px;
-      height: auto;
-      margin: 0 0 10px 0px;
-  }
-
-  /* .navbar-collapse {
-      padding-top: 0px;
-      margin-left:340px;
-      margin-right:  00px;
-      border-radius: 20px;
-      border-style: solid 5px;
-  } */
-  .nav li ul {
-  display:none;
-  position:absolute;
-  min-width:170px;
-  }
-  .nav li ul li ul {
-    margin-right: -29px;
-    margin-left: 210px;
-  top:3px;
-
-  }
-
-
-.w-100 {
-    height: 100%;
-    width: 100%;
-}
-  nav h1 {
-    padding: 12px 0px 0 15px;
-  }
-  .navbar-toggler {
-    padding: 1rem .75rem;
-    font-size: 1.25rem;
-    line-height: 1;
-    background-color: transparent;
-    border: 1px solid transparent;
-    border-radius: .25rem;
-}
-}
-
-@media (min-width:767px)
-{
-
-  .logoHoridex{
-  width: 45%;
-
-  }
-  nav {
-    border: #007ECF;
-    background-color:#007ECF;
-    height: 120px;
-    z-index: 1000;
-}
-
-  footer .iconos-redes ion-icon {
-  color: #F7F1C4;
-  font-size: 1em;
-  }
-
-  footer .iconos-redes {
-    display: inline;
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 16px;
-}
-
-footer .logo-footer {
-  width: 306px;
-  height: auto;
-  margin: 9px 0 0px -34px;
-}
-
-  footer .btn {
-    background-color: #F7F1C4;
-     color: #597aa6;
-    border-radius: 20px;
-    border: none;
-    width: 200px;
-    height: 50px;
-    display: block;
-    margin: 0 auto;
-    margin-top: 10px;
-    line-height: 25px;
-  }
-footer.logo-footer {
-      width: 258px;
-      height: auto;
-      margin: 0 0 10px 0px;
-  }
-
-  nav ul li a{
-    font-size: 1.3em;
-    margin-top: 5px;
-  }
-
-
-  .dropdown-menu{
-    background-color: #007ECF;
-    min-width: 5rem;
-    padding: 0.5rem;
-  }
-  .dropdown-item{
-    color: #597aa6;
-  }
-  .dropdown-menu.show{
-    display: inline-block;
-  }
-  .navbar-collapse {
-  display: flex!important;
-  flex-basis: auto;
-  padding-top: 0!important;
-  padding-right: 15px;
-  }
-  .navbar-toggler {
-  display: none;
-  }
-  .navbar-nav {
-   margin-left: 0px;
-    flex-direction: row;
-    margin-top: 0px;
-
-
-  }
-
-  /* ICONOS DEL NAV BOOT */
-  .navbar-nav .nav-link {
-      padding: 10px 12px;
-      margin-right: 00px;
-      margin-left: 00px;
-  }
-  nav h1 {
-    padding: 0px 0px 0 100px;
-  }
-
-
-  nav ul li a p {
-    display: inline;
-    text-transform: lowercase;
-    font-size: 0.8em;
-  }
-
-
-}
-
-@media (min-width:1024px)
-{
-
-  .logoHoridex{
-  width: 55%;
-
-  }
-  footer {
-    border: #007ECF;
-    background-color:#007ECF;
-      padding-top: 5px;
-      text-align: center;
-      bottom: 0;
-  }
-  footer .container {
-      margin: auto 30px;
-  }
-  footer .footer-copyright {
-      background-color: #346397;
-      padding-top: 3px;
-      padding-bottom: 3px;
-
-  }
-  footer .footer-copyright p {
-      font-size: 0.8em;
-      margin: 10px;
-      color: #F7F1C4;
-  }
-  footer ul {
-      list-style-type: none;
-      padding-left: 0;
-      line-height: 1.7;
-  }
-
-  footer .logo-footer {
-    width: 381px;
-    height: auto;
-    margin: 0px 0 0px -29px;
-  }
-
-  footer h5 {
-      font-size: 1.3em;
-
-      margin-top: 15px;
-      text-transform: uppercase;
-  }
-  footer a {
-    color: #F7F1C4;
-    text-decoration: none;
-    list-style-type: none;
-  }
-  footer a:hover, footer a:active {
-      text-decoration: none;
-      color: #F7F1C4;
-  }
-  footer h1 a{
-      font-size: 50px;
-      text-align: center;
-      color: #fff;
-  }
-  footer .iconos-redes {
-      display: inline;
-      text-align: center;
-      padding-top: 30px;
-      padding-bottom: 16px;
-  }
-
-  footer .iconos-redes a {
-
-      color: #007ECF;
-      padding: 5px;
-      transition: 0.2s;
-  }
-  footer .iconos-redes a ion-icon
-  {
-    font-size: 2.5em;
-  }
-
-  footer .iconos-redes a:hover {
-      background-color: #fff;
-      text-decoration: none;
-      color: #64a19d;
-  }
-
-  footer .btn {
-    background-color: #F7F1C4;
-     color: #597aa6;
-      border-radius: 20px;
-      border: none;
-      width: 150px;
-      display: block;
-      margin: 0 auto;
-      margin-top: 10px;
-      line-height: 25px;
-  }
-
-
-nav ul li a{
-    font-size: 1.4em;
-    margin-top: 5px;
-}
-
-    .nav-link {
-      padding: 10px 12px;
-  }
 
   .navbar-collapse {
-    padding-top: -10px;
-    margin-left:0px;
-    margin-right:  00px;
+   background-color: #fff;
+      padding-top: 50px;
   }
-}
-
-
-@media (min-width: 1399px){
-
-  footer {
-      border: #007ECF;
-      background-color:#007ECF;
-      padding-top: 5px;
-      text-align: center;
-      bottom: 0;
+    
+  .logo-nav {
+    left: 37%;
+    max-width: 120px;  
   }
-  footer .container {
-      margin: 5px auto 5px;
-  }
-  footer .footer-copyright {
-      background-color: #346397;
-      padding-top: 3px;
-      padding-bottom: 3px;
-
-  }
-  footer .footer-copyright p {
-      font-size: 0.8em;
-      margin: 10px;
-      color: #F7F1C4;
-  }
-  footer ul {
-      font-size:1.3em;
-      list-style-type: none;
-      padding-left: 0;
-      line-height: 1.7;
-  }
-
-  footer .logo-footer {
-    width: 481px;
-    height: auto;
-    margin: 5px 0 10px -90px;
-  }
-
-  footer h5 {
-      font-size: 2.1em;
-
-      margin-top: 15px;
-      text-transform: uppercase;
-  }
-  footer a {
-      color: #F7F1C4;
-      text-decoration: none;
-      list-style-type: none;
-  }
-  footer a:hover, footer a:active {
-      text-decoration: none;
-      color: #F7F1C4;
-  }
-  footer h1 a{
-      font-size: 50px;
-      text-align: center;
-      color: #fff;
-  }
-  footer .iconos-redes {
-      display: inline;
-      text-align: center;
-      padding-top: 30px;
-      padding-bottom: 16px;
-  }
-
-  footer .iconos-redes a {
-
-      color: #e2efee;
-      padding: 5px;
-      transition: 0.2s;
-  }
-  footer .iconos-redes a ion-icon
-  {
-    font-size: 3.2em;
-  }
-
-  footer .iconos-redes a:hover {
-      background-color: #fff;
-      text-decoration: none;
-      color: #64a19d;
-  }
-
-  footer .btn {
-    background-color: #F7F1C4;
-     color: #597aa6;
-      border-radius: 20px;
-      border: none;
-      width: 220px;
-      display: block;
-      margin: 0 auto;
-      margin-top: 10px;
-      line-height: 25px;
-  }
-
-  nav ul li a {
-      font-size: 12px;
-  }
-
-.navbar-collapse {
-  padding-top: -10px;
-  margin-left:0px;
-  margin-right:  00px;
-}
-
-
-
-
-}
-
-                                            /* MEDIAQUERIES */
-
-
-
-                                                  /* 32 pulgadas */
-
-@media (min-width: 1919px){
-  .container{
-    max-width: 1720px;
-  }
-
-  .logoHoridex{
-    width: 40%;
-
+    .navbar {
+        padding: 0px;
     }
-
-
-.breadcrumb {
-    padding-left: 3rem;
-    font-size: 2em;
-    border: #007ECF;
-    background-color: #007ECF;
-    margin-top: 0%;
-    font-weight: bold;
+    ion-icon {
+    color: #308bd6;
 }
 
-
-footer {
-  border: #007ECF;
-  background-color: #007ECF;
-  padding-top: 5px;
-  text-align: center;
-  bottom: 0;
-}
-footer .container {
-    margin: 5px auto 5px;
-}
-footer .footer-copyright {
-    background-color: #346397;
-    padding-top: 3px;
-    padding-bottom: 3px;
-
-}
-footer .footer-copyright p {
-    font-size: 0.8em;
-    margin: 10px;
-    color: #ccc;
-}
-footer ul {
-    font-size:1.3em;
-    list-style-type: none;
-    padding-left: 0;
-    line-height: 1.7;
 }
 
-footer .logo-footer {
-  width: 481px;
-  height: auto;
-  margin: 5px 0 10px -90px;
-}
-
-footer h5 {
-    font-size: 2.1em;
-    margin-top: 15px;
-    text-transform: uppercase;
-}
-footer a {
-  color: #F7F1C4;
-  text-decoration: none;
-  list-style-type: none;
-}
-footer a:hover, footer a:active {
-    text-decoration: none;
-    color: #F7F1C4;
-}
-footer h1 a{
-    font-size: 50px;
-    text-align: center;
-    color: #fff;
-}
-footer .iconos-redes {
-    display: inline;
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 16px;
-}
-
-footer .iconos-redes a {
-
-    color: #e2efee;
-    padding: 5px;
-    transition: 0.2s;
-}
-footer .iconos-redes a ion-icon
-{
-  font-size: 3.2em;
-}
-
-footer .iconos-redes a:hover {
-    background-color: #fff;
-    text-decoration: none;
-    color: #64a19d;
-}
-
-footer .btn {
-    color: #F7F1C4;
-    background-color: #597aa6;
-    border-radius: 20px;
-    border: none;
-    width: 220px;
-    display: block;
-    margin: 0 auto;
-    margin-top: 10px;
-    line-height: 25px;
-}
-
-
-nav ul li a {
-    font-size: 12px;
-}
-
-
-
-}
 
 
 

@@ -2,30 +2,23 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-sm-4 col-lg-4">
-                  <img src="/img/logomigueCelu.png" class="logo-footer"> </a>
+                <div class="col-lg-3">
+                  <ion-icon name="location-outline"></ion-icon><p>Dr. Marcos Paz 1702<br>Marcos Paz | Bs. As.<br>Argentina</p>
                 </div>
-
-                <div class="col-sm-4 col-lg-4" id="infoFoo">
-                    <h5>INFO </h5>
-                    <ul>
-                        <li><a href="https://web.whatsapp.com/" target="_blank">011 15 30917451 </a></li>
-                        <li><a href="mailto:..">migue@gmail.com</a></li>
-                        <li><a href="https://goo.gl/maps/ViahmZN6uXbfLgbE6" target="_blank">Ramos Mejía | Bs. As. | Argentina</a></li>
-                    </ul>
+                <div class="col-lg-3">
+                  <ion-icon name="mail-outline"></ion-icon><p>gvgaeta@gmail.com</p>
                 </div>
-                <div class="col-sm-4 col-lg-4">
-                    <div class="iconos-redes">
-                        <a href="" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
-                        <a href="" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
-                        <a href="" target="_blank"> <ion-icon name="logo-whatsapp"></ion-icon><br></a>
-                    </div>
-                    <button type="button" class="btn btn-default">Contacto</button>
+                <div class="col-lg-3">
+                  <ion-icon name="call-outline"></ion-icon><p>Teléfono | Fax<br>
+(0220) 4771106</p>
+                </div>
+                <div class="col-lg-3">
+                  <ion-icon name="logo-facebook"></ion-icon><p>Pastas Gaeta</p>
                 </div>
             </div>
         </div>
         <div class="footer-copyright">
-            <p>© Copyright 2020. Todos los derechos reservados. Migue Market S.A</p>
+            <p>© Copyright 2020. Todos los derechos reservados. Pipa Design</p>
         </div>
     </footer>
 </div>
