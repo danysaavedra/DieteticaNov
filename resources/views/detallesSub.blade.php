@@ -28,15 +28,15 @@
     @if(isset($categorias))
       @foreach($categorias as $categoria)
       @if($categoria->name == "Soperos")
-      <h2 style="text-align :center" class="titulo-productos">Fideos Soperos</h2>
+      <h2 class="titulo-productos">Fideos Soperos</h2>
       @elseif($categoria->name=="Guiseros")
-      <h2 style="text-align :center" class="titulo-productos">Fideos Guiseros</h2>
+      <h2 class="titulo-productos">Fideos Guiseros</h2>
       @elseif($categoria->name=="Moñitos")
-      <h2 style="text-align :center" class="titulo-productos">Fideos Moñitos</h2>
+      <h2 class="titulo-productos">Fideos Moñitos</h2>
       @elseif($categoria->name=="Nidos")
-      <h2 style="text-align :center" class="titulo-productos">Fideos Nidos</h2>
+      <h2 class="titulo-productos">Fideos Nidos</h2>
       @else($categoria->name=="Tricolor")
-      <h2 style="text-align :center" class="titulo-productos">Fideos Tricolor</h2>
+      <h2 class="titulo-productos">Fideos Tricolor</h2>
       @endif
   @endforeach
 @endif
@@ -102,7 +102,7 @@
               </div>
           </div>
 
-          @if($product->stock == 0)
+           <!-- @if($product->stock == 0)
 
 
           <ul class="list-group">
@@ -129,7 +129,7 @@
 </ul>
             <br>
 
-            @endif
+            @endif  -->
 
 
             <img src="/storage/{{$product->avatar}}" alt="">
@@ -138,10 +138,13 @@
 
 
         <div class="titulo">
-            <a href="/productos/detalles/{{$product->id}}"><h5>{{$product->name}}</h5></a>
-            <p style="color:black; font-size:1em"><em> @if($product->stock > 0)
+            <h4>{{$product->name}}</h4>
+            <!--<p><em> @if($product->stock > 0)
                   Cuántos querés?         <input style="text-align:center;margin-left: 5%;width:10%"type="number" min =1  name="quantity" placeholder="0" required>
-              @endif <br> Precio: $ {{$product->price}} </em></p>
+              @endif </em></p> -->
+              <p>{{$product->description}} </p>
+              <h7>${{$product->price}} </h7>
+              <a href="/productos/detalles/{{$product->id}}"><h5>Agregar al carrito</h5></a>
 
         </div>
         </form>

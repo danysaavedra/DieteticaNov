@@ -42,8 +42,10 @@
   margin: 1rem auto;
   position: relative;
   display: block;
-  padding: .75rem 1.25rem;
+  padding: .5rem 2rem;
   margin-bottom: -1px;
+  background-color: #D1A158;
+  color: #fff;   
 
 }
 
@@ -357,32 +359,58 @@ h1.titulo-productos {
 h1.titulo-productos strong {
   font-weight: 700;
 }
+h2.titulo-productos {
+  color: #f71619;
+  font-size: 1.8em;
+  margin: 100px 0px 40px 0px;
+  border-top: 2px solid #cdaf67;
+  border-bottom: 2px solid #cdaf67;
+  font-weight: 400;
+  width: 500px;
+  height: auto;
+  padding: 15px 0px;    
+  text-align: left;
+  font-family: 'Headland One', serif;
+}
 .card {
   border: none;
   text-align: center;
 }
+.card .titulo h4 {
+  color: #CDAF67;
+  font-family: 'Headland One', serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 1.4;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+.card .titulo h7 {
+  color: #B81517;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 0;
+  margin-top: 0px;    
+}
 .card .titulo a {
-  border: 2px solid black;
   margin: 10px auto;
   padding: 10px 24px;
   transition:0.2s background-color;
   text-decoration: none;
-  display: inline-block;
-  width: 100%;
+  display: block;
+  width: 70%;
+  background-color: #CDAF67;    
 }
 .card .titulo a:hover, .card .titulo a:active {
-  background-color:#346397!important;
-  transform:translateY(2px);
-  transform:translateX(2px);
+  background-color:#B81517!important;
 }
 .card .titulo a h5 {
-  color: #000;
-  font-family: 'Quicksand', sans serif;
-  text-transform: uppercase;
+  color: #fff;    
   font-weight: 400;
-  font-size: 1em;
-  letter-spacing: 1px;
-  line-height: 1.4;
+  font-size: 14px;
   margin-bottom: 0;
 }
 .card .titulo a h5:hover {
@@ -391,6 +419,7 @@ h1.titulo-productos strong {
 }
 .card .titulo p {
   color: #6C6C6C;
+  margin-bottom: 0px;    
 }
 .card .card-producto {
   position: relative;
