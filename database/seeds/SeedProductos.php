@@ -19,9 +19,9 @@ class SeedProductos extends Seeder
         DB::table('products')->insert(
             [
                 'name' => 'Munición',
-                'description' => 'Peso Neto ...gr',
+                'description' => 'Peso Neto 500 gr',
                 'price' => 210,
-                'avatar' => '..\img\seedPro\higosAlmiBro.png',
+                'avatar' => '..\img\seedPro\barletta-soperos-municion-fideo.jpg',
                 'category_id' => 28,
                 'stock' => 50,
                 'promo' => 0,
@@ -30,9 +30,9 @@ class SeedProductos extends Seeder
         DB::table('products')->insert(
             [
                 'name' => 'Ave María',
-                'description' => 'Peso Neto ...gr',
+                'description' => 'Peso Neto 500 gr',
                 'price' => 185,
-                'avatar' => '..\img\seedPro\mermBroLightArand.png',
+                'avatar' => '..\img\seedPro\barletta-soperos-avemaria-fideo.jpg',
                 'category_id' => 28,
                 'stock' => 50,
                 'promo' => 0,
@@ -41,9 +41,9 @@ class SeedProductos extends Seeder
         DB::table('products')->insert(
             [
                 'name' => 'Dedalitos',
-                'description' => 'Peso Neto ...gr',
+                'description' => 'Peso Neto 500 gr',
                 'price' => 185,
-                'avatar' => '..\img\seedPro\mermBroLigthNar.png',
+                'avatar' => '..\img\seedPro\barletta-soperos-dedalito-fideo.jpg',
                 'category_id' => 28,
                 'stock' => 50,
                 'promo' => 0,
@@ -52,9 +52,9 @@ class SeedProductos extends Seeder
         DB::table('products')->insert(
             [
                 'name' => 'Pamperito',
-                'description' => 'Peso Neto ...gr',
+                'description' => 'Peso Neto 500 gr',
                 'price' => 185,
-                'avatar' => '..\img\seedPro\mermBroLigthFr.png',
+                'avatar' => '..\img\seedPro\barletta-soperos-pamperito-fideo.jpg',
                 'category_id' => 28,
                 'stock' => 50,
                 'promo' => 0,
@@ -63,9 +63,9 @@ class SeedProductos extends Seeder
         DB::table('products')->insert(
             [
                 'name' => 'Anillitos',
-                'description' => 'Peso Neto ...gr',
+                'description' => 'Peso Neto 500 gr',
                 'price' => 185,
-                'avatar' => '..\img\seedPro\mermBroLigthFrRoj.png',
+                'avatar' => '..\img\seedPro\barletta-soperos-anillito-fideo.jpg',
                 'category_id' => 28,
                 'stock' => 50,
                 'promo' => 0,
@@ -76,9 +76,9 @@ class SeedProductos extends Seeder
         DB::table('products')->insert(
             [
                 'name' => 'Letritas',
-                'description' => 'Peso Neto ...gr',
+                'description' => 'Peso Neto 500 gr',
                 'price' => 185,
-                'avatar' => '..\img\seedPro\mermBroCir.png',
+                'avatar' => '..\img\seedPro\barletta-soperos-anillito-fideo.jpg',
                 'category_id' => 28,
                 'stock' => 50,
                 'promo' => 0,
@@ -87,9 +87,9 @@ class SeedProductos extends Seeder
         DB::table('products')->insert(
             [
                 'name' => 'Cornetín',
-                'description' => 'Peso Neto ...gr',
+                'description' => 'Peso Neto 500 gr',
                 'price' => 185,
-                'avatar' => '..\img\seedPro\mermBroDur.png',
+                'avatar' => '..\img\seedPro\barletta-soperos-cornetin-fideo.jpg',
                 'category_id' => 28,
                 'stock' => 50,
                 'promo' => 0,
@@ -103,9 +103,9 @@ class SeedProductos extends Seeder
         DB::table('products')->insert(
             [
                 'name' => 'Dedal',
-                'description' => 'Peso Neto ...gr',
+                'description' => 'Peso Neto 500 gr',
                 'price' => 185,
-                'avatar' => '..\img\seedPro\mermBroFru.png',
+                'avatar' => '..\img\seedPro\barletta-guiseros-dedal.png',
                 'category_id' => 29,
                 'stock' => 50,
                 'promo' => 0,
@@ -115,9 +115,9 @@ class SeedProductos extends Seeder
         DB::table('products')->insert(
             [
                 'name' => 'Codito Rayado',
-                'description' => 'Peso Neto ...gr',
+                'description' => 'Peso Neto 500 gr',
                 'price' => 95,
-                'avatar' => '..\img\seedPro\mermCampC.png',
+                'avatar' => '..\img\seedPro\barletta-guiseros-coditosrayados.png',
                 'category_id' => 29,
                 'stock' => 50,
                 'promo' => 0,
@@ -126,9 +126,9 @@ class SeedProductos extends Seeder
         DB::table('products')->insert(
             [
                 'name' => 'Caracol',
-                'description' => 'Peso Neto ...gr',
+                'description' => 'Peso Neto 500 gr',
                 'price' => 95,
-                'avatar' => '..\img\seedPro\mermCampN.png',
+                'avatar' => '..\img\seedPro\barletta-guiseros-caracol.png',
                 'category_id' => 29,
                 'stock' => 50,
                 'promo' => 0,
@@ -137,9 +137,9 @@ class SeedProductos extends Seeder
         DB::table('products')->insert(
             [
                 'name' => 'Ñoquis',
-                'description' => 'Peso Neto ...gr',
+                'description' => 'Peso Neto 500 gr',
                 'price' => 95,
-                'avatar' => '..\img\seedPro\mermCampD.png',
+                'avatar' => '..\img\seedPro\barletta-guiseros-nioquis.png',
                 'category_id' => 29,
                 'stock' => 50,
                 'promo' => 0,
@@ -150,9 +150,9 @@ class SeedProductos extends Seeder
         DB::table('products')->insert(
             [
                 'name' => 'Chelentano',
-                'description' => 'Peso Neto ...gr',
+                'description' => 'Peso Neto 500 gr',
                 'price' => 170,
-                'avatar' => '..\img\seedPro\mermCampBCfr.png',
+                'avatar' => '..\img\seedPro\barletta-guiseros-chelentano.png',
                 'category_id' => 29,
                 'stock' => 50,
                 'promo' => 0,
@@ -161,9 +161,9 @@ class SeedProductos extends Seeder
         DB::table('products')->insert(
             [
                 'name' => 'Mostachol',
-                'description' => 'Peso Neto ...gr',
+                'description' => 'Peso Neto 500 gr',
                 'price' => 170,
-                'avatar' => '..\img\seedPro\mermCampBCaran.png',
+                'avatar' => '..\img\seedPro\barletta-guiseros-mostachol.png',
                 'category_id' => 29,
                 'stock' => 50,
                 'promo' => 0,
@@ -172,9 +172,9 @@ class SeedProductos extends Seeder
         DB::table('products')->insert(
             [
                 'name' => 'Rigatti',
-                'description' => 'Peso Neto ...gr',
+                'description' => 'Peso Neto 500 gr',
                 'price' => 175,
-                'avatar' => '..\img\seedPro\jaleaCampBCmem.png',
+                'avatar' => '..\img\seedPro\barletta-guiseros-rigatti.png',
                 'category_id' => 29,
                 'stock' => 50,
                 'promo' => 0,
@@ -183,9 +183,9 @@ class SeedProductos extends Seeder
         DB::table('products')->insert(
             [
                 'name' => 'Tirabuzón',
-                'description' => 'Peso Neto ...gr',
+                'description' => 'Peso Neto 500 gr',
                 'price' => 110,
-                'avatar' => '..\img\seedPro\jaleaCampMem.png',
+                'avatar' => '..\img\seedPro\barletta-guiseros-tirabuzon.png',
                 'category_id' => 29,
                 'stock' => 50,
                 'promo' => 0,
@@ -197,9 +197,9 @@ class SeedProductos extends Seeder
         DB::table('products')->insert(
             [
                 'name' => 'Penne Rigatti',
-                'description' => 'Peso Neto ...gr',
+                'description' => 'Peso Neto 500 gr',
                 'price' => 95,
-                'avatar' => '..\img\seedPro\mermCampBCD.png',
+                'avatar' => '..\img\seedPro\barletta-guiseros-pennerigatti.png',
                 'category_id' => 29,
                 'stock' => 50,
                 'promo' => 0,
@@ -208,9 +208,9 @@ class SeedProductos extends Seeder
         DB::table('products')->insert(
             [
                 'name' => 'Penetas',
-                'description' => 'Peso Neto ...gr',
+                'description' => 'Peso Neto 500 gr',
                 'price' => 95,
-                'avatar' => '..\img\seedPro\mermCampBCDama.png',
+                'avatar' => '..\img\seedPro\barletta-guiseros-penetas.png',
                 'category_id' => 29,
                 'stock' => 50,
                 'promo' => 0,
@@ -218,10 +218,10 @@ class SeedProductos extends Seeder
         );
         DB::table('products')->insert(
             [
-                'name' => 'Canutos',
-                'description' => 'Peso Neto ...gr',
+                'name' => 'Canudos',
+                'description' => 'Peso Neto 500 gr',
                 'price' => 95,
-                'avatar' => '..\img\seedPro\mermCampBCC.png',
+                'avatar' => '..\img\seedPro\barletta-guiseros-canudos.png',
                 'category_id' => 29,
                 'stock' => 50,
                 'promo' => 0,
@@ -230,9 +230,9 @@ class SeedProductos extends Seeder
         DB::table('products')->insert(
             [
                 'name' => 'Mil rayas',
-                'description' => 'Peso Neto ...gr',
+                'description' => 'Peso Neto 500 gr',
                 'price' => 95,
-                'avatar' => '..\img\seedPro\mermCampBCn.png',
+                'avatar' => '..\img\seedPro\barletta-guiseros-milrayas.png',
                 'category_id' => 29,
                 'stock' => 50,
                 'promo' => 0,
@@ -242,9 +242,9 @@ class SeedProductos extends Seeder
         DB::table('products')->insert(
             [
                 'name' => 'Cornetín',
-                'description' => 'Peso Neto ...gr',
+                'description' => 'Peso Neto 500 gr',
                 'price' => 185,
-                'avatar' => '..\img\seedPro\mermCabDurz.png',
+                'avatar' => '..\img\seedPro\barletta-guiseros-cornetin.png',
                 'category_id' => 29,
                 'stock' => 50,
                 'promo' => 0,
@@ -253,9 +253,9 @@ class SeedProductos extends Seeder
         DB::table('products')->insert(
             [
                 'name' => 'Tubetti',
-                'description' => 'Peso Neto ...gr',
+                'description' => 'Peso Neto 500 gr',
                 'price' => 185,
-                'avatar' => '..\img\seedPro\mermCabFb.png',
+                'avatar' => '..\img\seedPro\barletta-guiseros-tubetti.png',
                 'category_id' => 29,
                 'stock' => 50,
                 'promo' => 0,
@@ -267,9 +267,9 @@ class SeedProductos extends Seeder
         DB::table('products')->insert(
             [
                 'name' => 'Moños',
-                'description' => 'Peso Neto ...gr',
+                'description' => 'Peso Neto 500 gr',
                 'price' => 185,
-                'avatar' => '..\img\seedPro\mermCabLightDurz.png',
+                'avatar' => '..\img\seedPro\barletta-monios-monio.png',
                 'category_id' => 30,
                 'stock' => 50,
                 'promo' => 0,
@@ -280,10 +280,10 @@ class SeedProductos extends Seeder
         //NIDOS
         DB::table('products')->insert(
             [
-                'name' => 'Nidos n°1',
-                'description' => 'Peso Neto ...gr',
+                'name' => 'Nidos al Huevo n°1',
+                'description' => 'Peso Neto 500 gr',
                 'price' => 185,
-                'avatar' => '..\img\seedPro\mermCabLightFb.png',
+                'avatar' => '..\img\seedPro\barletta-nidos-alhuevo-n1-fideo.jpg',
                 'category_id' => 31,
                 'stock' => 50,
                 'promo' => 0,
@@ -292,10 +292,10 @@ class SeedProductos extends Seeder
 
         DB::table('products')->insert(
             [
-                'name' => 'Nidos n°2',
-                'description' => 'Peso Neto ...gr',
+                'name' => 'Nidos al Huevo n°2',
+                'description' => 'Peso Neto 500 gr',
                 'price' => 71,
-                'avatar' => '..\img\seedPro\mermMolDam.png',
+                'avatar' => '..\img\seedPro\barletta-nidos-alhuevo-n2-fideo.jpg',
                 'category_id' => 31,
                 'stock' => 50,
                 'promo' => 0,
@@ -303,47 +303,35 @@ class SeedProductos extends Seeder
         );
         DB::table('products')->insert(
           [
-            'name' => 'Nidos n°3',
-            'description' => 'Peso Neto ...gr',
+            'name' => 'Nidos al Huevo n°3',
+            'description' => 'Peso Neto 500 gr',
             'price' => 75,
-            'avatar' => '..\img\seedPro\mermMolLightDam.png',
+            'avatar' => '..\img\seedPro\barletta-nidos-alhuevo-n3-fideo.jpg',
             'category_id' => 31,
             'stock' => 50,
             'promo' => 0,
           ]
         );
+
         DB::table('products')->insert(
             [
-                'name' => 'Nidos Verdes',
-                'description' => 'Peso Neto ...gr',
+                'name' => 'Nidos al Huevo de Espinaca',
+                'description' => 'Peso Neto 500 gr',
                 'price' => 75,
-                'avatar' => '..\img\seedPro\mermMolLightDur.png',
+                'avatar' => '..\img\seedPro\barletta-nidos-alhuevo-espinaca-fideo.jpg',
                 'category_id' => 31,
                 'stock' => 50,
                 'promo' => 0,
             ]
         );
 
-          //MAROLIO
+
         DB::table('products')->insert(
             [
-                'name' => 'Nidos Rojos',
-                'description' => 'Peso Neto ...gr',
+                'name' => 'Nidos al Huevo de Morrón',
+                'description' => 'Peso Neto 500 gr',
                 'price' => 65,
-                'avatar' => '..\img\seedPro\mermMarLightDam.png',
-                'category_id' => 31,
-                'stock' => 50,
-                'promo' => 0,
-            ]
-        );
-
-
-        DB::table('products')->insert(
-            [
-                'name' => 'Nidos a la Espinaca',
-                'description' => 'Peso Neto ...gr',
-                'price' => 185,
-                'avatar' => '..\img\seedPro\mermMassSAFb.png',
+                'avatar' => '..\img\seedPro\barletta-nidos-alhuevo-morron-fideo.jpg',
                 'category_id' => 31,
                 'stock' => 50,
                 'promo' => 0,
@@ -352,10 +340,10 @@ class SeedProductos extends Seeder
 
         DB::table('products')->insert(
             [
-                'name' => 'Nidos al Morrón',
-                'description' => 'Peso Neto ...gr',
+                'name' => 'Nido al Huevo Pappardelle',
+                'description' => 'Peso Neto 500 gr',
                 'price' => 185,
-                'avatar' => '..\img\seedPro\mermMassSAFr.png',
+                'avatar' => '..\img\seedPro\barletta-nidos-alhuevo-pappardelle-fideo.jpg',
                 'category_id' => 31,
                 'stock' => 50,
                 'promo' => 0,
@@ -364,10 +352,81 @@ class SeedProductos extends Seeder
 
         DB::table('products')->insert(
             [
-                'name' => 'Pappardelle',
-                'description' => 'Peso Neto ...gr',
+                'name' => 'Nidos',
+                'description' => 'Peso Neto 500 gr',
                 'price' => 185,
-                'avatar' => '..\img\seedPro\mermMassSAFdelB.png',
+                'avatar' => '..\img\seedPro\barletta-nidos-fideo.png',
+                'category_id' => 31,
+                'stock' => 50,
+                'promo' => 0,
+            ]
+        );
+
+        DB::table('products')->insert(
+            [
+                'name' => 'Nidos Semolados n°1',
+                'description' => 'Peso Neto 500 gr',
+                'price' => 185,
+                'avatar' => '..\img\seedPro\barletta-nidos-alhuevo-n1-fideo.jpg',
+                'category_id' => 31,
+                'stock' => 50,
+                'promo' => 0,
+            ]
+        );
+
+        DB::table('products')->insert(
+            [
+                'name' => 'Nidos Semolados n°2',
+                'description' => 'Peso Neto 500 gr',
+                'price' => 71,
+                'avatar' => '..\img\seedPro\barletta-nidos-alhuevo-n2-fideo.jpg',
+                'category_id' => 31,
+                'stock' => 50,
+                'promo' => 0,
+            ]
+        );
+        DB::table('products')->insert(
+          [
+            'name' => 'Nidos Semolados n°3',
+            'description' => 'Peso Neto 500 gr',
+            'price' => 75,
+            'avatar' => '..\img\seedPro\barletta-nidos-alhuevo-n3-fideo.jpg',
+            'category_id' => 31,
+            'stock' => 50,
+            'promo' => 0,
+          ]
+        );
+
+        DB::table('products')->insert(
+            [
+                'name' => 'Nidos Semolados de espinaca',
+                'description' => 'Peso Neto 500 gr',
+                'price' => 185,
+                'avatar' => '..\img\seedPro\barletta-nidos-semolados-verdes-fideo.jpg',
+                'category_id' => 31,
+                'stock' => 50,
+                'promo' => 0,
+            ]
+        );
+
+        DB::table('products')->insert(
+            [
+                'name' => 'Nidos Semolados de morrón',
+                'description' => 'Peso Neto 500 gr',
+                'price' => 185,
+                'avatar' => '..\img\seedPro\barletta-nidos-semolados-rojos-fideo.jpg',
+                'category_id' => 31,
+                'stock' => 50,
+                'promo' => 0,
+            ]
+        );
+
+        DB::table('products')->insert(
+            [
+                'name' => 'Nido Semolados Pappardelle',
+                'description' => 'Peso Neto 500 gr',
+                'price' => 185,
+                'avatar' => '..\img\seedPro\barletta-nidos-alhuevo-pappardelle-fideo.jpg',
                 'category_id' => 31,
                 'stock' => 50,
                 'promo' => 0,
@@ -379,9 +438,9 @@ class SeedProductos extends Seeder
         DB::table('products')->insert(
             [
                 'name' => 'Ave María',
-                'description' => 'Peso Neto ...gr',
+                'description' => 'Peso Neto 500 gr',
                 'price' => 185,
-                'avatar' => '..\img\seedPro\mermMassCAFb.png',
+                'avatar' => '..\img\seedPro\barletta-tricolor-ave-maria.png',
                 'category_id' =>32,
                 'stock' => 50,
                 'promo' => 0,
@@ -391,9 +450,9 @@ class SeedProductos extends Seeder
         DB::table('products')->insert(
             [
                 'name' => 'Dedalitos',
-                'description' => 'Peso Neto ...gr',
+                'description' => 'Peso Neto 500 gr',
                 'price' => 185,
-                'avatar' => '..\img\seedPro\mermMassCAGuinda.png',
+                'avatar' => '..\img\seedPro\barletta-soperos-tricolor-dedalitos.png',
                 'category_id' =>32,
                 'stock' => 50,
                 'promo' => 0,
@@ -403,9 +462,9 @@ class SeedProductos extends Seeder
         DB::table('products')->insert(
             [
                 'name' => 'Pamperitos',
-                'description' => 'Peso Neto ...gr',
+                'description' => 'Peso Neto 500 gr',
                 'price' => 65,
-                'avatar' => '..\img\seedPro\fainalind.png',
+                'avatar' => '..\img\seedPro\barletta-soperos-tricolor-pamperitos.png',
                 'category_id' => 32,
                 'stock' => 50,
                 'promo' => 0,
@@ -414,9 +473,9 @@ class SeedProductos extends Seeder
         DB::table('products')->insert(
             [
                 'name' => 'Letritas',
-                'description' => 'Peso Neto ...gr',
+                'description' => 'Peso Neto 500 gr',
                 'price' => 43,
-                'avatar' => '..\img\seedPro\hariMar000.png',
+                'avatar' => '..\img\seedPro\barletta-soperos-tricolor-letritas.png',
                 'category_id' => 32,
                 'stock' => 50,
                 'promo' => 0,
@@ -426,9 +485,9 @@ class SeedProductos extends Seeder
         DB::table('products')->insert(
             [
                 'name' => 'Rigatti',
-                'description' => 'Peso Neto ...gr',
+                'description' => 'Peso Neto 500 gr',
                 'price' => 62,
-                'avatar' => '..\img\seedPro\mariNsLinoChia.png',
+                'avatar' => '..\img\seedPro\barletta-guiseros-tricolor-rigatti.png',
                 'category_id' =>32,
                 'stock' => 50,
                 'promo' => 0,
@@ -437,9 +496,9 @@ class SeedProductos extends Seeder
         DB::table('products')->insert(
             [
                 'name' => 'Tirabuzón',
-                'description' => 'Peso Neto ...gr',
+                'description' => 'Peso Neto 500 gr',
                 'price' => 62,
-                'avatar' => '..\img\seedPro\mariNsMixSem.png',
+                'avatar' => '..\img\seedPro\barletta-guiseros-tricolor-tirabuzon.png',
                 'category_id' =>32,
                 'stock' => 50,
                 'promo' => 0,
@@ -447,10 +506,10 @@ class SeedProductos extends Seeder
         );
         DB::table('products')->insert(
             [
-                'name' => 'Pennerigate',
-                'description' => 'Peso Neto ...gr',
+                'name' => 'Penne rigate',
+                'description' => 'Peso Neto 500 gr',
                 'price' => 62,
-                'avatar' => '..\img\seedPro\mariNsTra.png',
+                'avatar' => '..\img\seedPro\barletta-guiseros-tricolor-pennerigate.png',
                 'category_id' =>32,
                 'stock' => 50,
                 'promo' => 0,
@@ -460,9 +519,9 @@ class SeedProductos extends Seeder
         DB::table('products')->insert(
             [
                 'name' => 'Moños',
-                'description' => 'Peso Neto ...gr',
+                'description' => 'Peso Neto 500 gr',
                 'price' => 62,
-                'avatar' => '..\img\seedPro\galleLeivaSalvX3.png',
+                'avatar' => '..\img\seedPro\barletta-monios-tricolor-monios.png',
                 'category_id' =>32,
                 'stock' => 50,
                 'promo' => 0,
