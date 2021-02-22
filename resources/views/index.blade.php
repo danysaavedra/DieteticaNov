@@ -17,7 +17,7 @@
   </div>
   @endif
 
-  
+
 <!-- buscador -->
 <!-- <form  class="buscador" action="/listaProductos" method="get">
   <div class="input-group mt-3">
@@ -111,14 +111,14 @@ botonera productos -->
       <div class="carousel-inner">
         <div class="carousel-item active banner1">
             <div class="carousel-caption">
-                <h2>Elaboradas con 
-                100% trigo candeal 
+                <h2>Elaboradas con
+                100% trigo candeal
                 de la más alta calidad.</h2>
             </div>
         </div>
 
           <div class="carousel-item">
-          
+
             </div>
 <!--
           <div class="carousel-item">
@@ -137,12 +137,25 @@ botonera productos -->
   </div>
  <!-- primer carrusel -->
 
+
+
+@if($categorias)
+<h3>SELECCION&Aacute; UNA CATEGOR&Iacute;A</h3>
+@foreach($categorias as $categoria)
+<div class="card" style="width: 18rem;">
+  <img src="/storage/{{$categoria->imagen}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">{{$categoria->name}}</p>
+  </div>
+</div>
+@endforeach
+@endif
   <!-- seccion Comestibles-->
+
+
+
   <section id="productosDestacados">
       <div class="titulo-productos">
-          <h3>SELECCION&Aacute; UNA CATEGOR&Iacute;A</h3>
-        <hr>
-      </div>
         @if(isset($productos))
       <div class="container-productos">
           @foreach ($productos as $producto)
@@ -165,7 +178,7 @@ botonera productos -->
 
               <div class="titulo">
             <a href="/productos/detalles/{{$producto->id}}"><h5>{{$producto->name}}</h5>
-            
+
 
                   <img src="/storage/{{$producto->avatar}}"alt="Comestible">
                   </a>
@@ -241,24 +254,24 @@ botonera productos -->
 <div class="barra">
      <div class="container">
       <div class="row">
-      
+
         <div class="col-lg-4 text-center">
             <img src="/img/metodos-de-pago.png">
             <h5>MÉTODOS DE PAGO</h5>
             <p>Conocé nuestros métodos de pago <u><strong>
 Elegí método que quieras</strong></u></p>
-        </div>  
+        </div>
         <div class="col-lg-4 text-center">
             <img src="/img/metodos-de-envio.png">
             <h5>MÉTODOS DE ENVÍO</h5>
             <p>Envíos a domicilio a todo el país <u><strong>Calculá el costo de envío!</strong></u></p>
-        </div> 
+        </div>
         <div class="col-lg-4 text-center">
             <img src="/img/como-comprar.png">
             <h5>CÓMO COMPRAR</h5>
             <p>Te ayudamos con tus compras <u><strong>Cómo compro?</strong></u></p>
-        </div>        
-        
+        </div>
+
       </div>
     </div>
     </div>
@@ -295,7 +308,7 @@ Elegí método que quieras</strong></u></p>
 
               <div class="titulo">
                   <a href="/productos/detalles/{{$producto->id}}"><h5>{{$producto->name}}</h5>
-            
+
 
                   <img src="/storage/{{$producto->avatar}}"alt="Comestible">
                   </a>
