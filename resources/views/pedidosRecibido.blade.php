@@ -91,10 +91,13 @@
         </tbody>
 
     </table>
-    <h2>Super Market</h2>
-<li><strong>WhatsApp +54 11 3091 7451</strong></li>
-<li><strong>Ramos Mejia|Bs As|Argentina</strong></li>
-<li><strong>© Copyright 2020. Todos los derechos reservados. Migue Market S.A</strong></li>
+    <h2>Pastas Barletta</h2>
+<li><strong>Teléfono | Fax
+(0220) 4771106</strong></li>
+<li><strong>Dr. Marcos Paz 1702
+Marcos Paz | Bs. As.
+Argentina</strong></li>
+<li><strong>© Copyright 2020. Todos los derechos reservados. Pipa Design</strong></li>
 </div>
 
 

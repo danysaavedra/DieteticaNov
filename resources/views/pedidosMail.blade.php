@@ -79,10 +79,12 @@
         </tbody>
 
     </table>
-    <h2>DieteticaNov</h2>
+    <h2>Pastas Barletta</h2>
 <li><strong>Teléfonos:1527274638 / 44557788</strong></li>
-<li><strong>Capital Federal|Bs As|Argentina</strong></li>
-<li><strong>© Copyright 2020. Todos los derechos reservados. DieteticaNov S.A</strong></li>
+<li><strong>Dr. Marcos Paz 1702
+Marcos Paz | Bs. As.
+Argentina</strong></li>
+<li><strong>© Copyright 2020. Todos los derechos reservados. Pipa Design</strong></li>
 </div>
 
 
