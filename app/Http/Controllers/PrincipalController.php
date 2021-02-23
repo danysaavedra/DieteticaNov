@@ -26,16 +26,11 @@ class PrincipalController extends Controller
 
 public function productosDestacados(){
 
-$productos = Product::orderBy('name', 'asc')->get();
-
-    // $productos = Product::inRandomOrder()
-
-    return view('/index', compact('productos'));
-
-
+    $productos = Product::orderBy('name', 'asc')->get();
+    $categorias = Category::all();
+    return view('/index')->with('productos', $productos)->with('categorias', $categorias);
+  
 }
-
-
 
 
 }

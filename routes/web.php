@@ -26,6 +26,9 @@ Route::post('/pedidos/cliente/{id}', 'UsuarioController@borrarP')->middleware(['
 //Usuarios
 Route::get('/', 'PrincipalController@buscador');
 Route::get('/', 'PrincipalController@productosDestacados');
+//Route::get('/', 'PrincipalController@categoryindex');
+
+
 
 Route::prefix('/productos')->group(function(){
 Route::get('detalles/{id}', 'ProductoController@detalle');
