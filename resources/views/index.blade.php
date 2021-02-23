@@ -115,10 +115,6 @@
                 <h2>Bla bla bla</h2>
             </div>
         </div>
-<!--
-          <div class="carousel-item">
-              <img src="/img/limpieza.jpg" class="d-block w-100" alt="...">
-            </div> -->
 
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -161,13 +157,19 @@
  </section>
  <!-- fin sección categorías -->
 
-  <!-- seccion Comestibles
-  <section id="productosDestacados">
-      <div class="titulo-productos">
-          <h3>SELECCION&Aacute; UNA CATEGOR&Iacute;A</h3>
+ @if($categorias)
+ <h3>SELECCION&Aacute; UNA CATEGOR&Iacute;A</h3>
+ @foreach($categorias as $categoria)
+ <div class="card" style="width: 18rem;">
+   <img src="/storage/{{$categoria->imagen}}" class="card-img-top" alt="...">
+   <div class="card-body">
+     <p class="card-text">{{$categoria->name}}</p>
+   </div>
+ </div>
+ @endforeach
+ @endif
 
-      </div>
-
+    <section id="productosDestacados">
         @if(isset($productos))
       <div class="container-productos">
           @foreach ($productos as $producto)
@@ -244,11 +246,11 @@
     </section>
  seccion Comestibles-->
 
-<!-- botonVerMas -->
+<!-- botonVerMas
 <div class="verMas">
 <a href="{{route('nidos')}}"> <button type="button" class="btnon">Ver Más</button></a>
 </div>
-<!-- botonVerMas -->
+ botonVerMas -->
 
 <!-- La Pasta familias -->
 
