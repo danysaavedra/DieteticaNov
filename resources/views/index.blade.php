@@ -116,10 +116,10 @@ botonera productos -->
                 de la más alta calidad.</h2>
             </div>
         </div>
-
+<!--
           <div class="carousel-item">
           
-            </div>
+            </div>  -->
 <!--
           <div class="carousel-item">
               <img src="/img/limpieza.jpg" class="d-block w-100" alt="...">
@@ -219,11 +219,11 @@ botonera productos -->
     </section>
 <!-- seccion Comestibles-->
 
-<!-- botonVerMas -->
+<!-- botonVerMas
 <div class="verMas">
 <a href="{{route('nidos')}}"> <button type="button" class="btnon">Ver Más</button></a>
 </div>
-<!-- botonVerMas -->
+ botonVerMas -->
 
 <!-- La Pasta familias -->
 
