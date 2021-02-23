@@ -139,9 +139,9 @@
 
         <div class="titulo">
             <h4>{{$product->name}}</h4>
-            <!--<p><em> @if($product->stock > 0)
+            <p><em> @if($product->stock > 0)
                   Cuántos querés?         <input style="text-align:center;margin-left: 5%;width:10%"type="number" min =1  name="quantity" placeholder="0" required>
-              @endif </em></p> -->
+              @endif </em></p>
               <p>{{$product->description}} </p>
               <h7>${{$product->price}} </h7>
               <a href="/productos/detalles/{{$product->id}}"><h5>Agregar al carrito</h5></a>
