@@ -3,16 +3,16 @@
 @section('contenido')
 <div class="reg">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-6 registro-caja">
             <div class="card">
-                <div style="background-color: #597aa6;
+                <div style="background-color: #d1a158;
                   color: white;" class="card-header"><h4>{{ __('- REGISTRATE -') }}</h4></div>
 
                 <div class="card-body">
                     <form name="form" method="POST" action="{{ route('register') }}" enctype="multipart/form-data">
                         @csrf
                       <div class="row">
-                        <div class="col-sm-6">
+                        <div class="col-sm-3">
                             <div class="form-group">
                                 <label for="name" class="col-form-label text-md-left">{{ __('Nombre *') }}</label>
                                 <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" autocomplete="name" autofocus>
@@ -26,7 +26,7 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-6">
+                        <div class="col-sm-3">
                             <div class="form-group">
                                 <label for="lastname" class="col-form-label text-md-left">{{ __('Apellido *') }}</label>
                                 <input id="lastname" type="text" class="form-control @error('lastname') is-invalid @enderror" name="lastname" value="{{ old('lastname') }}" autocomplete="lastname" autofocus>
@@ -65,7 +65,7 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-6">
+                        <div class="col-sm-3">
                             <div class="form-group">
                                 <label for="nro" class="col-form-label text-md-left">{{ __('Nro') }}</label>
                                 <input id="nro" type="number" class="form-control @error('nro') is-invalid @enderror" name="nro" value="{{ old('nro') }}" autocomplete="nro" autofocus>
@@ -78,14 +78,14 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-6">
+                        <div class="col-sm-3">
                             <div class="form-group">
                                 <label for="dto" class="col-form-label text-md-left">{{ __('Dpto.') }}</label>
                                 <input id="dto"  class="form-control @error('dto') is-invalid @enderror" name="dto" value="{{ old('dto') }}" autocomplete="dto" autofocus>
 
                             </div>
                         </div>
-
+                        
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="piso" class="col-form-label text-md-left">{{ __('Piso.') }}</label>
@@ -98,7 +98,7 @@
                                 @enderror
                             </div>
                         </div>
-
+                        
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="localidad" class="col-form-label text-md-left">{{ __('Localidad *') }}</label>
@@ -112,6 +112,7 @@
                             </div>
                         </div>
 
+                       
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="partido" class="col-form-label text-md-left">{{ __('Partido *') }}</label>
@@ -150,10 +151,10 @@
                                 @enderror
                             </div>
                         </div>
-
+                        
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <label for="tel1" class="col-form-label text-md-left">{{ __('teléfono 1 *') }}</label>
+                                <label for="tel1" class="col-form-label text-md-left">{{ __('teléfono *') }}</label>
                                 <input id="tel1" type="number" class="form-control @error('tel1') is-invalid @enderror" name="tel1" value="{{ old('tel1') }}" autocomplete="tel1" autofocus>
 
                                 @error('tel1')
@@ -163,7 +164,7 @@
                                 @enderror
                             </div>
                         </div>
-
+                        
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="tel2" class="col-form-label text-md-left">{{ __('teléfono 2 *') }}</label>
@@ -176,7 +177,7 @@
                                 @enderror
                             </div>
                         </div>
-
+                        
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="password" class="col-form-label text-md-left">{{ __('Contraseña') }}</label>
@@ -196,7 +197,7 @@
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" autocomplete="new-password">
                             </div>
                         </div>
-
+                        
                         <div class="col-sm-6">
                           <div class="form-group">
                               <label for="foto">Subir imagen:</label>
@@ -209,7 +210,7 @@
                               @enderror
                           </div>
                         </div>
-
+                        
 
                         <div class="col-md-12">
                             <div class="form-group row mb-0">

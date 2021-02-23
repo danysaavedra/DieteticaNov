@@ -76,7 +76,7 @@
 
 
 
-  <li><a href="/"><ion-icon name="chatbubbles-outline"></ion-icon>Ayuda</a></li>
+  <li><a href="/ayuda"><ion-icon name="chatbubbles-outline"></ion-icon>Ayuda</a></li>
 
             @if((Auth::user()) && (Auth::user()->admin))
   <li>
@@ -93,8 +93,8 @@
   @if($user = Auth::user())
   <li class="nav-item active">
     <a  href="/carrito" ><ion-icon name="cart-outline"></ion-icon>
-      (<span style="color:red"; id="cantCar">{{ $user->carrito()->sum('quantity') }}</span>)
-      <br> Carrito</a>
+      <span style="padding-right:5px;" id="cantCar">({{ $user->carrito()->sum('quantity') }})</span>
+       Carrito</a>
     </li>
 
     @endif
@@ -110,27 +110,24 @@
     @else
 
     <ul>
-
-<li> <a class="enlace_desactivado"> <img src="/storage/{{Auth::user()->foto}}" alt="" class="foto">
-        <br>
-
-        {{ Auth::user()->name }} <span class="flecha">&#9660;</span><span class="caret"></span></a>
-  <ul>
-    <li>
-    @if((Auth::user()->admin))
-     <a href="/pedidos/cliente"> Pedidos </a>
-  @elseif($user = Auth::user())
-  <a href="/pedidos"> Mis Pedidos </a>
-  @endif
-     </li>
-    <li> <a href="{{ route('logout') }}"
-            onclick="event.preventDefault();
-            document.getElementById('logout-form').submit();">
-            {{ __('Logout') }}
-          </a> <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-              @csrf
-          </form></li>
-  </ul>
+        <li><a class="enlace_desactivado"> <img src="/storage/{{Auth::user()->foto}}" alt="" class="foto">
+            {{ Auth::user()->name }} <span class="flecha">&#9660;</span><span class="caret"></span></a>
+          <ul>
+            <li>
+            @if((Auth::user()->admin))
+             <a href="/pedidos/cliente"> Pedidos </a>
+          @elseif($user = Auth::user())
+          <a href="/pedidos"> Mis Pedidos </a>
+          @endif
+             </li>
+            <li> <a href="{{ route('logout') }}"
+                    onclick="event.preventDefault();
+                    document.getElementById('logout-form').submit();">
+                    {{ __('Logout') }}
+                  </a> <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                      @csrf
+                  </form></li>
+   </ul>
 
 </li>
 </ul>
@@ -159,7 +156,14 @@
     </li> -->
 
       @endguest
-      
+      <form class="buscador2" action="/listaProductos" method="get">
+              <div class="input-group mt-3">
+                <input type="text" name="name" class="form-control" placeholder="¿Qué estás buscando?" aria-label="¿QUE ESTÁS BUSCANDO?" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button class="input-group-text" id="basic-addon2" type="submit"><i class="fas fa-search"></i></button>
+                    </div>
+              </div>
+            </form>
     </ul>
   </div>
 

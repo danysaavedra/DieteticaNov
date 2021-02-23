@@ -139,6 +139,7 @@ background: transparent;
 .buscador{
 width: 30%;
 padding: 2px 2px 2px 2px;
+display: none;    
 }
 
 .divisor{
@@ -494,6 +495,9 @@ section {
              line-height: 49px;
 
        }
+.buscador2{
+        display: block;
+    }
 
 
 
@@ -514,6 +518,22 @@ section {
     margin: 0px 40px;
 }
 }
+@media (min-width:990px)
+{
+    .buscador2{
+        display: none;
+    }
+    .buscador{
+        display: block;
+    }
+    .logo-nav {
+    max-width: 200px;
+    position: absolute;
+    top: 15px;
+    left: 45%;
+    }
+}
+    
                                                   /* 320 */
 
   @media (min-width: 319px) {

@@ -8,7 +8,7 @@
 
 
         h2 {
-            color: rgb(230, 107, 0);
+            color: rgb(230, 0, 0);
         }
         body {font-family: Arial, Helvetica, sans-serif;}
 

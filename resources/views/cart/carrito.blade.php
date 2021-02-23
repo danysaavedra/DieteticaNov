@@ -7,10 +7,10 @@
 
 
 
-<div class="container-fluid">
+<div class="container-fluid carritocompras">
 
 
-<div class="containerCarroPapa" >
+<div class="containerCarroPapa text-center" >
   <a class="ir-arriba"  javascript:void(0) title="Volver arriba">
     <span class="fa-stack">
       <i class="fa fa-circle fa-stack-2x"></i>
@@ -26,7 +26,7 @@
 
   @if(isset($detalles))
   <div class="carrito">
-    <h2 class="miCarrito">Este es tu Carrito {{Auth::user()->name}}</h2>
+    <h2 class="miCarrito">Este es tu carrito <span>{{Auth::user()->name}}</span></h2>
         <a href="/listaProductos">Seguir Comprando</a>
               <?php $suma = 0; ?>
       @foreach($detalles as $detalle)
@@ -38,6 +38,7 @@
             <div class="card-body">
               <button class="btn btn-outline-danger" type="submit" name="detalle_id" value="{{$detalle->id}}"><strong>X</strong> </button>
             </div>
+          </div>
           </div>
       </form>
 
@@ -61,7 +62,22 @@
             <p class="card-text"><small class="text-muted">Seleccionados: {{$detalle->pivot->quantity}}<br>Subtotal: ${{$detalle->price * $detalle->pivot->quantity }}</small></p>
           </div>
         </div>
-      </div>
+        <!--
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="storage/{{$detalle->avatar}}" alt="">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">{{$detalle->name}}</h5>
+                <p class="card-text">Precio por Unidad:  ${{$detalle->price}}</p>
+                <p class="card-text"><small class="text-muted">Seleccionados: {{$detalle->pivot->quantity}}<br>Subtotal: ${{$detalle->price * $detalle->pivot->quantity }}</small></p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      
 
             <?php
             $subtotal[]= $detalle->price * $detalle->pivot->quantity;
@@ -111,7 +127,7 @@
 
 </div>
 </div>
-
+</div>
 
 <script src="/js/botonarriba.js"></script>
 <script src="/js/librerias.js"></script>

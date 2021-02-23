@@ -95,7 +95,9 @@ Route::get('/pedidosMail', function(){
   return view('pedidosMail');
 });
 
-
+Route::get('/ayuda', function(){
+  return view('ayuda');
+});
 
 
 Route::get('/home', 'HomeController@index')->middleware(['auth','verified']);

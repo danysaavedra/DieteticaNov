@@ -14,7 +14,7 @@ class SeedCategorias extends Seeder
   DB::table('subcategories')->insert(
             [
               'name' => 'Comestibles',
-              'imagen' => '../img/subComestibles.jpg',
+              'imagen' => '../img/seedPro/barletta-soperos-pamperito-fideo.jpg',
 
             ]
         );
@@ -25,7 +25,7 @@ class SeedCategorias extends Seeder
         DB::table('categories')->insert(
             [
               'name' => 'Soperos',
-              'imagen' => '../img/subComestibles.jpg',
+              'imagen' => '../img/seedPro/barletta-soperos-pamperito-fideo.jpg',
               'sub_category_id' => 7,
             ]
         );
@@ -33,7 +33,7 @@ class SeedCategorias extends Seeder
         DB::table('categories')->insert(
             [
                 'name' => 'Guiseros',
-                'imagen' => '../img/subComestibles.jpg',
+                'imagen' => '../img/seedPro/barletta-soperos-dedalito-fideo.jpg',
                 'sub_category_id' => 7,
                 ]
             );
@@ -42,7 +42,7 @@ class SeedCategorias extends Seeder
         DB::table('categories')->insert(
             [
                 'name' => 'Moñitos',
-                'imagen' => '../img/subComestibles.jpg',
+                'imagen' => '../img/seedPro/barletta-nidos-alhuevo-pappardelle-fideo.jpg',
                 'sub_category_id' => 7,
             ]
         );
@@ -51,7 +51,7 @@ class SeedCategorias extends Seeder
         DB::table('categories')->insert(
             [
               'name' => 'Nidos',
-              'imagen' => '../img/subComestibles.jpg',
+              'imagen' => '../img/seedPro/barletta-nidos-alhuevo-pappardelle-fideo.jpg',
                 'sub_category_id' => 7,
             ]
         );
@@ -59,7 +59,7 @@ class SeedCategorias extends Seeder
         DB::table('categories')->insert(
             [
                 'name' => 'Tricolor',
-                'imagen' => '../img/subComestibles.jpg',
+                'imagen' => '../img/seedPro/barletta-soperos-avemaria-fideo.jpg',
                 'sub_category_id' => 7,
                 ]
             );

@@ -10,9 +10,9 @@
   background: #64a19d;
 }
 ::selection {
-  color: red;
+  color: #ffffff;
   text-shadow: none;
-  background: #64a19d;
+  background: #a50d11;
 }
 
 .container-fluid {
@@ -96,13 +96,17 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 200px;
     position: absolute;
     top: 15px;
-    left: 45%;
+    left: 15px;
 }
 
 nav{
   background: rgb(0,81,159);
   background: linear-gradient(90deg, rgba(0,81,159,1) 0%, rgba(71,166,240,1) 50%, rgba(0,81,159,1) 100%);
   z-index: 1000;
+}
+.navbar-toggler {
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
 
 
@@ -137,6 +141,7 @@ nav i{
 
 nav ul li{
     padding-left: 0px;
+    color: #D1A158
 }
 
 nav ul li a p {
@@ -144,9 +149,9 @@ nav ul li a p {
 }
 
 img.foto{
-  border-radius: 50%;
-  width: 50px;
-  height: 40px;
+  width: 45px;
+  height: auto;
+    padding-right: 10px;
 }
 
 
@@ -333,7 +338,6 @@ footer .btn {
   }
 
   .logo-nav {
-    left: 37%;
     max-width: 120px;
   }
     .navbar {

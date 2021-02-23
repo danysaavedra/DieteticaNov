@@ -3,12 +3,12 @@
 @section('contenido')
 
 <div class="log">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center m-0">
 
 
-        <div class="col-md-6">
+        <div class="col-md-6 login-caja">
             <div class="card">
-                <div style="background-color: #597aa6;" class="card-header" ><h4>{{ __('- LOGIN -') }}</h4></div>
+                <div style="background-color: #d1a158;" class="card-header" ><h4>{{ __('- INGRESAR -') }}</h4></div>
 
 
 

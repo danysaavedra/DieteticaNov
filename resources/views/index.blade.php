@@ -127,126 +127,94 @@
         </div>
   </div>
  <!-- primer carrusel -->
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<section class="container" id="productosDestacados">
+    @if($categorias)  
+       <div class="titulo-seccion">
+           <h3>SELECCION&Aacute; UNA CATEGOR&Iacute;A</h3>
+       </div>
+       <div class="row">
+    @foreach($categorias as $categoria)
+    @if($categoria->name == "Soperos")
 
- <!-- sección categorías -->
- <section id="productosDestacados">
+          <div class="col-md-4">
+      <a href="{{route('soperos')}}"><img src="/storage/{{$categoria->imagen}}" class="img-fluid" alt="...">
+      <div class="card-body">
+        <p class="card-text">{{$categoria->name}}</p>
+      </div></a>
+    </div>
+          @elseif($categoria->name=="Guiseros")
+
+          <div class="col-md-4">
+      <a href="{{route('guiseros')}}"><img src="/storage/{{$categoria->imagen}}" class="img-fluid" alt="...">
+      <div class="card-body">
+      <p class="card-text">{{$categoria->name}}</p>
+      </div></a>
+    </div>
+          @elseif($categoria->name=="Moñitos")
+
+          <div class="col-md-4">
+      <a href="{{route('monitos')}}"><img src="/storage/{{$categoria->imagen}}" class="img-fluid" alt="...">
+      <div class="card-body">
+      <p class="card-text">{{$categoria->name}}</p>
+      </div></a>
+    </div>
+          @elseif($categoria->name=="Nidos")
+
+          <div class="col-md-4">
+      <a href="{{route('nidos')}}"><img src="/storage/{{$categoria->imagen}}" class="img-fluid" alt="...">
+      <div class="card-body">
+      <p class="card-text">{{$categoria->name}}</p>
+      </div></a>
+    </div>
+          @else($categoria->name=="Tricolor")
+
+          <div class="col-md-4">
+      <a href="{{route('tricolor')}}"><img src="/storage/{{$categoria->imagen}}" class="img-fluid" alt="...">
+      <div class="card-body">
+      <p class="card-text">{{$categoria->name}}</p>
+      </div></a>
+    </div>
+          @endif
+    @endforeach
+    </div>
+    @endif
+</section> 
+ 
+ 
+<!--
+
+<section class="container" id="productosDestacados">
    <div class="titulo-seccion">
        <h3>SELECCION&Aacute; UNA CATEGOR&Iacute;A</h3>
    </div>
-
-   <div class="row justify-content-center">
-     <div class="col-sm-6 col-md-4">
-       <a href="{{route('soperos')}}">Soperos</a>
+     @if($categorias)
+    <div class="row">
+     @foreach($categorias as $categoria)
+     
+      <div class="col-md-4">
+          <a href="{{$categoria->id}}">
+           <img src="/storage/{{$categoria->imagen}}" class="card-img-top" alt="...">
+           <div class="card-body">
+             <p class="card-text">{{$categoria->name}}</p>
+           </div>
+           </a>
      </div>
-     <div class="col-sm-6 col-md-4">
-       <a href="{{route('guiseros')}}">Guiseros</a>
+    
+     @endforeach
      </div>
-     <div class="col-sm-6 col-md-4">
-       <a href="{{route('monitos')}}">Moñitos</a>
-     </div>
-     <div class="col-sm-6 col-md-4">
-       <a href="{{route('nidos')}}">Nidos</a>
-     </div>
-     <div class="col-sm-6 col-md-4">
-       <a href="{{route('tricolor')}}">Tricolor</a>
-     </div>
-     <div class="col-sm-6 col-md-4">
-       <a href="{{route('monitos')}}">Moñitos</a>
-     </div>
-   </div>
+     @endif
  </section>
- <!-- fin sección categorías -->
+   
 
- @if($categorias)
- <h3>SELECCION&Aacute; UNA CATEGOR&Iacute;A</h3>
- @foreach($categorias as $categoria)
- <div class="card" style="width: 18rem;">
-   <img src="/storage/{{$categoria->imagen}}" class="card-img-top" alt="...">
-   <div class="card-body">
-     <p class="card-text">{{$categoria->name}}</p>
-   </div>
- </div>
- @endforeach
- @endif
-
-    <section id="productosDestacados">
-        @if(isset($productos))
-      <div class="container-productos">
-          @foreach ($productos as $producto)
-          @if($producto->category->dameSubCategoria() == 'Comestibles' && $producto->dameCategoria() == 'Nidos')
-
-
-
-          <article class="producto">
-
-            <a href="/productos/detalles/{{$producto->id}}">
-              <div class="producto-hover">
-                  <div class="producto-hover-content">
-                    @if($producto->stock > 0)
-                    <ion-icon style='color:rgba(0, 150, 0 ,0.5);' name="cart-outline"></ion-icon>
-                    @elseif($producto->stock == 0)
-                    <strong style='color:rgba(200 ,0 ,0 ,0.7); font-size:2rem;'>Sin Stock</strong>
-                    <br>
-                    <ion-icon style='color:rgba(200 ,0 ,0 ,0.7);font-size:2.5rem;' name="alert-outline"></ion-icon>
-                    @endif
-                  </div>
-              </div>
-            </a>
-
-            <div class="titulo">
-              <a href="/productos/detalles/{{$producto->id}}">
-                <img src="/storage/{{$producto->avatar}}"alt="Comestible">
-                <h5>{{$producto->name}}</h5>
-              </a>
-            </div>
-
-                  @if($producto->stock == 0)
-
-            <br>
-            <p>{{$producto->description}}</p>
-            <br>
-            <strong>${{$producto->price}}</strong>
-            <br>
-          <ul class="list-group">
-            <li class="list-group-item list-group-item-danger">Sin Stock</li>
-          </ul>
-          <br>
-            @elseif($producto->stock < 50)
-          <a href="/productos/detalles/{{$producto->id}}">
-            <br>
-            <p>{{$producto->description}}</p>
-            <br>
-            <strong>${{$producto->price}}</strong>
-            <br>
-            <ul class="list-group">
-            <li class="list-group-item list-group-item-warning">Stock Limitado</li>
-            </ul>
-            <br>
-          </a>
-
-            @elseif($producto->stock >= 50)
-          <a href="/productos/detalles/{{$producto->id}}">
-            <br>
-            <p>{{$producto->description}}</p>
-            <br>
-            <strong>${{$producto->price}}</strong>
-            <br>
-            <ul class="list-group">
-            <li class="list-group-item list-group-item-success">Agregar al carrito</li>
-            </ul>
-            <br>
-          </a>
-        @endif
-            </article>
-          @endif
-
-          @endforeach
-          </div>
-          @endif
-    </section>
- seccion Comestibles-->
-
-<!-- botonVerMas
+ botonVerMas
 <div class="verMas">
 <a href="{{route('nidos')}}"> <button type="button" class="btnon">Ver Más</button></a>
 </div>
@@ -291,99 +259,6 @@ Elegí método que quieras</strong></u></p>
     </div>
 <!-- Tipo de envio -->
 
-
-    <!-- Perfu y Limpieza -->
-
-    <section id="productosDestacados">
-      <div class="titulo-productos">
-          <h3>Fideos Tricolor</h3>
-        <hr>
-      </div>
-      @if(isset($productos))
-      <div class="container-productos">
-        @foreach ($productos as $producto)
-        @if($producto->category->dameSubCategoria() == 'Comestibles' && $producto->dameCategoria() == 'Tricolor')
-
-        <article class="producto">
-
-            <a href="/productos/detalles/{{$producto->id}}">
-              <div class="producto-hover">
-                  <div class="producto-hover-content">
-                    @if($producto->stock > 0)
-                    <ion-icon style='color:rgba(0, 150, 0 ,0.5);' name="checkmark-done-outline"></ion-icon>
-                    @elseif($producto->stock == 0)
-                    <strong style='color:rgba(200 ,0 ,0 ,0.7); font-size:2rem;'>Sin Stock</strong>
-                    <br>
-                    <ion-icon style='color:rgba(200 ,0 ,0 ,0.7);font-size:2.5rem;' name="alert-outline"></ion-icon>
-                    @endif
-                  </div>
-              </div>
-              </a>
-
-              <div class="titulo">
-                  <a href="/productos/detalles/{{$producto->id}}"><h5>{{$producto->name}}</h5>
-
-
-                  <img src="/storage/{{$producto->avatar}}"alt="Comestible">
-                  </a>
-                </div>
-
-                  @if($producto->stock == 0)
-
-            <br>
-            <p>{{$producto->description}}</p>
-            <br>
-            <strong>${{$producto->price}}</strong>
-            <br>
-            <ul class="list-group">
-
-  <li class="list-group-item list-group-item-danger">Sin Stock</li>
-
-</ul>
-            <br>
-            @elseif($producto->stock < 50)
-            <a href="/productos/detalles/{{$producto->id}}">
-            <br>
-            <p>{{$producto->description}}</p>
-            <br>
-            <strong>${{$producto->price}}</strong>
-            <br>
-            <ul class="list-group">
-  <li class="list-group-item list-group-item-warning">Disp. Limitada</li>
-</ul>
-            <br>
-</a>
-
-  @elseif($producto->stock >= 50)
-  <a href="/productos/detalles/{{$producto->id}}">
-  <br>
-            <p>{{$producto->description}}</p>
-            <br>
-            <strong>${{$producto->price}}</strong>
-            <br>
-            <ul class="list-group">
-            <li class="list-group-item list-group-item-success">Disponible</li>
-</ul>
-            <br>
-            </a>
-@endif
-            </article>
-
-        @endif
-        @endforeach
-        </div>
-      @endif
-    </section>
-
-     <!-- Perfu y Limpieza -->
-
-     <!-- botonVerMas -->
-
-    <div class="verMas">
-      <a href="{{route('tricolor')}}"> <button type="button" class="btnon">Ver Más</button></a>
-    </div>
-
-<!-- botonVerMas -->
 
 </div>
 
