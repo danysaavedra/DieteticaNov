@@ -17,7 +17,7 @@
 
 Ya logueado, podrá navegar a través de las distintas categorías, en donde tendrá los artículos cargados con sus fotos, descripciones, unidades por bultos (UxB) y sus precios. Una vez que encuentre el artículo que le interesa comprar, no tiene más que presionar AGREGAR previa selección de la UxB y la cantidad deseada.
 
-En el caso que no encuentre un artículo de su interés o requiera encontrar un artículo rápidamente, puede realizar una búsqueda y selección de artículo en el "buscador" ubicado en la parte superior derecha de su pantalla. Con solo incluir alguna palabra como el producto o la marca recibirá las distintas opciones acordes a los términos ingresados.
+En el caso que no encuentre un artículo de su interés o requiera encontrar un artículo rápidamente, puede realizar una búsqueda y selección de artículo en el "buscador" ubicado en la parte superior izquierda de su pantalla. Con solo incluir alguna palabra como el producto o la marca recibirá las distintas opciones acordes a los términos ingresados.
 
 De igual manera, ya sea navegando por la página por categorias o por búsqueda, cuando encuentra el artículo el cual quiere sumar a su pedido, no tiene más que presionar AGREGAR previa selección de la UxB y la cantidad deseada.
 
@@ -32,9 +32,9 @@ Recibirá en su pantalla una Confirmación de que su pedido fue procesado, con u
 Aguarde a ser contactado por el sector comercial de Maxiconsumo para poder coordinar entrega o retiro de mercadería y las formas de pago.
 
                         Muchas gracias por utilizar nuestro servicio web.</p>
-                    
-                    
-                    
+
+
+
                 </div>
 
             </div>
@@ -44,9 +44,9 @@ Aguarde a ser contactado por el sector comercial de Maxiconsumo para poder coord
 
                 <div class="card-body text-left">
                     <p>CABA y GCBA</p>
-                    
-                    
-                    
+
+
+
                 </div>
 
             </div>

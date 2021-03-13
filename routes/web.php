@@ -37,6 +37,7 @@ Route::get('detalles/{id}', 'ProductoController@detalle');
 Route::get('detallesSub', 'ProductoController@sub');
 
 
+
 //ComestiblesCat
 
 Route::get('/fideosSoperos', 'ProductoController@subFiam')->name('soperos');
@@ -51,16 +52,49 @@ Route::get('fideosTricolor', 'ProductoController@subGalle')->name('tricolor');
 
 
 
-//ComestiblesFiltrado
-Route::get('com', 'ProductoController@catProdCom');
 
-Route::get('com/Mayor-Com', 'ProductoController@precComMay');
-Route::get('com/Menor-Com', 'ProductoController@precComMen');
-Route::get('com/a-z-Com', 'ProductoController@azCom');
-Route::get('com/z-a-Com', 'ProductoController@zaCom');
-Route::get('com/Desc-Com', 'ProductoController@stockMayCom');
-Route::get('com/Asc-Com', 'ProductoController@stockMenCom');
-Route::get('com/promo-Com', 'ProductoController@promoCom');
+
+
+
+
+
+//especialidadesFiltrado
+Route::get('especialidades', 'ProductoController@catProdLimpi')->name('especialidades');
+
+Route::get('Mayor-esp', 'ProductoController@precLimMay')->name('mayor-esp');
+Route::get('Menor-esp', 'ProductoController@precLimMen')->name('menor-esp');
+Route::get('a-z-esp', 'ProductoController@azLim')->name('az-esp');
+Route::get('z-a-esp', 'ProductoController@zaLim')->name('za-esp');
+Route::get('Desc-esp', 'ProductoController@stockMayLim')->name('desc-esp');
+Route::get('Asc-esp', 'ProductoController@stockMenLim')->name('asc-esp');
+Route::get('promo-esp', 'ProductoController@promoLim')->name('pro-esp');
+
+
+
+//pastalargaFiltrado
+Route::get('pastalarga', 'ProductoController@catProdBeb')->name('pastalarga');
+
+Route::get('beb/Mayor-Beb', 'ProductoController@precBebMay');
+Route::get('beb/Menor-Beb', 'ProductoController@precBebMen');
+Route::get('beb/a-z-Beb', 'ProductoController@azBeb');
+Route::get('beb/z-a-Beb', 'ProductoController@zaBeb');
+Route::get('beb/Desc-Beb', 'ProductoController@stockMayBeb');
+Route::get('beb/Asc-Beb', 'ProductoController@stockMenBeb');
+Route::get('beb/promo-Beb', 'ProductoController@promoBeb');
+
+//CpastacortaFiltrado
+Route::get('pastacorta', 'ProductoController@catProdCom')->name('pastacorta');
+
+
+
+
+Route::get('Mayor-pasc', 'ProductoController@precComMay')->name('precioMayor');
+Route::get('Menor-pasc', 'ProductoController@precComMen')->name('precioMenor');
+Route::get('a-z-pasc', 'ProductoController@azCom')->name('az');
+Route::get('z-a-pasc', 'ProductoController@zaCom')->name('za');
+Route::get('Desc-pasc', 'ProductoController@stockMayCom')->name('desc');
+Route::get('Asc-pasc', 'ProductoController@stockMenCom')->name('men');
+Route::get('promo-pasc', 'ProductoController@promoCom')->name('pro');
 });
 
 //BUSCADOR

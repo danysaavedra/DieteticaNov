@@ -13,7 +13,23 @@ class SeedCategorias extends Seeder
     {
   DB::table('subcategories')->insert(
             [
-              'name' => 'Comestibles',
+              'name' => 'Pasta corta',
+              'imagen' => '../img/seedPro/barletta-soperos-pamperito-fideo.jpg',
+
+            ]
+        );
+
+        DB::table('subcategories')->insert(
+            [
+              'name' => 'Especialidades',
+              'imagen' => '../img/seedPro/barletta-soperos-pamperito-fideo.jpg',
+
+            ]
+        );
+
+        DB::table('subcategories')->insert(
+            [
+              'name' => 'Pasta larga',
               'imagen' => '../img/seedPro/barletta-soperos-pamperito-fideo.jpg',
 
             ]
@@ -26,7 +42,7 @@ class SeedCategorias extends Seeder
             [
               'name' => 'Soperos',
               'imagen' => '../img/seedPro/barletta-soperos-pamperito-fideo.jpg',
-              'sub_category_id' => 7,
+              'sub_category_id' => 12,
             ]
         );
 
@@ -34,16 +50,16 @@ class SeedCategorias extends Seeder
             [
                 'name' => 'Guiseros',
                 'imagen' => '../img/seedPro/barletta-soperos-dedalito-fideo.jpg',
-                'sub_category_id' => 7,
+                'sub_category_id' => 12,
                 ]
             );
 
 
         DB::table('categories')->insert(
             [
-                'name' => 'Moñitos',
+                'name' => 'Moños',
                 'imagen' => '../img/seedPro/barletta-nidos-alhuevo-pappardelle-fideo.jpg',
-                'sub_category_id' => 7,
+                'sub_category_id' => 13,
             ]
         );
 
@@ -52,18 +68,18 @@ class SeedCategorias extends Seeder
             [
               'name' => 'Nidos',
               'imagen' => '../img/seedPro/barletta-nidos-alhuevo-pappardelle-fideo.jpg',
-                'sub_category_id' => 7,
+                'sub_category_id' => 13,
             ]
         );
 
-        DB::table('categories')->insert(
+/*         DB::table('categories')->insert(
             [
                 'name' => 'Tricolor',
                 'imagen' => '../img/seedPro/barletta-soperos-avemaria-fideo.jpg',
-                'sub_category_id' => 7,
+                'sub_category_id' => 14,
                 ]
             );
-
+ */
 
     }
 }

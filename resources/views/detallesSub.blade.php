@@ -33,10 +33,8 @@
       <h2 class="titulo-productos">Fideos Guiseros</h2>
       @elseif($categoria->name=="Moñitos")
       <h2 class="titulo-productos">Fideos Moñitos</h2>
-      @elseif($categoria->name=="Nidos")
+      @else($categoria->name=="Nidos")
       <h2 class="titulo-productos">Fideos Nidos</h2>
-      @else($categoria->name=="Tricolor")
-      <h2 class="titulo-productos">Fideos Tricolor</h2>
       @endif
   @endforeach
 @endif
@@ -60,7 +58,7 @@
 
       <a class="dropdown-item" href="{{route('monitos')}}">Moñitos</a>
       <a class="dropdown-item" href="{{route('nidos')}}">Nidos</a>
-      <a class="dropdown-item" href="{{route('tricolor')}}">Tricolor</a>
+
 
       @endforeach
     </div>

@@ -28,8 +28,9 @@ public function productosDestacados(){
 
     $productos = Product::orderBy('name', 'asc')->get();
     $categorias = Category::all();
-    return view('/index')->with('productos', $productos)->with('categorias', $categorias);
-  
+    $subcategorias = Subcategory::all();
+    return view('/index')->with( [ 'categorias' => $categorias, 'subcategorias' => $subcategorias] );
+
 }
 
 
