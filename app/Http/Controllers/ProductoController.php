@@ -111,79 +111,79 @@ class ProductoController extends Controller
 
     public function catProdLimpi(){
       $productos = Product::all();
-      return view('product.productsLimp', compact('productos'));
+      return view('product.especialidades', compact('productos'));
     }
 
     public function precLimMay(){
       $productos = Product::orderBy('price','desc')->get();
-      return view('product.productsLimp')->with( ['productos' => $productos] );
+      return view('product.especialidades')->with( ['productos' => $productos] );
     }
 
     public function precLimMen(){
       $productos = Product::orderBy('price','asc')->get();
-      return view('product.productsLimp')->with( ['productos' => $productos] );
+      return view('product.especialidades')->with( ['productos' => $productos] );
     }
 
     public function azLim(){
       $productos = Product::orderBy('name','asc')->get();
-      return view('product.productsLimp')->with( ['productos' => $productos] );
+      return view('product.especialidades')->with( ['productos' => $productos] );
     }
     public function zaLim(){
       $productos = Product::orderBy('name','desc')->get();
-      return view('product.productsLimp')->with( ['productos' => $productos] );
+      return view('product.especialidades')->with( ['productos' => $productos] );
     }
 
     public function promoLim(){
       $productos = Product::where('promo','=', 1 )->get();
-      return view('product.productsLimp')->with( ['productos' => $productos] );
+      return view('product.especialidades')->with( ['productos' => $productos] );
     }
 
     public function stockMenLim(){
       $productos = Product::orderBy('stock','asc')->get();
-      return view('product.productsLimp')->with( ['productos' => $productos] );
+      return view('product.especialidades')->with( ['productos' => $productos] );
     }
     public function stockMayLim(){
       $productos = Product::orderBy('stock','desc')->get();
-      return view('product.productsLimp')->with( ['productos' => $productos] );
+      return view('product.especialidades')->with( ['productos' => $productos] );
     }
 
 
 
     public function catProdBeb(){
       $productos = Product::all();
-      return view('product.productsBeb', compact('productos'));
+      return view('product.pastalarga', compact('productos'));
     }
     public function precBebMay(){
       $productos = Product::orderBy('price','desc')->get();
-      return view('product.productsBeb')->with( ['productos' => $productos] );
+      return view('product.pastalarga')->with( ['productos' => $productos] );
     }
 
     public function precBebMen(){
       $productos = Product::orderBy('price','asc')->get();
-      return view('product.productsBeb')->with( ['productos' => $productos] );
+      return view('product.pastalarga')->with( ['productos' => $productos] );
     }
 
     public function azBeb(){
       $productos = Product::orderBy('name','asc')->get();
-      return view('product.productsBeb')->with( ['productos' => $productos] );
+      return view('product.pastalarga')->with( ['productos' => $productos] );
     }
     public function zaBeb(){
       $productos = Product::orderBy('name','desc')->get();
-      return view('product.productsBeb')->with( ['productos' => $productos] );
+      return view('product.pastalarga')->with( ['productos' => $productos] );
     }
 
     public function promoBeb(){
       $productos = Product::where('promo','=', 1 )->get();
-      return view('product.productsBeb')->with( ['productos' => $productos] );
+      return view('product.pastalarga')->with( ['productos' => $productos] );
     }
 
     public function stockMenBeb(){
       $productos = Product::orderBy('stock','asc')->get();
-      return view('product.productsBeb')->with( ['productos' => $productos] );
+      return view('product.pastalarga')->with( ['productos' => $productos] );
     }
     public function stockMayBeb(){
       $productos = Product::orderBy('stock','desc')->get();
-      return view('product.productsBeb')->with( ['productos' => $productos] );
+      return view('product.pastalarga')->with( ['productos' => $productos] );
     }
 
 
@@ -202,7 +202,7 @@ class ProductoController extends Controller
       return view('detallesSub', compact('categorias'));
     }
     public function subDul(){
-      $categorias = Category::where('name','=','Moñitos')->get();
+      $categorias = Category::where('name','=','Moños')->get();
       return view('detallesSub', compact('categorias'));
     }
     public function subCon(){
@@ -213,7 +213,7 @@ class ProductoController extends Controller
       $categorias = Category::where('name','=','Tricolor')->get();
       return view('detallesSub', compact('categorias'));
     }
-   
+
 
 
 

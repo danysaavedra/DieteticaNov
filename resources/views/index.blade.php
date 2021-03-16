@@ -18,76 +18,6 @@
   @endif
 
 
-<!-- buscador -->
-<!-- <form  class="buscador" action="/listaProductos" method="get">
-  <div class="input-group mt-3">
-    <input type="text" name="name" class="form-control" placeholder="¿QUE ESTÁS BUSCANDO?" aria-label="¿QUE ESTÁS BUSCANDO?" aria-describedby="basic-addon2">
-        <div class="input-group-append">
-            <button class="input-group-text" id="basic-addon2" type="submit"><i class="fas fa-search"></i></button>
-        </div>
-  </div>
-</form> -->
-
-<!-- fin-buscador -->
-
-
- <!-- promociones
-  <section id="productosDestacados">
-    <div class="titulo-productos">
-        <h3>PROMOCIONES <br>Semana del 3/7 al 10/7</h3>
-      <hr>
-    </div>
-    @if(isset($productos))
-    <div class="center">
-          @foreach ($productos as $producto)
-          @if( $producto->promo === 1 && $producto->stock === 0)
-          <div style="text-align:center">
-            <a href="/productos/detalles/{{$producto->id}}">
-            <ul class="list-group">
-              <li class="list-group-item list-group-item-danger">Sin Stock</li>
-            </ul>
-            <br>
-            <img class="productoPromo"src="/storage/{{$producto->avatar}}"alt="">
-            <strong class="titulo-productos">{{$producto->name}}</strong>
-            <br>
-            <strong class="titulo-productos">${{$producto->price}}</strong>
-            </a>
-          </div>
-
-                  <!-- https://fullstacklima2.slack.com/files/U6G1JK4KX/FRWDVE1UG/mercadopago_edit.mp4 -->
-
-   <!--         @elseif( $producto->promo === 1 && $producto->stock < 50 )
-            <div style="text-align:center">
-              <a href="/productos/detalles/{{$producto->id}}">
-              <ul class="list-group">
-              <li class="list-group-item list-group-item-warning">Stock Limitado</li>
-              </ul>
-                <img class="productoPromo"src="/storage/{{$producto->avatar}}"alt="">
-              <br>
-              <strong class="titulo-productos">{{$producto->name}}</strong>
-              <br>
-              <strong class="titulo-productos">${{$producto->price}}</strong>
-              </a>
-            </div>
-            @elseif($producto->promo === 1 && $producto->stock >= 50)
-            <div style="text-align:center">
-              <a href="/productos/detalles/{{$producto->id}}">
-              <ul class="list-group">
-                <li class="list-group-item list-group-item-success">Disponible</li>
-              </ul>
-              <img class="productoPromo"src="/storage/{{$producto->avatar}}"alt="">
-              <br>
-              <strong class="titulo-productos">{{$producto->name}}</strong>
-              <br>
-              <strong class="titulo-productos">${{$producto->price}}</strong>
-              </a>
-            </div>
-            @endif
-          @endforeach
-        </div>
-      @endif
-  </section>
- promo -->
 
 <!-- primer carrusel -->
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -127,16 +57,72 @@
         </div>
   </div>
  <!-- primer carrusel -->
- 
- 
- 
- 
- 
- 
- 
- 
+
+
+
+
+ <!-- promociones -->
+<!--  <section id="productosDestacados">
+    <div class="titulo-productos">
+        <h3>PROMOCIONES <br>Semana del 3/7 al 10/7</h3>
+      <hr>
+    </div>
+    @if(isset($productos))
+    <div class="center">
+          @foreach ($productos as $producto)
+          @if( $producto->promo === 1 && $producto->stock === 0)
+          <div style="text-align:center">
+            <a href="/productos/detalles/{{$producto->id}}">
+            <ul class="list-group">
+              <li class="list-group-item list-group-item-danger">Sin Stock</li>
+            </ul>
+            <br>
+            <img class="productoPromo"src="/storage/{{$producto->avatar}}"alt="">
+            <strong class="titulo-productos">{{$producto->name}}</strong>
+            <br>
+            <strong class="titulo-productos">${{$producto->price}}</strong>
+            </a>
+          </div>
+
+         @elseif( $producto->promo === 1 && $producto->stock < 50 )
+            <div style="text-align:center">
+              <a href="/productos/detalles/{{$producto->id}}">
+              <ul class="list-group">
+              <li class="list-group-item list-group-item-warning">Stock Limitado</li>
+              </ul>
+                <img class="productoPromo"src="/storage/{{$producto->avatar}}"alt="">
+              <br>
+              <strong class="titulo-productos">{{$producto->name}}</strong>
+              <br>
+              <strong class="titulo-productos">${{$producto->price}}</strong>
+              </a>
+            </div>
+            @elseif($producto->promo === 1 && $producto->stock >= 50)
+            <div style="text-align:center">
+              <a href="/productos/detalles/{{$producto->id}}">
+              <ul class="list-group">
+                <li class="list-group-item list-group-item-success">Disponible</li>
+              </ul>
+              <img class="productoPromo"src="/storage/{{$producto->avatar}}"alt="">
+              <br>
+              <strong class="titulo-productos">{{$producto->name}}</strong>
+              <br>
+              <strong class="titulo-productos">${{$producto->price}}</strong>
+              </a>
+            </div>
+            @endif
+          @endforeach
+        </div>
+      @endif
+  </section> -->
+ <!-- promo -->
+
+
+
+
+<!-- CATEGORIA -->
 <section class="container" id="productosDestacados">
-    @if($categorias)  
+    @if($categorias)
        <div class="titulo-seccion">
            <h3>SELECCION&Aacute; UNA CATEGOR&Iacute;A</h3>
        </div>
@@ -158,7 +144,7 @@
       <p class="card-text">{{$categoria->name}}</p>
       </div></a>
     </div>
-          @elseif($categoria->name=="Moñitos")
+          @elseif($categoria->name=="Moños")
 
           <div class="col-md-4">
       <a href="{{route('monitos')}}"><img src="/storage/{{$categoria->imagen}}" class="img-fluid" alt="...">
@@ -186,39 +172,55 @@
     @endforeach
     </div>
     @endif
-</section> 
- 
- 
-<!--
+</section>
+<!-- CATEGORIA -->
 
+<br>
+
+
+
+
+
+<!-- SUBCATEGORIA -->
 <section class="container" id="productosDestacados">
-   <div class="titulo-seccion">
-       <h3>SELECCION&Aacute; UNA CATEGOR&Iacute;A</h3>
-   </div>
-     @if($categorias)
-    <div class="row">
-     @foreach($categorias as $categoria)
-     
-      <div class="col-md-4">
-          <a href="{{$categoria->id}}">
-           <img src="/storage/{{$categoria->imagen}}" class="card-img-top" alt="...">
-           <div class="card-body">
-             <p class="card-text">{{$categoria->name}}</p>
-           </div>
-           </a>
-     </div>
-    
-     @endforeach
-     </div>
-     @endif
- </section>
-   
+    @if($subcategorias)
+       <div class="titulo-seccion">
+           <h3>SELECCION&Aacute; UNA CATEGOR&Iacute;A</h3>
+       </div>
+       <div class="row">
+    @foreach($subcategorias as $subcategoria)
+    @if($subcategoria->name == "Pasta corta")
 
- botonVerMas
-<div class="verMas">
-<a href="{{route('nidos')}}"> <button type="button" class="btnon">Ver Más</button></a>
-</div>
- botonVerMas -->
+          <div class="col-md-4">
+      <a href="{{route('pastacorta')}}"><img src="/storage/{{$subcategoria->imagen}}" class="img-fluid" alt="...">
+      <div class="card-body">
+        <p class="card-text">{{$subcategoria->name}}</p>
+      </div></a>
+    </div>
+          @elseif($subcategoria->name=="Especialidades")
+
+          <div class="col-md-4">
+      <a href="{{route('especialidades')}}"><img src="/storage/{{$subcategoria->imagen}}" class="img-fluid" alt="...">
+      <div class="card-body">
+      <p class="card-text">{{$subcategoria->name}}</p>
+      </div></a>
+    </div>
+          @else($subcategoria->name=="Pasta Larga")
+
+          <div class="col-md-4">
+      <a href="{{route('pastalarga')}}"><img src="/storage/{{$subcategoria->imagen}}" class="img-fluid" alt="...">
+      <div class="card-body">
+      <p class="card-text">{{$subcategoria->name}}</p>
+      </div></a>
+    </div>
+
+          @endif
+    @endforeach
+    </div>
+    @endif
+</section>
+<!-- SUBCATEGORIA -->
+
 
 <!-- La Pasta familias -->
 

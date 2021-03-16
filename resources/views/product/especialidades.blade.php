@@ -28,8 +28,8 @@
 
   <br>
 
-<h2 style="text-align :center" class="titulo-productos"><strong>Pasta corta</strong></h2>
-<a href="{{route('especialidades')}}"><h3 style="text-align :center" class="titulo-productos"><strong>Especialidades</strong></h3></a>
+<h2 style="text-align :center" class="titulo-productos"><strong>Especialidades</strong></h2>
+<a href="{{route('pastacorta')}}"><h3 style="text-align :center" class="titulo-productos"><strong>Pastas cortas</strong></h3></a>
 
 <div style="display:flex" class="botoncat">
 
@@ -62,13 +62,13 @@
   </a>
 
   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <a class="dropdown-item"href="{{route('precioMayor')}}">Precio:Mayor</a>
-    <a class="dropdown-item" href="{{route('precioMenor')}}">Precio:Menor</a>
-    <a class="dropdown-item" href="{{route('az')}}">A-Z</a>
-    <a class="dropdown-item" href="{{route('za')}}">Z-A</a>
-    <a class="dropdown-item" href="{{route('desc')}}">Del mas Viejo al mas Nuevo</a>
-    <a class="dropdown-item" href="{{route('men')}}">Del mas Nuevo al mas Viejo</a>
-    <a class="dropdown-item" href="{{route('pro')}}">En Promo</a>
+    <a class="dropdown-item"href="{{route('mayor-esp')}}">Precio:Mayor</a>
+    <a class="dropdown-item" href="{{route('menor-esp')}}">Precio:Menor</a>
+    <a class="dropdown-item" href="{{route('az-esp')}}">A-Z</a>
+    <a class="dropdown-item" href="{{route('za-esp')}}">Z-A</a>
+    <a class="dropdown-item" href="{{route('desc-esp')}}">Del mas Viejo al mas Nuevo</a>
+    <a class="dropdown-item" href="{{route('asc-esp')}}">Del mas Nuevo al mas Viejo</a>
+    <a class="dropdown-item" href="{{route('pro-esp')}}">En Promo</a>
   </div>
 </div>
 
@@ -81,7 +81,7 @@
 @if(isset($productos))
       @foreach ($productos as $product)
 
- @if($product->dameSubCategoria()   == "Pasta corta")
+ @if($product->dameSubCategoria()   == "Especialidades")
       <div class="col-sm-4" id="div-producto{{$product->id}}">
     <div class="card mb-3">
         <div class="card-producto">

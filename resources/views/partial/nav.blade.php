@@ -6,14 +6,14 @@
       <title>Pastas Barletta</title>
       <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        
+
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-        
+
         <link href="https://fonts.googleapis.com/css?family=Headland+One" rel="stylesheet">
-        
+
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        
+
         <link rel="stylesheet" href="/css/styles.css">
         <link rel="stylesheet" href="/css/index.css">
         <link rel="stylesheet" href="/css/logyregistro.css">
@@ -26,11 +26,11 @@
 
   <body>
 
-    
-     
+
+
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-         
+
              <form class="buscador" action="/listaProductos" method="get">
               <div class="input-group mt-3">
                 <input type="text" name="name" class="form-control" placeholder="¿Qué estás buscando?" aria-label="¿QUE ESTÁS BUSCANDO?" aria-describedby="basic-addon2">
@@ -39,17 +39,17 @@
                     </div>
               </div>
             </form>
-         
-         
-         
+
+
+
 
          <div class="logo">
              <a href="/"><img src="/img/barletta-productos.png" class="logo-nav" alt=""></a>
          </div>
-          
-          
-          
-          
+
+
+
+
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-bars"></i>
           </button>
@@ -59,18 +59,18 @@
   <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><ion-icon name="restaurant-outline"></ion-icon>Productos</a>
       <div class="dropdown-menu">
-	<a class="dropdown-item" href="/productos/com">Todos los fideos</a>
+	<a class="dropdown-item" href="/listaProductos">Todos los fideos</a>
       <div class="dropdown-divider"></div>
 
               <a class="dropdown-item" href="{{route('soperos')}}">Soperos</a>
               <a class="dropdown-item" href="{{route('guiseros')}}">Guiseros</a>
               <a class="dropdown-item" href="{{route('monitos')}}">Moñitos</a>
               <a class="dropdown-item" href="{{route('nidos')}}">Nidos</a>
-              <a class="dropdown-item" href="{{route('tricolor')}}">Tricolor</a>
+    
 
-          
+
       </div>
-      
+
   </li>
 
 

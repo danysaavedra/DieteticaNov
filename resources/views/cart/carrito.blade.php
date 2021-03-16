@@ -42,7 +42,7 @@
           </div>
       </form>
 
-        <div class="card">
+        <div class="card" >
             <div class="card-body" id="avatar-carrito" style="max">
             <img src="storage/{{$detalle->avatar}}" alt="">
           </div>
@@ -77,7 +77,7 @@
             </div>
           </div>
         </div> -->
-      
+
 
             <?php
             $subtotal[]= $detalle->price * $detalle->pivot->quantity;
