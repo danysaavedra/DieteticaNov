@@ -116,76 +116,13 @@
       @endif
   </section> -->
  <!-- promo -->
-
-
-
-
-<!-- CATEGORIA -->
-<section class="container" id="productosDestacados">
-    @if($categorias)
-       <div class="titulo-seccion">
-           <h3>SELECCION&Aacute; UNA CATEGOR&Iacute;A</h3>
-       </div>
-       <div class="row">
-    @foreach($categorias as $categoria)
-    @if($categoria->name == "Soperos")
-
-          <div class="col-md-4">
-      <a href="{{route('soperos')}}"><img src="/storage/{{$categoria->imagen}}" class="img-fluid" alt="...">
-      <div class="card-body">
-        <p class="card-text">{{$categoria->name}}</p>
-      </div></a>
-    </div>
-          @elseif($categoria->name=="Guiseros")
-
-          <div class="col-md-4">
-      <a href="{{route('guiseros')}}"><img src="/storage/{{$categoria->imagen}}" class="img-fluid" alt="...">
-      <div class="card-body">
-      <p class="card-text">{{$categoria->name}}</p>
-      </div></a>
-    </div>
-          @elseif($categoria->name=="Moños")
-
-          <div class="col-md-4">
-      <a href="{{route('monitos')}}"><img src="/storage/{{$categoria->imagen}}" class="img-fluid" alt="...">
-      <div class="card-body">
-      <p class="card-text">{{$categoria->name}}</p>
-      </div></a>
-    </div>
-          @elseif($categoria->name=="Nidos")
-
-          <div class="col-md-4">
-      <a href="{{route('nidos')}}"><img src="/storage/{{$categoria->imagen}}" class="img-fluid" alt="...">
-      <div class="card-body">
-      <p class="card-text">{{$categoria->name}}</p>
-      </div></a>
-    </div>
-          @else($categoria->name=="Tricolor")
-
-          <div class="col-md-4">
-      <a href="{{route('tricolor')}}"><img src="/storage/{{$categoria->imagen}}" class="img-fluid" alt="...">
-      <div class="card-body">
-      <p class="card-text">{{$categoria->name}}</p>
-      </div></a>
-    </div>
-          @endif
-    @endforeach
-    </div>
-    @endif
-</section>
-<!-- CATEGORIA -->
-
 <br>
-
-
-
-
 
 <!-- SUBCATEGORIA -->
 <section class="container" id="productosDestacados">
     @if($subcategorias)
        <div class="titulo-seccion">
-           <h3>SELECCION&Aacute; UNA CATEGOR&Iacute;A</h3>
+           <h3>SELECCION&Aacute; UNA CATEGOR&Iacute;A</h3><br>
        </div>
        <div class="row">
     @foreach($subcategorias as $subcategoria)

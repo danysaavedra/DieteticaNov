@@ -26,148 +26,142 @@
 
   <body>
 
-
-
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-
-             <form class="buscador" action="/listaProductos" method="get">
+            <form class="buscador" action="/listaProductos" method="get">
               <div class="input-group mt-3">
                 <input type="text" name="name" class="form-control" placeholder="¿Qué estás buscando?" aria-label="¿QUE ESTÁS BUSCANDO?" aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                        <button class="input-group-text" id="basic-addon2" type="submit"><i class="fas fa-search"></i></button>
-                    </div>
+                <div class="input-group-append">
+                  <button class="input-group-text" id="basic-addon2" type="submit"><i class="fas fa-search"></i></button>
+                </div>
               </div>
             </form>
-
-
 
 
          <div class="logo">
              <a href="/"><img src="/img/barletta-productos.png" class="logo-nav" alt=""></a>
          </div>
 
-
-
-
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fas fa-bars"></i>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i>
           </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav nav ml-auto">
 
-  <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><ion-icon name="restaurant-outline"></ion-icon>Productos</a>
-      <div class="dropdown-menu">
-	<a class="dropdown-item" href="/listaProductos">Todos los fideos</a>
-      <div class="dropdown-divider"></div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav ml-auto">
 
-              <a class="dropdown-item" href="{{route('soperos')}}">Soperos</a>
-              <a class="dropdown-item" href="{{route('guiseros')}}">Guiseros</a>
-              <a class="dropdown-item" href="{{route('monitos')}}">Moñitos</a>
-              <a class="dropdown-item" href="{{route('nidos')}}">Nidos</a>
-    
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><ion-icon name="restaurant-outline"></ion-icon>Productos</a>
+
+                  <ul class="dropdown-menu">
+            	       <li><a class="dropdown-item" href="/listaProductos">Todos los fideos</a></li>
+                     <li class="dropdown-divider"></li>
+
+                      <li><a class="dropdown-item" href="{{route('pastacorta')}}">Pasta Corta</a>
+                        <ul class="dropend" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="{{route('soperos')}}">Soperos</a></li>
+                          <li><a class="dropdown-item" href="{{route('guiseros')}}">Guiseros</a></li>
+                        </ul>
+                      </li>
+                      <li><a class="dropdown-item" href="{{route('especialidades')}}">Especialidades</a>
+                        <ul class="dropend" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="{{route('nidos')}}">Nidos</a></li>
+                          <li><a class="dropdown-item" href="{{route('monitos')}}">Moños</a></li>
+                        </ul>
+                      </li>
+                      <li><a class="dropdown-item" href="{{route('pastalarga')}}">Pasta Larga</a></li>
 
 
-      </div>
-
-  </li>
 
 
+                  </ul>
 
+              </li>
 
-  <li><a href="/ayuda"><ion-icon name="chatbubbles-outline"></ion-icon>Ayuda</a></li>
+              <li>
+                <a href="/ayuda"><ion-icon name="chatbubbles-outline"></ion-icon>Ayuda</a>
+              </li>
 
-            @if((Auth::user()) && (Auth::user()->admin))
-  <li>
-    <a href="/productos/agregar"><ion-icon name="beer-outline"></ion-icon><br>Crear<br>Producto</a>
-  </li>
-  <!-- <li class="nav-item active">
-    <a  href="/categoriecreate"><i class="fas fa-plus"></i></i></ion-icon><br>Agregar <br> Categoria </a>
-  </li>
-  <li class="nav-item active">
-    <a  href="/subcategoriecreate"><i class="fas fa-plus"></i></i></ion-icon><br>Agregar <br> Subcategoria </a>
-  </li>  -->
-  @endif
+              @if((Auth::user()) && (Auth::user()->admin))
+              <li>
+                <a href="/productos/agregar"><ion-icon name="beer-outline"></ion-icon><br>Crear<br>Producto</a>
+              </li>
+              <!-- <li class="nav-item active">
+                <a  href="/categoriecreate"><i class="fas fa-plus"></i></i></ion-icon><br>Agregar <br> Categoria </a>
+              </li>
+              <li class="nav-item active">
+                <a  href="/subcategoriecreate"><i class="fas fa-plus"></i></i></ion-icon><br>Agregar <br> Subcategoria </a>
+              </li>  -->
+              @endif
 
-  @if($user = Auth::user())
-  <li class="nav-item active">
-    <a  href="/carrito" ><ion-icon name="cart-outline"></ion-icon>
-      <span style="padding-right:5px;" id="cantCar">({{ $user->carrito()->sum('quantity') }})</span>
-       Carrito</a>
-    </li>
-
-    @endif
-
-  @guest
-  <li class="nav-item active">
-    <a  href="/register"><ion-icon name="pencil-outline"></ion-icon>Registrate</a>
-  </li>
-  <li class="nav-item active">
-    <a href="/login"><ion-icon name="person-outline"></ion-icon>Ingresar</a>
-  </li>
-
-    @else
-
-    <ul>
-        <li><a class="enlace_desactivado"> <img src="/storage/{{Auth::user()->foto}}" alt="" class="foto">
-            {{ Auth::user()->name }} <span class="flecha">&#9660;</span><span class="caret"></span></a>
-          <ul>
-            <li>
-            @if((Auth::user()->admin))
-             <a href="/pedidos/cliente"> Pedidos </a>
-          @elseif($user = Auth::user())
-          <a href="/pedidos"> Mis Pedidos </a>
-          @endif
+              @if($user = Auth::user())
+              <li class="nav-item active">
+                <a  href="/carrito" ><ion-icon name="cart-outline"></ion-icon>
+                  <span style="padding-right:5px;" id="cantCar">({{ $user->carrito()->sum('quantity') }})</span> Carrito</a>
              </li>
-            <li> <a href="{{ route('logout') }}"
+              @endif
+
+              @guest
+              <li class="nav-item active">
+                <a  href="/register"><ion-icon name="pencil-outline"></ion-icon>Registrate</a>
+              </li>
+              <li class="nav-item active">
+                <a href="/login"><ion-icon name="person-outline"></ion-icon>Ingresar</a>
+              </li>
+
+              @else
+              <ul>
+                <li>
+                  <a class="enlace_desactivado"><img src="/storage/{{Auth::user()->foto}}" alt="" class="foto"> {{ Auth::user()->name }} <span class="flecha">&#9660;</span><span class="caret"></span></a>
+                    <ul>
+                      <li>
+                        @if((Auth::user()->admin))
+                        <a href="/pedidos/cliente"> Pedidos </a>
+                        @elseif($user = Auth::user())
+                        <a href="/pedidos"> Mis Pedidos </a>
+                        @endif
+                     </li>
+                     <li>
+                       <a href="{{ route('logout') }}"               onclick="event.preventDefault();document.getElementById('logout-form').submit();"> {{ __('Logout') }}</a>
+                       <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        @csrf </form>
+                     </li>
+                  </ul>
+              </li>
+            </ul>
+
+        <!--
+            <li class="nav-item dropdown">
+              <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre >
+                <img src="/storage/{{Auth::user()->foto}}" alt="" class="foto">
+                <br>
+                {{ Auth::user()->name }} <span class="caret"></span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+
+                  <a class="dropdown-item" href="/pedidos">Perfil <br>{{Auth::user()->name}} </a>
+                  <a class="dropdown-item" href="{{ route('logout') }}"
                     onclick="event.preventDefault();
                     document.getElementById('logout-form').submit();">
                     {{ __('Logout') }}
-                  </a> <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                  </a>
+
+                  <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                       @csrf
-                  </form></li>
-   </ul>
+                  </form>
 
-</li>
-</ul>
+                </div>
+            </li> -->
 
-<!--
-    <li class="nav-item dropdown">
-      <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre >
-        <img src="/storage/{{Auth::user()->foto}}" alt="" class="foto">
-        <br>
-        {{ Auth::user()->name }} <span class="caret"></span>
-      </a>
-      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-
-          <a class="dropdown-item" href="/pedidos">Perfil <br>{{Auth::user()->name}} </a>
-          <a class="dropdown-item" href="{{ route('logout') }}"
-            onclick="event.preventDefault();
-            document.getElementById('logout-form').submit();">
-            {{ __('Logout') }}
-          </a>
-
-          <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-              @csrf
-          </form>
-
-        </div>
-    </li> -->
-
-      @endguest
-      <form class="buscador2" action="/listaProductos" method="get">
-              <div class="input-group mt-3">
-                <input type="text" name="name" class="form-control" placeholder="¿Qué estás buscando?" aria-label="¿QUE ESTÁS BUSCANDO?" aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                        <button class="input-group-text" id="basic-addon2" type="submit"><i class="fas fa-search"></i></button>
-                    </div>
-              </div>
-            </form>
-    </ul>
-  </div>
-
+              @endguest
+              <form class="buscador2" action="/listaProductos" method="get">
+                  <div class="input-group mt-3">
+                      <input type="text" name="name" class="form-control" placeholder="¿Qué estás buscando?" aria-label="¿QUE ESTÁS BUSCANDO?" aria-describedby="basic-addon2">
+                      <div class="input-group-append">
+                          <button class="input-group-text" id="basic-addon2" type="submit"><i class="fas fa-search"></i></button>
+                      </div>
+                  </div>
+              </form>
+            </ul>
+          </div>
 
 </div>
 </nav>
-

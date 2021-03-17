@@ -29,7 +29,8 @@
   <br>
 
 <h2 style="text-align :center" class="titulo-productos"><strong>Pasta corta</strong></h2>
-<a href="{{route('especialidades')}}"><h3 style="text-align :center" class="titulo-productos"><strong>Especialidades</strong></h3></a>
+<a href="{{route('soperos')}}"><h3 style="text-align :center" class="titulo-productos"><strong>Soperos</strong></h3></a>
+<a href="{{route('guiseros')}}"><h3 style="text-align :center" class="titulo-productos"><strong>Guiseros</strong></h3></a>
 
 <div style="display:flex" class="botoncat">
 
@@ -45,8 +46,6 @@
 
   <a class="dropdown-item" href="{{route('soperos')}}">Soperos</a>
   <a class="dropdown-item" href="{{route('guiseros')}}">Guiseros</a>
-  <a class="dropdown-item" href="{{route('monitos')}}">Moñitos</a>
-  <a class="dropdown-item" href="{{route('nidos')}}">Nidos</a>
 
 
   </div>
