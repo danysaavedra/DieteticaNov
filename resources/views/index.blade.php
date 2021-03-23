@@ -119,36 +119,32 @@
 <br>
 
 <!-- SUBCATEGORIA -->
-<section class="container" id="productosDestacados">
+<section class="container categorias" id="productosDestacados">
     @if($subcategorias)
-       <div class="titulo-seccion">
+       <div class="titulo-seccion text-center">
            <h3>SELECCION&Aacute; UNA CATEGOR&Iacute;A</h3><br>
        </div>
        <div class="row">
     @foreach($subcategorias as $subcategoria)
     @if($subcategoria->name == "Pasta corta")
 
-          <div class="col-md-4">
+          <div class="col-md-4 text-center">
       <a href="{{route('pastacorta')}}"><img src="/storage/{{$subcategoria->imagen}}" class="img-fluid" alt="...">
-      <div class="card-body">
-        <p class="card-text">{{$subcategoria->name}}</p>
-      </div></a>
+      
+        <h2>{{$subcategoria->name}}</h2>
+      </a>
     </div>
           @elseif($subcategoria->name=="Especialidades")
 
-          <div class="col-md-4">
+          <div class="col-md-4 text-center">
       <a href="{{route('especialidades')}}"><img src="/storage/{{$subcategoria->imagen}}" class="img-fluid" alt="...">
-      <div class="card-body">
-      <p class="card-text">{{$subcategoria->name}}</p>
-      </div></a>
+      <h2>{{$subcategoria->name}}</h2></a>
     </div>
           @else($subcategoria->name=="Pasta Larga")
 
-          <div class="col-md-4">
+          <div class="col-md-4 text-center">
       <a href="{{route('pastalarga')}}"><img src="/storage/{{$subcategoria->imagen}}" class="img-fluid" alt="...">
-      <div class="card-body">
-      <p class="card-text">{{$subcategoria->name}}</p>
-      </div></a>
+      <h2>{{$subcategoria->name}}</h2></a>
     </div>
 
           @endif

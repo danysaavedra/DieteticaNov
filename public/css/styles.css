@@ -15,6 +15,7 @@
   background: #a50d11;
 }
 
+
 .container-fluid {
   padding: 0!important;
   position: relative;
@@ -350,6 +351,35 @@ footer .btn {
 }
 
 
+.fondo-categorias{
+    background-color: #f3f5f7;
+}
+.card {
+    padding: 20px 10px;
+}
+.boton-subcat{
+    padding: 15px 10px;
+    background-color: #c5231f;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    margin: 0px 5px;
+    
+}
+.boton-subcat h3{
+    color: #fff;
+    font-size: 18px;
+}
+
+.boton-subcat:focus, .boton-subcat:hover {
+    text-decoration: none;
+}
+.boton-subcat img{
+    max-width: 60px;
+}
+.caja-bt-cat{
+    top:-70px;
+    position: relative;
+}
 
 
 
@@ -364,20 +394,20 @@ h1.titulo-productos strong {
   font-weight: 700;
 }
 h2.titulo-productos {
-  color: #f71619;
-  font-size: 1.8em;
-  margin: 100px 0px 20px 0px;
+  color: #c5231f;
+  font-size: 2.2em;
   border-top: 2px solid #cdaf67;
   border-bottom: 2px solid #cdaf67;
   font-weight: 400;
-  width: 500px;
+  width: 100%;
   height: auto;
-  padding: 15px 0px;
+  padding: 100px 0px 100px 0px;
   text-align: left;
   font-family: 'Headland One', serif;
+  background-color: #fff;    
 }
 .card {
-  border: none;
+  /*border: none;*/
   text-align: center;
 }
 .card .titulo h4 {

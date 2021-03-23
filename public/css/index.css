@@ -36,6 +36,19 @@
     font-weight: 700;
     margin-top: 20px;
 }
+.categorias a{
+    text-decoration: none;
+}
+.categorias h2{
+    font-family: 'Charm', cursive;
+    font-size: 30px;
+    color: #9e864c;
+    margin-top: 15px;
+}
+.categorias img{
+    padding: 10px 40px;
+    max-width: 70%;
+}
 .pasta-familiar{
     background-image: url(../img/pasta-familiar.jpg);
     background-repeat: no-repeat;
@@ -852,9 +865,6 @@ section {
     padding: 50px 30px 20px;
     margin: 10px auto;
     width: 60%;
-  }
-  #productosDestacados {
-    max-width: 90%;
   }
   #productosDestacados .container-productos .producto .producto-hover {
     display: block;

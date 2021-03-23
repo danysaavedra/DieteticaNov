@@ -14,7 +14,7 @@ class SeedCategorias extends Seeder
   DB::table('subcategories')->insert(
             [
               'name' => 'Pasta corta',
-              'imagen' => '../img/seedPro/barletta-soperos-pamperito-fideo.jpg',
+              'imagen' => '../img/seedPro/categoria-pasta-corta.png',
 
             ]
         );
@@ -22,7 +22,7 @@ class SeedCategorias extends Seeder
         DB::table('subcategories')->insert(
             [
               'name' => 'Especialidades',
-              'imagen' => '../img/seedPro/barletta-soperos-pamperito-fideo.jpg',
+              'imagen' => '../img/seedPro/categoria-pasta-especialidades.png',
 
             ]
         );
@@ -30,7 +30,7 @@ class SeedCategorias extends Seeder
         DB::table('subcategories')->insert(
             [
               'name' => 'Pasta larga',
-              'imagen' => '../img/seedPro/barletta-soperos-pamperito-fideo.jpg',
+              'imagen' => '../img/seedPro/categoria-pasta-larga.png',
 
             ]
         );

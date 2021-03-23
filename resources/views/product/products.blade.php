@@ -3,7 +3,7 @@
 @section('contenido')
 
 
-
+<div class="fondo-categorias">
 <div class="container">
 <!--   <form  class="buscador" action="/listaProductos" method="get">
     <div class="input-group mt-3">
@@ -28,30 +28,36 @@
 
   <br>
 
-<h2 style="text-align :center" class="titulo-productos"><strong>Pasta corta</strong></h2>
-<a href="{{route('soperos')}}"><h3 style="text-align :center" class="titulo-productos"><strong>Soperos</strong></h3></a>
-<a href="{{route('guiseros')}}"><h3 style="text-align :center" class="titulo-productos"><strong>Guiseros</strong></h3></a>
+<h2 style="text-align:center" class="titulo-productos"><strong>Pasta corta</strong></h2>
+<div class="row caja-bt-cat justify-content-center align-self-center">
+    <a href="{{route('soperos')}}" class="boton-subcat">
+        <div class="col-lg-2">
+           <img src="/img/seedPro/soperos.png" class="">
+            <h3 style="text-align:center">Soperos</h3>
+        </div>
+    </a>
+    <a href="{{route('guiseros')}}" class="boton-subcat">
+        <div class="col-lg-2 ">
+           <img src="/img/seedPro/guiseros.png">
+            <h3 style="text-align:center">Guiseros</h3>
+        </div>
+    </a>
+</div>
 
-<div style="display:flex" class="botoncat">
-
-
+<!-- <div style="display:flex" class="botoncat">
   <div class="dropdown">
-
       <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
       aria-haspopup="true" aria-expanded="false">
       Fideos
       </a>
-
   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-
   <a class="dropdown-item" href="{{route('soperos')}}">Soperos</a>
   <a class="dropdown-item" href="{{route('guiseros')}}">Guiseros</a>
-
-
   </div>
 </div>
 
-</div>
+</div> -->
+
 <br>
 
 
@@ -84,7 +90,7 @@
       <div class="col-sm-4" id="div-producto{{$product->id}}">
     <div class="card mb-3">
         <div class="card-producto">
-          <div class="producto-hover">
+           <div class="producto-hover">
               <div class="producto-hover-content">
                   <form action="/productos/agregarCarrito" method="post">
                   @csrf
@@ -96,7 +102,7 @@
                   @endif
                   @if($product->stock == 0)
 
-                    <!-- <a href="/productos/detalles/{{$product->id}}"><i class="fas fa-search-plus"></i></a> -->
+                     <a href="/productos/detalles/{{$product->id}}"><i class="fas fa-search-plus"></i></a>
                     <strong >Sin stock</strong>
 
                     @elseif($product->stock > 0)
@@ -143,10 +149,13 @@
 
 
             <div class="titulo">
-                <a href="/productos/detalles/{{$product->id}}"><h5>{{$product->name}}</h5></a>
+                <h4>{{$product->name}}</h4>
                 <p style="color:black; font-size:1em"><em> @if($product->stock > 0)
                     Cuántos querés?         <input style="text-align:center;margin-left: 5%;width:10%"type="number" min =1  name="quantity" placeholder="0" required>
-                @endif <br> Precio: $ {{$product->price}} </em></p>
+                @endif  </em></p>
+                <p>{{$product->description}} </p>
+                <h7>$ {{$product->price}}</h7>
+                <a href="/productos/detalles/{{$product->id}}"><h5>Agregar al carrito</h5></a>
 
             </div>
      </form>
@@ -156,6 +165,7 @@
       @endforeach
 
 @endif
+</div>
 </div>
 </div>
 
