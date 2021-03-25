@@ -15,13 +15,12 @@ class SeedProductos extends Seeder
 
         // COMESTIBLES
         //SOPEROS
-
         DB::table('products')->insert(
             [
                 'name' => 'Munición',
                 'description' => 'Peso Neto 500 gr',
                 'price' => 210,
-                'avatar' => '..\img\seedPro\barletta-soperos-municion-fideo.jpg',
+                'avatar' => '..\img\seedPro\barletta-soperos-municion.png',
                 'category_id' => 39,
                 'stock' => 50,
                 'promo' => 0,
@@ -32,7 +31,7 @@ class SeedProductos extends Seeder
                 'name' => 'Ave María',
                 'description' => 'Peso Neto 500 gr',
                 'price' => 185,
-                'avatar' => '..\img\seedPro\barletta-soperos-avemaria-fideo.jpg',
+                'avatar' => '..\img\seedPro\barletta-soperos-avemaria.png',
                 'category_id' => 39,
                 'stock' => 50,
                 'promo' => 0,
@@ -43,7 +42,7 @@ class SeedProductos extends Seeder
                 'name' => 'Dedalitos',
                 'description' => 'Peso Neto 500 gr',
                 'price' => 185,
-                'avatar' => '..\img\seedPro\barletta-soperos-dedalito-fideo.jpg',
+                'avatar' => '..\img\seedPro\barletta-soperos-dedalitos.png',
                 'category_id' => 39,
                 'stock' => 50,
                 'promo' => 0,
@@ -54,7 +53,7 @@ class SeedProductos extends Seeder
                 'name' => 'Pamperito',
                 'description' => 'Peso Neto 500 gr',
                 'price' => 185,
-                'avatar' => '..\img\seedPro\barletta-soperos-pamperito-fideo.jpg',
+                'avatar' => '..\img\seedPro\barletta-soperos-pamperito.png',
                 'category_id' => 39,
                 'stock' => 50,
                 'promo' => 0,
@@ -65,20 +64,18 @@ class SeedProductos extends Seeder
                 'name' => 'Anillitos',
                 'description' => 'Peso Neto 500 gr',
                 'price' => 185,
-                'avatar' => '..\img\seedPro\barletta-soperos-anillito-fideo.jpg',
+                'avatar' => '..\img\seedPro\barletta-soperos-anillitos.png',
                 'category_id' => 39,
                 'stock' => 50,
                 'promo' => 0,
             ]
         );
-
-
         DB::table('products')->insert(
             [
                 'name' => 'Letritas',
                 'description' => 'Peso Neto 500 gr',
                 'price' => 185,
-                'avatar' => '..\img\seedPro\barletta-soperos-anillito-fideo.jpg',
+                'avatar' => '..\img\seedPro\barletta-soperos-letritas.png',
                 'category_id' => 39,
                 'stock' => 50,
                 'promo' => 0,
@@ -89,16 +86,59 @@ class SeedProductos extends Seeder
                 'name' => 'Cornetín',
                 'description' => 'Peso Neto 500 gr',
                 'price' => 185,
-                'avatar' => '..\img\seedPro\barletta-soperos-cornetin-fideo.jpg',
+                'avatar' => '..\img\seedPro\barletta-soperos-cornetin.png',
+                'category_id' => 39,
+                'stock' => 50,
+                'promo' => 0,
+            ]
+        );
+        // SOPEROS TRICOLOR
+         DB::table('products')->insert(
+            [
+                'name' => 'Ave María tricolor',
+                'description' => 'Peso Neto 500 gr',
+                'price' => 185,
+                'avatar' => '..\img\seedPro\barletta-tricolor-avemaria.png',
+                'category_id' =>39,
+                'stock' => 50,
+                'promo' => 0,
+            ]
+        );
+        DB::table('products')->insert(
+            [
+                'name' => 'Dedalitos tricolor',
+                'description' => 'Peso Neto 500 gr',
+                'price' => 185,
+                'avatar' => '..\img\seedPro\barletta-soperos-tricolor-dedalitos.png',
+                'category_id' =>39,
+                'stock' => 50,
+                'promo' => 0,
+            ]
+        );
+        DB::table('products')->insert(
+            [
+                'name' => 'Pamperitos tricolor',
+                'description' => 'Peso Neto 500 gr',
+                'price' => 65,
+                'avatar' => '..\img\seedPro\barletta-soperos-tricolor-pamperitos.png',
+                'category_id' => 39,
+                'stock' => 50,
+                'promo' => 0,
+            ]
+        );
+        DB::table('products')->insert(
+            [
+                'name' => 'Letritas tricolor',
+                'description' => 'Peso Neto 500 gr',
+                'price' => 43,
+                'avatar' => '..\img\seedPro\barletta-soperos-tricolor-letritas.png',
                 'category_id' => 39,
                 'stock' => 50,
                 'promo' => 0,
             ]
         );
 
-
-
-        // COMESTIBLES
+        //PASTA CORTA
         //GUISEROS
         DB::table('products')->insert(
             [
@@ -111,7 +151,6 @@ class SeedProductos extends Seeder
                 'promo' => 0,
             ]
         );
-
         DB::table('products')->insert(
             [
                 'name' => 'Codito Rayado',
@@ -145,8 +184,6 @@ class SeedProductos extends Seeder
                 'promo' => 0,
             ]
         );
-
-
         DB::table('products')->insert(
             [
                 'name' => 'Chelentano',
@@ -191,9 +228,6 @@ class SeedProductos extends Seeder
                 'promo' => 0,
             ]
         );
-
-
-
         DB::table('products')->insert(
             [
                 'name' => 'Penne Rigatti',
@@ -238,7 +272,6 @@ class SeedProductos extends Seeder
                 'promo' => 0,
             ]
         );
-
         DB::table('products')->insert(
             [
                 'name' => 'Cornetín',
@@ -261,8 +294,44 @@ class SeedProductos extends Seeder
                 'promo' => 0,
             ]
         );
+        // GUISEROS TRICOLOR
+        DB::table('products')->insert(
+            [
+                'name' => 'Rigatti tricolor',
+                'description' => 'Peso Neto 500 gr',
+                'price' => 62,
+                'avatar' => '..\img\seedPro\barletta-guiseros-tricolor-rigatti.png',
+                'category_id' =>40,
+                'stock' => 50,
+                'promo' => 0,
+            ]
+        );
+        DB::table('products')->insert(
+            [
+                'name' => 'Tirabuzón tricolor',
+                'description' => 'Peso Neto 500 gr',
+                'price' => 62,
+                'avatar' => '..\img\seedPro\barletta-guiseros-tricolor-tirabuzon.png',
+                'category_id' =>40,
+                'stock' => 50,
+                'promo' => 0,
+            ]
+        );
+        DB::table('products')->insert(
+            [
+                'name' => 'Penne rigate tricolor',
+                'description' => 'Peso Neto 500 gr',
+                'price' => 62,
+                'avatar' => '..\img\seedPro\barletta-guiseros-tricolor-pennerigate.png',
+                'category_id' =>40,
+                'stock' => 50,
+                'promo' => 0,
+            ]
+        );
 
-        // COMESTIBLES
+
+
+        // ESPECIALIDADES
         //MOÑITOS
         DB::table('products')->insert(
             [
@@ -275,8 +344,19 @@ class SeedProductos extends Seeder
                 'promo' => 0,
             ]
         );
+        DB::table('products')->insert(
+            [
+                'name' => 'Moños tricolor',
+                'description' => 'Peso Neto 500 gr',
+                'price' => 62,
+                'avatar' => '..\img\seedPro\barletta-monios-tricolor-monios.png',
+                'category_id' =>41,
+                'stock' => 50,
+                'promo' => 0,
+            ]
+        );
 
-     // COMESTIBLES
+        //ESPECIALIDADES
         //NIDOS
         DB::table('products')->insert(
             [
@@ -289,7 +369,6 @@ class SeedProductos extends Seeder
                 'promo' => 0,
             ]
         );
-
         DB::table('products')->insert(
             [
                 'name' => 'Nidos al Huevo n°2',
@@ -312,7 +391,6 @@ class SeedProductos extends Seeder
             'promo' => 0,
           ]
         );
-
         DB::table('products')->insert(
             [
                 'name' => 'Nidos al Huevo de Espinaca',
@@ -324,8 +402,6 @@ class SeedProductos extends Seeder
                 'promo' => 0,
             ]
         );
-
-
         DB::table('products')->insert(
             [
                 'name' => 'Nidos al Huevo de Morrón',
@@ -337,7 +413,6 @@ class SeedProductos extends Seeder
                 'promo' => 0,
             ]
         );
-
         DB::table('products')->insert(
             [
                 'name' => 'Nido al Huevo Pappardelle',
@@ -349,7 +424,6 @@ class SeedProductos extends Seeder
                 'promo' => 0,
             ]
         );
-
         DB::table('products')->insert(
             [
                 'name' => 'Nidos',
@@ -361,7 +435,6 @@ class SeedProductos extends Seeder
                 'promo' => 0,
             ]
         );
-
         DB::table('products')->insert(
             [
                 'name' => 'Nidos Semolados n°1',
@@ -373,7 +446,6 @@ class SeedProductos extends Seeder
                 'promo' => 0,
             ]
         );
-
         DB::table('products')->insert(
             [
                 'name' => 'Nidos Semolados n°2',
@@ -396,7 +468,6 @@ class SeedProductos extends Seeder
             'promo' => 0,
           ]
         );
-
         DB::table('products')->insert(
             [
                 'name' => 'Nidos Semolados de espinaca',
@@ -408,7 +479,6 @@ class SeedProductos extends Seeder
                 'promo' => 0,
             ]
         );
-
         DB::table('products')->insert(
             [
                 'name' => 'Nidos Semolados de morrón',
@@ -420,7 +490,6 @@ class SeedProductos extends Seeder
                 'promo' => 0,
             ]
         );
-
         DB::table('products')->insert(
             [
                 'name' => 'Nido Semolados Pappardelle',
@@ -433,100 +502,6 @@ class SeedProductos extends Seeder
             ]
         );
 
-    // COMESTIBLES
-        //TRICOLOR
-/*         DB::table('products')->insert(
-            [
-                'name' => 'Ave María',
-                'description' => 'Peso Neto 500 gr',
-                'price' => 185,
-                'avatar' => '..\img\seedPro\barletta-tricolor-ave-maria.png',
-                'category_id' =>38,
-                'stock' => 50,
-                'promo' => 0,
-            ]
-        );
-
-        DB::table('products')->insert(
-            [
-                'name' => 'Dedalitos',
-                'description' => 'Peso Neto 500 gr',
-                'price' => 185,
-                'avatar' => '..\img\seedPro\barletta-soperos-tricolor-dedalitos.png',
-                'category_id' =>38,
-                'stock' => 50,
-                'promo' => 0,
-            ]
-        );
-
-        DB::table('products')->insert(
-            [
-                'name' => 'Pamperitos',
-                'description' => 'Peso Neto 500 gr',
-                'price' => 65,
-                'avatar' => '..\img\seedPro\barletta-soperos-tricolor-pamperitos.png',
-                'category_id' => 38,
-                'stock' => 50,
-                'promo' => 0,
-            ]
-        );
-        DB::table('products')->insert(
-            [
-                'name' => 'Letritas',
-                'description' => 'Peso Neto 500 gr',
-                'price' => 43,
-                'avatar' => '..\img\seedPro\barletta-soperos-tricolor-letritas.png',
-                'category_id' => 38,
-                'stock' => 50,
-                'promo' => 0,
-            ]
-        );
-
-        DB::table('products')->insert(
-            [
-                'name' => 'Rigatti',
-                'description' => 'Peso Neto 500 gr',
-                'price' => 62,
-                'avatar' => '..\img\seedPro\barletta-guiseros-tricolor-rigatti.png',
-                'category_id' =>38,
-                'stock' => 50,
-                'promo' => 0,
-            ]
-        );
-        DB::table('products')->insert(
-            [
-                'name' => 'Tirabuzón',
-                'description' => 'Peso Neto 500 gr',
-                'price' => 62,
-                'avatar' => '..\img\seedPro\barletta-guiseros-tricolor-tirabuzon.png',
-                'category_id' =>38,
-                'stock' => 50,
-                'promo' => 0,
-            ]
-        );
-        DB::table('products')->insert(
-            [
-                'name' => 'Penne rigate',
-                'description' => 'Peso Neto 500 gr',
-                'price' => 62,
-                'avatar' => '..\img\seedPro\barletta-guiseros-tricolor-pennerigate.png',
-                'category_id' =>38,
-                'stock' => 50,
-                'promo' => 0,
-            ]
-        );
-
-        DB::table('products')->insert(
-            [
-                'name' => 'Moños',
-                'description' => 'Peso Neto 500 gr',
-                'price' => 62,
-                'avatar' => '..\img\seedPro\barletta-monios-tricolor-monios.png',
-                'category_id' =>38,
-                'stock' => 50,
-                'promo' => 0,
-            ]
-        ); */
 
     }
 }
