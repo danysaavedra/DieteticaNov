@@ -98,7 +98,7 @@ class SeedProductos extends Seeder
                 'name' => 'Ave María tricolor',
                 'description' => 'Peso Neto 500 gr',
                 'price' => 185,
-                'avatar' => '..\img\seedPro\barletta-tricolor-avemaria.png',
+                'avatar' => '..\img\seedPro\barletta-soperos-tricolor-avemaria.png',
                 'category_id' =>39,
                 'stock' => 50,
                 'promo' => 0,
