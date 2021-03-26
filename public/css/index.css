@@ -511,6 +511,12 @@ section {
 .buscador2{
         display: block;
     }
+.fondo-busca{
+        background-color: #D1A158;
+    }
+.nav li a:hover, :active{
+    color: #fff;
+}
 
 
 
@@ -529,6 +535,14 @@ section {
 }
 .cuadro-borde {
     margin: 0px 40px;
+}
+    .nav li a:hover, :active {
+    color: #246092;
+}
+    .dropdown-item:focus, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #e2c8a1;
 }
 }
 @media (min-width:990px)

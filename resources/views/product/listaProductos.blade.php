@@ -3,7 +3,7 @@
 @section('contenido')
 
 
-
+<div class="fondo-categorias">
 <div class="container">
 
   <a class="ir-arriba"  javascript:void(0) title="Volver arriba">
@@ -21,7 +21,21 @@
 
 
 <br>
-<h2 style="text-align :center" class="titulo-productos">Encontrá acá Todos tus Productos</h2>
+<h2 style="text-align :center" class="titulo-productos">Encontrá Acá Todos Los Productos</h2>
+<ul class="row caja-bt-cat justify-content-center align-self-center ">
+       <li class="boton-subcat"><a href="{{route('pastacorta')}}">
+               <img src="/img/seedPro/soperos.png" class="" style="vertical-align: middle;">
+                <h3 style="text-align:center">Pasta Corta</h3>
+       </a> </li>   
+    <li class="boton-subcat"><a href="{{route('especialidades')}}">
+               <img src="/img/seedPro/soperos.png" class="" style="vertical-align: middle;">
+                <h3 style="text-align:center">Especialidades</h3>
+       </a> </li>
+    <li class="boton-subcat"><a href="{{route('pastalarga')}}">
+               <img src="/img/seedPro/soperos.png" class="" style="vertical-align: middle;">
+                <h3 style="text-align:center">Pasta Larga</h3>
+       </a> </li>
+</ul>
 
 <div class="dropdown">
   <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -108,10 +122,14 @@
 
 
         <div class="titulo">
-            <a href="/productos/detalles/{{$product->id}}"><h5>{{$product->name}}</h5></a>
+            <h4>{{$product->name}}</h4>
             <p style="color:black; font-size:1em"><em> @if($product->stock > 0)
                   Cuántos querés?         <input style="text-align:center;margin-left: 5%;width:10%"type="number" min =1  name="quantity" placeholder="0" required>
-              @endif <br> Precio: $ {{$product->price}} </em></p>
+              @endif  </em></p>
+              <p> Precio: $ {{$product->price}}</p>
+              <h7>$ {{$product->price}}</h7>
+              
+              <a href="/productos/detalles/{{$product->id}}"><h5>Agregar al carrito</h5></a>
 
         </div>
         </form>
@@ -121,6 +139,7 @@
       @endforeach
 {{$productos->links()}}
 @endif
+    </div>
     </div>
     <script src="../js/botonarriba.js"></script>
     <script src="../js/librerias.js"></script>

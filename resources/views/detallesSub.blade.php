@@ -2,6 +2,7 @@
 
 @section('contenido')
 
+<div class="fondo-categorias">
 <div class="container">
 <!--   <form  class="buscador" action="/listaProductos" method="get">
     <div class="input-group mt-3">
@@ -28,17 +29,40 @@
     @if(isset($categorias))
       @foreach($categorias as $categoria)
       @if($categoria->name == "Soperos")
-      <h2 class="titulo-productos">Fideos Soperos</h2>
+      <h2 class="titulo-productos" style="text-align:center">Fideos Soperos</h2>
       @elseif($categoria->name=="Guiseros")
-      <h2 class="titulo-productos">Fideos Guiseros</h2>
-      @elseif($categoria->name=="Moñitos")
-      <h2 class="titulo-productos">Fideos Moñitos</h2>
+      <h2 class="titulo-productos" style="text-align:center">Fideos Guiseros</h2>
+      @elseif($categoria->name=="Moños")
+      <h2 class="titulo-productos" style="text-align:center">Fideos Moñitos</h2>
       @else($categoria->name=="Nidos")
-      <h2 class="titulo-productos">Fideos Nidos</h2>
+      <h2 class="titulo-productos" style="text-align:center">Fideos Nidos</h2>
       @endif
   @endforeach
 @endif
 
+<ul class="row caja-bt-cat justify-content-center align-self-center ">
+       <li class="boton-subcat"><a href="{{route('pastacorta')}}">
+               <img src="/img/seedPro/soperos.png" class="" style="vertical-align: middle;">
+                <h3 style="text-align:center">Soperos</h3>
+       </a> </li>   
+    <li class="boton-subcat"><a href="{{route('guiseros')}}">
+        
+           <img src="/img/seedPro/guiseros.png">
+            <h3 style="text-align:center">Guiseros</h3>
+    </a></li>
+    <li class="boton-subcat"><a href="{{route('nidos')}}">
+               <img src="/img/seedPro/soperos.png" class="" style="vertical-align: middle;">
+                <h3 style="text-align:center">Nidos</h3>
+       </a> </li>  
+       <li class="boton-subcat"><a href="{{route('monitos')}}">
+               <img src="/img/seedPro/soperos.png" class="" style="vertical-align: middle;">
+                <h3 style="text-align:center">Moños</h3>
+       </a> </li>
+       <li class="boton-subcat"> <a href="{{route('pastalarga')}}">
+           <img src="/img/seedPro/soperos.png" class="">
+            <h3 style="text-align:center">Pasta Larga</h3>
+       </a></li>  
+</ul>
 
 @if(isset($categorias))
   <div class="dropdown">
@@ -180,7 +204,7 @@
     </div>
 @endif
 </div>
-
+</div>
 <script src="/js/botonarriba.js"></script>
 <script src="/js/librerias.js"></script>
 <script src="/js/products.js"></script>

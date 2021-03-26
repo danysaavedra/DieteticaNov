@@ -28,32 +28,25 @@
 
   <br>
 
-<h2 style="text-align :center" class="titulo-productos"><strong>Especialidades</strong></h2>
-<a href="{{route('pastacorta')}}"><h3 style="text-align :center" class="titulo-productos"><strong>Pastas cortas</strong></h3></a>
-
-<div style="display:flex" class="botoncat">
-
-
-  <div class="dropdown">
-
-      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
-      aria-haspopup="true" aria-expanded="false">
-      Fideos
-      </a>
-
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-
-  <a class="dropdown-item" href="{{route('soperos')}}">Soperos</a>
-  <a class="dropdown-item" href="{{route('guiseros')}}">Guiseros</a>
-  <a class="dropdown-item" href="{{route('monitos')}}">Moñitos</a>
-  <a class="dropdown-item" href="{{route('nidos')}}">Nidos</a>
-
-
-  </div>
-</div>
-
-</div>
-<br>
+<h2 style="text-align :center" class="titulo-productos">Especialidades</h2>
+<ul class="row caja-bt-cat justify-content-center align-self-center ">
+       <li class="boton-subcat"><a href="{{route('especialidades')}}">
+               <img src="/img/seedPro/soperos.png" class="" style="vertical-align: middle;">
+                <h3 style="text-align:center">Todas</h3>
+       </a> </li>   
+       <li class="boton-subcat"> <a href="{{route('nidos')}}">
+        
+           <img src="/img/seedPro/soperos.png" class="">
+            <h3 style="text-align:center">Nidos</h3>
+        
+       </a></li>
+    <li class="boton-subcat"><a href="{{route('monitos')}}">
+        
+           <img src="/img/seedPro/guiseros.png">
+            <h3 style="text-align:center">Moños</h3>
+        
+    </a></li>
+</ul>
 
 
 <div class="dropdown">
@@ -144,10 +137,13 @@
 
 
             <div class="titulo">
-                <a href="/productos/detalles/{{$product->id}}"><h5>{{$product->name}}</h5></a>
+                <h4>{{$product->name}}</h4>
                 <p style="color:black; font-size:1em"><em> @if($product->stock > 0)
                     Cuántos querés?         <input style="text-align:center;margin-left: 5%;width:10%"type="number" min =1  name="quantity" placeholder="0" required>
-                @endif <br> Precio: $ {{$product->price}} </em></p>
+                @endif  </em></p>
+                <p>{{$product->description}} </p>
+                <h7>$ {{$product->price}}</h7>
+                <a href="/productos/detalles/{{$product->id}}"><h5>Agregar al carrito</h5></a>
 
             </div>
      </form>
