@@ -31,8 +31,8 @@
       <h2 class="titulo-productos">Fideos Soperos</h2>
       @elseif($categoria->name=="Guiseros")
       <h2 class="titulo-productos">Fideos Guiseros</h2>
-      @elseif($categoria->name=="Moñitos")
-      <h2 class="titulo-productos">Fideos Moñitos</h2>
+      @elseif($categoria->name=="Moños")
+      <h2 class="titulo-productos">Fideos Moños</h2>
       @else($categoria->name=="Nidos")
       <h2 class="titulo-productos">Fideos Nidos</h2>
       @endif
@@ -56,7 +56,7 @@
       <a class="dropdown-item" href="{{route('guiseros')}}">Guiseros</a>
 
 
-      <a class="dropdown-item" href="{{route('monitos')}}">Moñitos</a>
+      <a class="dropdown-item" href="{{route('monitos')}}">Moños</a>
       <a class="dropdown-item" href="{{route('nidos')}}">Nidos</a>
 
 
@@ -136,15 +136,25 @@
 
 
         <div class="titulo">
-            <h4>{{$product->name}}</h4>
-            <p><em> @if($product->stock > 0)
-                  Cuántos querés?         <input style="text-align:center;margin-left: 5%;width:10%"type="number" min =1  name="quantity" placeholder="0" required>
-              @endif </em></p>
-              <p>{{$product->description}} </p>
-              <h7>${{$product->price}} </h7>
-              <a href="/productos/detalles/{{$product->id}}"><h5>Agregar al carrito</h5></a>
+                <h4>{{$product->name}}</h4>
+                <p style="color:black; font-size:1em"><em> @if($product->stock > 0)
+                    Cuántos querés?         <input style="text-align:center;margin-left: 5%;width:10%"type="number" min =1  name="quantity" placeholder="0" required>
+                @endif  </em></p>
+                <p>{{$product->description}} </p>
+                <h7>$ {{$product->price}}</h7>
+                <br>
+                @if($user = !Auth::user())
+                <div class="alert alert-danger" role="alert">
+                Registrate o logueate para poder comprar
+                </div>
 
-        </div>
+
+               @elseif($user = Auth::user())
+               <button type="submit" class=""  name="product_id" value="{{$product->id}}"><h5>Agregar al carrito</h5></button>
+
+               @endif
+
+            </div>
         </form>
         </div>
       </div>

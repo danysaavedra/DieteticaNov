@@ -76,6 +76,10 @@
                   @if((Auth::user())&& (Auth::user()->admin))
                     <a href="/productos/editar/{{$caca->id}}">Editar producto</a><br><br>
                     <a href="#" data-toggle="modal" data-target="#producto{{$caca->id}}">Borrar producto</a>
+                    @elseif($user = !Auth::user())
+                    <div class="alert alert-danger" role="alert">
+                Registrate o logueate para poder comprar
+                </div>
 
                 @endif
 

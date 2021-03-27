@@ -13,17 +13,6 @@
     <strong>Fecha y Hora: {{date_format($order->created_at,"d/m/y g:i a")}} </strong>
     <br>
     <strong>Cliente : {{$order->dameUsuario()->name}},{{$order->dameUsuario()->lastname}} </strong>
-    ,
-    <strong>Domicilio: {{$order->dameUsuario()->domicilio}}, {{$order->dameUsuario()->nro}}
-    </strong>
-    @if($order->dameUsuario()->dto && $order->dameUsuario()->piso)
-    <strong>
-    Dto: {{$order->dameUsuario()->dto}} ,   Piso: {{$order->dameUsuario()->piso}}</strong>
-    ,
-    @endif
-    <strong>Localidad y Partido: {{$order->dameUsuario()->localidad}}, {{$order->dameUsuario()->partido}} </strong>
-    <br>
-    <strong>Entre Calles: {{$order->dameUsuario()->calle1}} y {{$order->dameUsuario()->calle2}} </strong>
     <br>
     <strong>Teléfonos de contacto: {{$order->dameUsuario()->tel1}} , {{$order->dameUsuario()->tel2}} </strong>
         <thead>

@@ -45,9 +45,8 @@
 
   <a class="dropdown-item" href="{{route('soperos')}}">Soperos</a>
   <a class="dropdown-item" href="{{route('guiseros')}}">Guiseros</a>
-  <a class="dropdown-item" href="{{route('monitos')}}">Moñitos</a>
+  <a class="dropdown-item" href="{{route('monitos')}}">Moños</a>
   <a class="dropdown-item" href="{{route('nidos')}}">Nidos</a>
-  <a class="dropdown-item" href="{{route('tricolor')}}">Tricolor</a>
 
   </div>
 </div>
@@ -128,12 +127,6 @@
             @elseif($product->stock >= 50)
 
 
-            <ul class="list-group">
-
-            <li class="list-group-item list-group-item-success">Disponible</li>
-
-            </ul>
-            <br>
 
             @endif
 
@@ -144,10 +137,23 @@
 
 
             <div class="titulo">
-                <a href="/productos/detalles/{{$product->id}}"><h5>{{$product->name}}</h5></a>
+                <h4>{{$product->name}}</h4>
                 <p style="color:black; font-size:1em"><em> @if($product->stock > 0)
                     Cuántos querés?         <input style="text-align:center;margin-left: 5%;width:10%"type="number" min =1  name="quantity" placeholder="0" required>
-                @endif <br> Precio: $ {{$product->price}} </em></p>
+                @endif  </em></p>
+                <p>{{$product->description}} </p>
+                <h7>$ {{$product->price}}</h7>
+                <br>
+                @if($user = !Auth::user())
+                <div class="alert alert-danger" role="alert">
+                Registrate o logueate para poder comprar
+                </div>
+
+
+               @elseif($user = Auth::user())
+               <button type="submit" class=""  name="product_id" value="{{$product->id}}"><h5>Agregar al carrito</h5></button>
+
+               @endif
 
             </div>
      </form>

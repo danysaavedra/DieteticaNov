@@ -28,6 +28,8 @@
 <body>
 <div class="container home">
     <h2>Confirmacion de Pedidos</h2>
+<p>Hola <strong>{{$info->dameUsuario()->name}}</strong>, <br> en breve nos comunicaremos con vos para coordinar la entrega de tu pedido!</p>
+
 
 
 
@@ -79,11 +81,10 @@
         </tbody>
 
     </table>
-    <h2>Pastas Barletta</h2>
-<li><strong>Teléfonos:1527274638 / 44557788</strong></li>
-<li><strong>Dr. Marcos Paz 1702
-Marcos Paz | Bs. As.
-Argentina</strong></li>
+
+<h2>Pastas Barletta</h2>
+<li><strong>Teléfono | Fax (0220) 4771106</strong></li>
+<li><strong>Dr. Marcos Paz 1702 Marcos Paz | Bs. As. Argentina</strong></li>
 <li><strong>© Copyright 2020. Todos los derechos reservados. Pipa Design</strong></li>
 </div>
 

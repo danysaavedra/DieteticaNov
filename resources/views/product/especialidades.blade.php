@@ -28,7 +28,23 @@
 
   <br>
 
-<h2 style="text-align :center" class="titulo-productos"><strong>Especialidades</strong></h2>
+  <h2 style="text-align:center" class="titulo-productos"><strong>Especialidades</strong></h2>
+<div class="row caja-bt-cat justify-content-center align-self-center">
+    <a href="{{route('monitos')}}" class="boton-subcat">
+        <div class="col-lg-2">
+           <img src="/img/seedPro/soperos.png" class="">
+            <h3 style="text-align:center">Moños</h3>
+        </div>
+    </a>
+    <a href="{{route('nidos')}}" class="boton-subcat">
+        <div class="col-lg-2 ">
+           <img src="/img/seedPro/guiseros.png">
+            <h3 style="text-align:center">Nidos</h3>
+        </div>
+    </a>
+</div>
+
+<!-- <h2 style="text-align :center" class="titulo-productos"><strong>Especialidades</strong></h2>
 <a href="{{route('pastacorta')}}"><h3 style="text-align :center" class="titulo-productos"><strong>Pastas cortas</strong></h3></a>
 
 <div style="display:flex" class="botoncat">
@@ -52,7 +68,7 @@
   </div>
 </div>
 
-</div>
+</div> -->
 <br>
 
 
@@ -128,12 +144,6 @@
             @elseif($product->stock >= 50)
 
 
-            <ul class="list-group">
-
-            <li class="list-group-item list-group-item-success">Disponible</li>
-
-            </ul>
-            <br>
 
             @endif
 
@@ -144,10 +154,23 @@
 
 
             <div class="titulo">
-                <a href="/productos/detalles/{{$product->id}}"><h5>{{$product->name}}</h5></a>
+                <h4>{{$product->name}}</h4>
                 <p style="color:black; font-size:1em"><em> @if($product->stock > 0)
                     Cuántos querés?         <input style="text-align:center;margin-left: 5%;width:10%"type="number" min =1  name="quantity" placeholder="0" required>
-                @endif <br> Precio: $ {{$product->price}} </em></p>
+                @endif  </em></p>
+                <p>{{$product->description}} </p>
+                <h7>$ {{$product->price}}</h7>
+                <br>
+                @if($user = !Auth::user())
+                <div class="alert alert-danger" role="alert">
+                Registrate o logueate para poder comprar
+                </div>
+
+
+               @elseif($user = Auth::user())
+               <button type="submit" class=""  name="product_id" value="{{$product->id}}"><h5>Agregar al carrito</h5></button>
+
+               @endif
 
             </div>
      </form>

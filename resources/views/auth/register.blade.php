@@ -52,7 +52,7 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-6">
+                     <!--    <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="lastname" class="col-form-label text-md-left">{{ __('Domicilio *') }}</label>
                                 <input id="domicilio" type="text" class="form-control @error('domicilio') is-invalid @enderror" name="domicilio" value="{{ old('domicilio') }}" autocomplete="domicilio" autofocus>
@@ -85,7 +85,7 @@
 
                             </div>
                         </div>
-                        
+
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="piso" class="col-form-label text-md-left">{{ __('Piso.') }}</label>
@@ -98,7 +98,7 @@
                                 @enderror
                             </div>
                         </div>
-                        
+
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="localidad" class="col-form-label text-md-left">{{ __('Localidad *') }}</label>
@@ -112,7 +112,7 @@
                             </div>
                         </div>
 
-                       
+
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="partido" class="col-form-label text-md-left">{{ __('Partido *') }}</label>
@@ -150,8 +150,8 @@
                                     </span>
                                 @enderror
                             </div>
-                        </div>
-                        
+                        </div> -->
+
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="tel1" class="col-form-label text-md-left">{{ __('teléfono *') }}</label>
@@ -164,7 +164,7 @@
                                 @enderror
                             </div>
                         </div>
-                        
+
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="tel2" class="col-form-label text-md-left">{{ __('teléfono 2 *') }}</label>
@@ -177,7 +177,7 @@
                                 @enderror
                             </div>
                         </div>
-                        
+
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="password" class="col-form-label text-md-left">{{ __('Contraseña') }}</label>
@@ -197,7 +197,7 @@
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" autocomplete="new-password">
                             </div>
                         </div>
-                        
+
                         <div class="col-sm-6">
                           <div class="form-group">
                               <label for="foto">Subir imagen:</label>
@@ -210,7 +210,7 @@
                               @enderror
                           </div>
                         </div>
-                        
+
 
                         <div class="col-md-12">
                             <div class="form-group row mb-0">

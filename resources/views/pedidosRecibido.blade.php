@@ -30,21 +30,11 @@
 
 <strong>PEDIDO N°: {{$infoparaadmin->id}} </strong>
     ,
+    <br>
     <strong>Fecha y Hora: {{date_format($infoparaadmin->created_at,"d/m/y g:i a")}} </strong>
     <br>
     <strong>Cliente : {{$infoparaadmin->dameUsuario()->name}},{{$infoparaadmin->dameUsuario()->lastname}} </strong>
-    ,
-    <strong>Domicilio: {{$infoparaadmin->dameUsuario()->domicilio}}, {{$infoparaadmin->dameUsuario()->nro}}
-    </strong>
-    @if($infoparaadmin->dameUsuario()->dto && $infoparaadmin->dameUsuario()->piso)
-    <strong>
-    Dto: {{$infoparaadmin->dameUsuario()->dto}} ,   Piso: {{$infoparaadmin->dameUsuario()->piso}}</strong>
-    ,
-    @endif
-    <strong>Localidad y Partido: {{$infoparaadmin->dameUsuario()->localidad}}, {{$infoparaadmin->dameUsuario()->partido}} </strong>
-    <br>
-    <strong>Entre Calles: {{$infoparaadmin->dameUsuario()->calle1}} y {{$infoparaadmin->dameUsuario()->calle2}} </strong>
-    <br>
+
     <strong>Teléfonos de contacto: {{$infoparaadmin->dameUsuario()->tel1}} , {{$infoparaadmin->dameUsuario()->tel2}} </strong>
 
 <table id="data_table" class="table table-striped">
@@ -92,11 +82,8 @@
 
     </table>
     <h2>Pastas Barletta</h2>
-<li><strong>Teléfono | Fax
-(0220) 4771106</strong></li>
-<li><strong>Dr. Marcos Paz 1702
-Marcos Paz | Bs. As.
-Argentina</strong></li>
+<li><strong>Teléfono | Fax (0220) 4771106</strong></li>
+<li><strong>Dr. Marcos Paz 1702 Marcos Paz | Bs. As. Argentina</strong></li>
 <li><strong>© Copyright 2020. Todos los derechos reservados. Pipa Design</strong></li>
 </div>
 

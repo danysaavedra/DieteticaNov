@@ -1,4 +1,4 @@
-@extends('layouts.plantilla')
+@extends('layouts.navFootHomeandVerify')
 
 @section('contenido')
 <div class="container-fluid vermail">

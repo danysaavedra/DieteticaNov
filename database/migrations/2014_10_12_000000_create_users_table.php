@@ -23,14 +23,7 @@ class CreateUsersTable extends Migration
         $table->string('password', 100);
         $table->string('foto', 300)->nullable();
         $table->boolean('admin')->default(0);
-        $table->string('domicilio', 200);
-        $table->string('nro', 100);
-        $table->string('dto', 100)->nullable();
-        $table->string('piso', 100)->nullable();
-        $table->string('localidad', 100);
-        $table->string('partido', 100);
-        $table->string('calle1', 100);
-        $table->string('calle2', 100);
+
         $table->string('tel1', 100);
         $table->string('tel2', 100)->nullable();
         $table->rememberToken();

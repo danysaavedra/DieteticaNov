@@ -11,7 +11,7 @@ class SeedCategorias extends Seeder
      */
     public function run()
     {
-  DB::table('subcategories')->insert(
+         DB::table('subcategories')->insert(
             [
               'name' => 'Pasta corta',
               'imagen' => '../img/seedPro/categoria-pasta-corta.png',

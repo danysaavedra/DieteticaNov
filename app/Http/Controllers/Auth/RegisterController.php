@@ -53,14 +53,14 @@ class RegisterController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'lastname' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'domicilio' => ['required', 'string', 'max:255'],
+/*             'domicilio' => ['required', 'string', 'max:255'],
             'nro' => ['required', 'string', 'max:255'],
             'dto' => ['nullable','string', 'max:255'],
             'piso' => ['required', 'string', 'max:255'],
             'localidad' => ['required', 'string', 'max:255'],
             'partido' => ['required', 'string', 'max:255'],
             'calle1' => ['required', 'string', 'max:255'],
-            'calle2' => ['required', 'string', 'max:255'],
+            'calle2' => ['required', 'string', 'max:255'], */
             'tel1' => ['required', 'string', 'max:255'],
             'tel2' => ['required', 'string', 'max:255'],
 
@@ -91,14 +91,14 @@ class RegisterController extends Controller
              'name' => $data['name'],
              'lastname' => $data['lastname'],
              'email' => $data['email'],
-             'domicilio' => $data['domicilio'],
+/*              'domicilio' => $data['domicilio'],
              'nro' => $data['nro'],
              'dto' => $data['dto'],
              'piso' => $data['piso'],
              'localidad' => $data['localidad'],
              'partido' => $data['partido'],
              'calle1' => $data['calle1'],
-             'calle2' => $data['calle2'],
+             'calle2' => $data['calle2'], */
              'tel1' => $data['tel1'],
              'tel2' => $data['tel2'],
 
