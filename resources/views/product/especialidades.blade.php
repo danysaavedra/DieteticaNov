@@ -28,6 +28,7 @@
 
   <br>
 
+<<<<<<< HEAD
   <h2 style="text-align:center" class="titulo-productos"><strong>Especialidades</strong></h2>
 <div class="row caja-bt-cat justify-content-center align-self-center">
     <a href="{{route('monitos')}}" class="boton-subcat">
@@ -70,6 +71,7 @@
 
 </div> -->
 <br>
+
 
 
 <div class="dropdown">
@@ -160,6 +162,7 @@
                 @endif  </em></p>
                 <p>{{$product->description}} </p>
                 <h7>$ {{$product->price}}</h7>
+
                 <br>
                 @if($user = !Auth::user())
                 <div class="alert alert-danger" role="alert">

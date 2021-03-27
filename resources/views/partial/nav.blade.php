@@ -55,13 +55,13 @@
             	       <li><a class="dropdown-item" href="/listaProductos">Todos los fideos</a></li>
                      <li class="dropdown-divider"></li>
 
-                      <li><a class="dropdown-item" href="{{route('pastacorta')}}">Pasta Corta</a>
+                      <li class="dropright"><a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="{{route('pastacorta')}}">Pasta Corta</a>
                         <ul class="dropend" aria-labelledby="navbarDropdown">
                           <li><a class="dropdown-item" href="{{route('soperos')}}">Soperos</a></li>
                           <li><a class="dropdown-item" href="{{route('guiseros')}}">Guiseros</a></li>
                         </ul>
                       </li>
-                      <li><a class="dropdown-item" href="{{route('especialidades')}}">Especialidades</a>
+                      <li class="dropright"><a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="{{route('especialidades')}}">Especialidades</a>
                         <ul class="dropend" aria-labelledby="navbarDropdown">
                           <li><a class="dropdown-item" href="{{route('nidos')}}">Nidos</a></li>
                           <li><a class="dropdown-item" href="{{route('monitos')}}">Moños</a></li>
@@ -153,7 +153,7 @@
 
               @endguest
               <form class="buscador2" action="/listaProductos" method="get">
-                  <div class="input-group mt-3">
+                  <div class="input-group mt-3 fondo-busca">
                       <input type="text" name="name" class="form-control" placeholder="¿Qué estás buscando?" aria-label="¿QUE ESTÁS BUSCANDO?" aria-describedby="basic-addon2">
                       <div class="input-group-append">
                           <button class="input-group-text" id="basic-addon2" type="submit"><i class="fas fa-search"></i></button>

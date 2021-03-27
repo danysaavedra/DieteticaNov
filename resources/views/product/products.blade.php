@@ -28,21 +28,27 @@
 
   <br>
 
-<h2 style="text-align:center" class="titulo-productos"><strong>Pasta corta</strong></h2>
-<div class="row caja-bt-cat justify-content-center align-self-center">
-    <a href="{{route('soperos')}}" class="boton-subcat">
-        <div class="col-lg-2">
+<h2 style="text-align:center" class="titulo-productos">Pasta corta</h2>
+<ul class="row caja-bt-cat justify-content-center align-self-center ">
+       <li class="boton-subcat"><a href="{{route('pastacorta')}}">
+            
+               <img src="/img/seedPro/soperos.png" class="" style="vertical-align: middle;">
+                <h3 style="text-align:center">Todas</h3>
+            
+       </a> </li>   
+       <li class="boton-subcat"> <a href="{{route('soperos')}}">
+        
            <img src="/img/seedPro/soperos.png" class="">
             <h3 style="text-align:center">Soperos</h3>
-        </div>
-    </a>
-    <a href="{{route('guiseros')}}" class="boton-subcat">
-        <div class="col-lg-2 ">
+        
+       </a></li>
+    <li class="boton-subcat"><a href="{{route('guiseros')}}">
+        
            <img src="/img/seedPro/guiseros.png">
             <h3 style="text-align:center">Guiseros</h3>
-        </div>
-    </a>
-</div>
+        
+    </a></li>
+</ul>
 
 <!-- <div style="display:flex" class="botoncat">
   <div class="dropdown">
@@ -58,7 +64,6 @@
 
 </div> -->
 
-<br>
 
 
 <div class="dropdown">
@@ -76,8 +81,6 @@
     <a class="dropdown-item" href="{{route('pro')}}">En Promo</a>
   </div>
 </div>
-
-<br>
 
 
 <br>

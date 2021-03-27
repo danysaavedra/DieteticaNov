@@ -255,7 +255,7 @@ footer .container p{
     color: #292E2C;
 }
 footer .footer-copyright {
-    background-color: #346397;
+    background-color: #a2090c;
     padding-top: 3px;
     padding-bottom: 3px;
 
@@ -363,15 +363,23 @@ footer .btn {
     text-decoration: none;
     border-radius: 0.5rem;
     margin: 0px 5px;
+    height: 120px;
+    width: 140px;
+    text-align: center;
     
 }
 .boton-subcat h3{
     color: #fff;
     font-size: 18px;
+    margin: 0px;
+    padding: 0px;
 }
 
-.boton-subcat:focus, .boton-subcat:hover {
+.boton-subcat a:focus, .boton-subcat a:hover {
     text-decoration: none;
+}
+.boton-subcat:focus, .boton-subcat:hover {
+    background-color: #a5221e;
 }
 .boton-subcat img{
     max-width: 60px;
@@ -379,9 +387,28 @@ footer .btn {
 .caja-bt-cat{
     top:-70px;
     position: relative;
+    list-style: none;
+    margin-bottom: -70px;
+}
+.dropdown .btn-secondary{
+    margin: 0px;
 }
 
-
+.form-control::-webkit-input-placeholder {
+  color: #fff;
+}
+.form-control:-moz-placeholder {
+  color: #fff;
+}
+.form-control::-moz-placeholder {
+  color: #fff;
+}
+.form-control::placeholder {
+  color: #fff;
+}
+.form-control:-ms-input-placeholder {
+  color: #fff;
+}
 
 /* Productos */
 h1.titulo-productos {
