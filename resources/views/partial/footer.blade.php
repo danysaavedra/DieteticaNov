@@ -1,18 +1,21 @@
 <div class="container-fluid">
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
-                  <ion-icon name="location-outline"></ion-icon><p>Dr. Marcos Paz 1702<br>Marcos Paz | Bs. As.<br>Argentina</p>
+        <div class="container-fluid ">
+            <div class="row contenedor-footer">
+               <div class="col-lg-3">
+                  <img src="/img/barletta-productos.png" class="img-footer">
                 </div>
-                <div class="col-lg-3">
-                  <ion-icon name="mail-outline"></ion-icon><p>gvgaeta@gmail.com</p>
+                <div class="col-lg-2">
+                  <ion-icon name="location-outline"></ion-icon><p><strong>Dr. Marcos Paz 1702 </strong>| Marcos Paz <br> Bs. As. - Argentina</p>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-2">
+                    <ion-icon name="mail-outline"></ion-icon><p><strong>gvgaeta@gmail.com</strong></p>
+                </div>
+                <div class="col-lg-2">
                   <ion-icon name="call-outline"></ion-icon><p>Teléfono | Fax<br>
-(0220) 4771106</p>
+<strong>(0220) 4771106</strong></p>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-2">
                   <ion-icon name="logo-facebook"></ion-icon><p>Pastas Gaeta</p>
                 </div>
             </div>

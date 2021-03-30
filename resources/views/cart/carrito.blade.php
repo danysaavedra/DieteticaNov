@@ -4,7 +4,7 @@
 
 
 
-
+<div class="fondo-categorias">
 
 
 <div class="container-fluid carritocompras">
@@ -30,38 +30,45 @@
         <a href="/listaProductos">Seguir Comprando</a>
               <?php $suma = 0; ?>
       @foreach($detalles as $detalle)
-      <form class="" action="/carrito/sacarCarrito" method="post">
+      <div class="row col-lg-10 mx-auto text-center">
+      
+      <form class="col-lg-1 bor-carrito" action="/carrito/sacarCarrito" method="post">
           @csrf
-          <br>
-        <div class="card-group">
-          <div class="card" id="boton-sacarCarrito">
-            <div class="card-body">
+          
+        
+          <div id="boton-sacarCarrito">
               <button class="btn btn-outline-danger" type="submit" name="detalle_id" value="{{$detalle->id}}"><strong>X</strong> </button>
-            </div>
           </div>
-          </div>
+          
       </form>
 
-        <div class="card" >
-            <div class="card-body" id="avatar-carrito" style="max">
-            <img src="storage/{{$detalle->avatar}}" alt="">
-          </div>
+        <div class="col-lg-2 bor-carrito" id="avatar-carrito">
+            <img src="storage/{{$detalle->avatar}}" alt="" style="max-width:50%;">
         </div>
-        <div class="card" id="prodcuto-nombre" >
-          <div class="card-body">
-          <p class="card-text"><small class="text-muted">{{$detalle->name}}</small></p>
+        <div class="col-lg-2 bor-carrito" id="prodcuto-nombre" >
+          
+          <p class="card-text"><small class="text-muted">{{$detalle->name}}</small>
         </div>
+        
+        <div class="col-lg-3 bor-carrito" id="producto-precio">
+          
+            <p class="card-text"><small class="text-muted">Precio por Unidad:<strong>  ${{$detalle->price}}</strong></small></p>
+          
         </div>
-        <div class="card" id="producto-precio">
-          <div class="card-body">
-            <p class="card-text"><small class="text-muted">Precio por Unidad:  ${{$detalle->price}}</small></p>
-          </div>
+        <div class="col-lg-2 bor-carrito" id="producto-precio">
+          
+            <p><small class="text-muted">Seleccionados: <strong>{{$detalle->pivot->quantity}}</strong></small></p>
+          
         </div>
-        <div class="card" id="producto-precio">
-          <div class="card-body">
-            <p class="card-text"><small class="text-muted">Seleccionados: {{$detalle->pivot->quantity}}<br>Subtotal: ${{$detalle->price * $detalle->pivot->quantity }}</small></p>
-          </div>
+        <div class="col-lg-2 bor-carrito" id="producto-precio">
+          
+            <p><small class="text-muted">Subtotal: <strong>${{$detalle->price * $detalle->pivot->quantity }}</strong></small></p>
+          
         </div>
+        
+      </div> 
+        
+        
         <!--
         <div class="card mb-3" style="max-width: 540px;">
           <div class="row g-0">
@@ -103,17 +110,20 @@
       @endforeach
 <!-- NO INVERTIR ORDEN DE LOS INPUTS -->
 
-   <div class="card text-center">
-        <div  class="total-carrito">
-          <ul class="list-group list-group-flush">
+   <div class="row col-lg-10 mx-auto mt-1">
+       <div  class="total-carrito col-lg-8 text-left">
+           <h4>IMPORTANTE</h4>
+           <p>*Una vez finalizado el pedido nos podremos en contacto para coordinar el pago y envío. 
+           <br> Le llegará a su casilla de correo el detalle de la compra.</p>
+       </div>
+        <div  class="total-carrito col-lg-4">
+          <ul class="list-group list-group-flush text-left">
             <li class="list-group-item"><strong>Total Del Carrito</strong></li>
             <li class="list-group-item">SUBTOTAL: ${{$suma}}</li>
             <li class="list-group-item">ENVÍO:(ACA SE PODRIA CALCULAR..)</li>
             <li class="list-group-item"> <strong>TOTAL: ${{$suma}}</strong></li>
             <li class="list-group-item">
-              <strong>
                 <button id="finalizar" type="submit" name="" value="">Finalizar compra</button>
-              </strong>
             </li>
           </ul>
         </div>
@@ -123,13 +133,15 @@
       @endif
       </form>
 
+</div>
+        
 
+</div>
+</div>
 
-</div>
-</div>
-</div>
 
 <script src="/js/botonarriba.js"></script>
 <script src="/js/librerias.js"></script>
 <script src="/js/products.js"></script>
    @endsection
+</div>

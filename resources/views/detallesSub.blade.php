@@ -37,7 +37,7 @@
       <h2 class="titulo-productos">Fideos Moños</h2>
 
       @else($categoria->name=="Nidos")
-      <h2 class="titulo-productos" style="text-align:center">Fideos Nidos</h2>
+      <h2 class="titulo-productos" style="text-align:center;">Fideos Nidos</h2>
       @endif
   @endforeach
 @endif
@@ -53,15 +53,15 @@
             <h3 style="text-align:center">Guiseros</h3>
     </a></li>
     <li class="boton-subcat"><a href="{{route('nidos')}}">
-               <img src="/img/seedPro/soperos.png" class="" style="vertical-align: middle;">
+               <img src="/img/seedPro/nidos.png" class="" style="vertical-align: middle;">
                 <h3 style="text-align:center">Nidos</h3>
        </a> </li>
        <li class="boton-subcat"><a href="{{route('monitos')}}">
-               <img src="/img/seedPro/soperos.png" class="" style="vertical-align: middle;">
+               <img src="/img/seedPro/monos.png" class="" style="vertical-align: middle;">
                 <h3 style="text-align:center">Moños</h3>
        </a> </li>
        <li class="boton-subcat"> <a href="{{route('pastalarga')}}">
-           <img src="/img/seedPro/soperos.png" class="">
+           <img src="/img/seedPro/pasta-larga.png" class="">
             <h3 style="text-align:center">Pasta Larga</h3>
        </a></li>
 </ul>
@@ -91,8 +91,7 @@
   </div>
 @endif
 
-
-
+<br>
 
 @if(isset($categorias))
     <div class="row" id="div-papi">
@@ -176,7 +175,7 @@
 
 
                @elseif($user = Auth::user())
-               <button type="submit" class=""  name="product_id" value="{{$product->id}}"><h5>Agregar al carrito</h5></button>
+               <button type="submit" class="agregar"  name="product_id" value="{{$product->id}}"><h5>Agregar al carrito</h5></button>
 
                @endif
 

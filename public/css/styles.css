@@ -383,6 +383,7 @@ footer .btn {
 }
 .boton-subcat img{
     max-width: 60px;
+    margin-bottom: 5px;
 }
 .caja-bt-cat{
     top:-70px;
@@ -429,7 +430,7 @@ h2.titulo-productos {
   width: 100%;
   height: auto;
   padding: 100px 0px 100px 0px;
-  text-align: left;
+  text-align: center;
   font-family: 'Headland One', serif;
   background-color: #fff;    
 }
@@ -484,7 +485,7 @@ h2.titulo-productos {
   position: relative;
 }
 .card .card-producto .producto-hover {
-  background: #000;
+  background: #504428fa;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -518,6 +519,55 @@ h2.titulo-productos {
 .card-producto .producto-hover .producto-hover-content i.fas:hover {
   opacity: 0.5;
 }
+
+.card-producto img{
+    max-width: 80%;
+}
+.detalle-individual .tarjeta{
+    background-color: #f3f5f7;
+    padding: 20px 30px 40px 30px;
+}
+.detalle-individual h5{
+    color: #B81517;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 0;
+    margin-top: 0px;
+}
+.detalle-individual #detalle-producto .tarjeta p {
+    color: #504f4f;
+    font-size: 22px;
+    font-weight: 300;
+    margin-top: 0px;
+}
+.detalle-individual .tarjeta form{
+    text-align: left;
+}
+.detalle-img{
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+.detalle-individual .nav li a:hover, :active, :focus {
+    color: #923737;
+}
+.detalle-individual label:hover, :active, :focus {
+    color: #923737;
+}
+.fondo-categorias nav{
+    background-color: transparent !important;
+    background: transparent !important;
+}
+.contenedor-footer {
+    padding: 30px 50px;
+}
+.img-footer{
+    max-width: 40%;
+}
+footer p{
+    color: #1c3a48;
+}
+
 
 /* Producto Detalle */
 form{
@@ -568,40 +618,22 @@ form{
   color: #6C6C6C;
   font-style: italic;
 }
-#detalle-producto .tarjeta button {
-  color: white;
-  border: 2px solid black;
-  background-color:#346397!important;
-  text-transform: uppercase;
-  font-size: 0.8em;
-  letter-spacing: 1px;
-  padding: 10px 24px;
-  transition:0.2s ;
-
+.agregar{
+    background-color: #CDAF67;
+    color: #fff;
+    border: 0px;
+    border-radius: 15px;
+    padding: 8px 30px;
+    margin-top: 15px;
+    
 }
-#detalle-producto .tarjeta button:hover, #detalle-producto .tarjeta button:active {
-background-color:#346397!important;
-  color: #fff;
-  transform:translateY(2px);
-  transform:translateX(2px);
+.agregar h5{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin-bottom: 0px;
 }
-#detalle-producto .tarjeta a {
-  border: 2px solid black;
-  background-color:#346397!important;
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 0.8em;
-  letter-spacing: 1px;
-  padding: 10px 24px;
-  transition:0.2s background-color;
-}
-#detalle-producto .tarjeta a:hover, #detalle-producto .tarjeta a:active {
-  border: 2px solid black;
-background-color:#346397!important;
-  color: #000;
-  transform:translateY(2px);
-  transform:translateX(2px);
+.agregar:focus, .agregar:hover, .agregar:active{
+    background-color: #881b17;
 }
 
 

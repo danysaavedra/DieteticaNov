@@ -31,10 +31,8 @@
 <h2 style="text-align:center" class="titulo-productos">Pasta corta</h2>
 <ul class="row caja-bt-cat justify-content-center align-self-center ">
        <li class="boton-subcat"><a href="{{route('pastacorta')}}">
-            
-               <img src="/img/seedPro/soperos.png" class="" style="vertical-align: middle;">
-                <h3 style="text-align:center">Todas</h3>
-            
+           <img src="/img/seedPro/soperos.png" class="" style="vertical-align: middle;">
+            <h3 style="text-align:center">Todas</h3>
        </a> </li>   
        <li class="boton-subcat"> <a href="{{route('soperos')}}">
         
@@ -101,7 +99,7 @@
                   @if(Auth::user() && $product->stock > 0)
 
 
-                  <button type="submit" class=""  name="product_id" value="{{$product->id}}"><i class="fas fa-cart-plus"></i></button>
+                  <button type="submit" class=""  name="product_id" value="{{$product->id}}"><ion-icon name="cart-outline"></ion-icon></button>
                   @endif
                   @if($product->stock == 0)
 
@@ -110,7 +108,7 @@
 
                     @elseif($product->stock > 0)
 
-                    <a href="/productos/detalles/{{$product->id}}"><i class="fas fa-search-plus"></i></a>
+                    <a href="/productos/detalles/{{$product->id}}"><ion-icon name="cart-outline"></ion-icon></a>
                     @endif
 
               </div>
@@ -148,7 +146,7 @@
             <div class="titulo">
                 <h4>{{$product->name}}</h4>
                 <p style="color:black; font-size:1em"><em> @if($product->stock > 0)
-                    Cuántos querés?         <input style="text-align:center;margin-left: 5%;width:10%"type="number" min =1  name="quantity" placeholder="0" required>
+                    Cantidad         <input style="text-align:center;margin-left: 5%;width:15%;  margin-bottom:0px;"type="number" min =1  name="quantity" placeholder="0" required>
                 @endif  </em></p>
                 <p>{{$product->description}} </p>
                 <h7>$ {{$product->price}}</h7>
@@ -160,7 +158,7 @@
 
 
                @elseif($user = Auth::user())
-               <button type="submit" class=""  name="product_id" value="{{$product->id}}"><h5>Agregar al carrito</h5></button>
+               <button type="submit" class="agregar"  name="product_id" value="{{$product->id}}"><h5>Agregar al carrito</h5></button>
 
                @endif
 
