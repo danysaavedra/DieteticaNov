@@ -1,5 +1,4 @@
 @extends('layouts.plantilla')
-
 @section('contenido')
 
 <div class="container-fluid">
@@ -23,8 +22,8 @@
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <!--      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>-->
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active banner1">
@@ -34,7 +33,7 @@
                 de la más alta calidad.</h2>
             </div>
         </div>
-
+<!--
         <div class="carousel-item banner1">
             <div class="carousel-caption">
                 <h2>Texto de prueba</h2>
@@ -53,7 +52,7 @@
           <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
-          </a>
+          </a> -->
         </div>
   </div>
  <!-- primer carrusel -->
@@ -130,7 +129,7 @@
 
           <div class="col-md-4 text-center">
       <a href="{{route('pastacorta')}}"><img src="/storage/{{$subcategoria->imagen}}" class="img-fluid" alt="...">
-      
+
         <h2>{{$subcategoria->name}}</h2>
       </a>
     </div>
@@ -175,13 +174,13 @@
         <div class="col-lg-4 text-center">
             <img src="/img/metodos-de-pago.png">
             <h5>MÉTODOS DE PAGO</h5>
-            <p>Conocé nuestros métodos de pago <u><strong>
-Elegí método que quieras</strong></u></p>
+            <p>Mediante Transferencia Bancaria <u><strong>
+Te explicamos paso a paso cómo comprar</strong></u></p>
         </div>
         <div class="col-lg-4 text-center">
             <img src="/img/metodos-de-envio.png">
             <h5>MÉTODOS DE ENVÍO</h5>
-            <p>Envíos a domicilio a todo el país <u><strong>Calculá el costo de envío!</strong></u></p>
+            <p>Envíos a domicilio a todo el país <u><strong>Envío gratis hasta 50km!</strong></u></p>
         </div>
         <div class="col-lg-4 text-center">
             <img src="/img/como-comprar.png">
