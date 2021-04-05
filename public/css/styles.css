@@ -34,7 +34,7 @@
 
 .dropdown-item:focus, .dropdown-item:hover {
     text-decoration: none;
-    background-color: rgb(56,182,255);
+    background-color: rgb(56,182,255);;
     color: #F7F1C4;
 }
 
@@ -330,25 +330,7 @@ footer .btn {
 }
 
 
-@media (max-width:767px)
-{
 
-  .navbar-collapse {
-   background-color: #fff;
-      padding-top: 50px;
-  }
-
-  .logo-nav {
-    max-width: 120px;
-  }
-    .navbar {
-        padding: 0px;
-    }
-    ion-icon {
-    color: #308bd6;
-}
-
-}
 
 
 .fondo-categorias{
@@ -567,7 +549,9 @@ h2.titulo-productos {
 footer p{
     color: #1c3a48;
 }
-
+.mispedidos{
+    margin-top: 150px;
+}
 
 /* Producto Detalle */
 form{
@@ -690,4 +674,74 @@ div.col-sm-6{
 }
 .dropdown-menu {
   font-size: inherit;
+}
+
+@media (max-width:767px)
+{
+
+  .navbar-collapse {
+   background-color: #f3f5f7;
+      padding-top: 50px;
+      padding-bottom: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+
+  .logo-nav {
+    max-width: 120px;
+  }
+    .navbar {
+        padding: 0px;
+    }
+    ion-icon {
+    color: #308bd6;
+    }
+    .nav li ul li ul {
+        position: inherit;
+        right: 100px;
+    }
+
+    .nav li ul {
+        min-width: 0px;
+    }
+    .boton-subcat {
+        padding: 8px 5px;
+        margin: 5px 5px;
+        height: 80px;
+        width: 100px;
+    }
+    .boton-subcat img {
+        max-width: 40px;
+        margin-bottom: 5px;
+    }
+    .boton-subcat h3 {
+        font-size: 14px;
+    }
+    h2.titulo-productos {
+        padding: 70px 0px 90px 0px;
+    }
+    .card-producto img {
+        max-width: 60%;
+    }
+    .fondo-categorias input {
+    margin-bottom: 0px;
+    }
+    footer ion-icon {
+        color: #fff;
+    }
+    .img-footer {
+        margin-bottom: 40px;
+    }
+    .contenedor-footer {
+        padding: 30px 0px;
+    }
+    footer{
+        margin: 0px;
+    }
+    .mispedidos{
+        margin-top: 70px;
+    }
+    .nav li ul.pedido{
+        position: relative;
+    }
 }

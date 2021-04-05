@@ -111,7 +111,7 @@
               <ul>
                 <li>
                   <a class="enlace_desactivado"><img src="/storage/{{Auth::user()->foto}}" alt="" class="foto"> {{ Auth::user()->name }} <span class="flecha">&#9660;</span><span class="caret"></span></a>
-                    <ul>
+                    <ul class="pedido">
                       <li>
                         @if((Auth::user()->admin))
                         <a href="/pedidos/cliente"> Pedidos </a>

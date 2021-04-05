@@ -528,7 +528,7 @@ section {
 @media (max-width:767px)
 {
   .carousel-caption h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     }
     .pasta-familiar p {
     font-size: 30px;
@@ -542,8 +542,27 @@ section {
     .dropdown-item:focus, .dropdown-item:active {
     color: #fff;
     text-decoration: none;
-    background-color: #e2c8a1;
+    background-color: #f5eee5;
 }
+    .categorias img {
+        padding: 10px 40px;
+        max-width: 60%;
+    }
+    .categorias h2 {
+        margin-top: 0px;
+    }
+    .banner1 {
+        background-image: url(../img/fondo-barletta-sm.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right center;
+    }
+    .carousel-caption h2 {
+        color: #614330;
+    }
+    .carousel-item {
+        height: 450px;
+    }
 }
 @media (min-width:990px)
 {

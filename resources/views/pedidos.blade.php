@@ -1,6 +1,6 @@
 @extends('layouts.plantilla')
 @section('contenido')
-<div class="container home">
+<div class="container home mispedidos">
     <h2>Historial de Compras</h2>
     @foreach($orders as $order)
 

@@ -30,9 +30,6 @@ Durante la realización de su pedido o una vez finalizado podrá optar por ver d
 -  <strong>Nos contactaremos para poder coordinar entrega o retiro de mercadería y las formas de pago.</strong>
 <br>
 </p>
-
-
-
                 </div>
 
             

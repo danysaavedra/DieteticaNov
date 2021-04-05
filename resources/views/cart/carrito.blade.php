@@ -30,7 +30,7 @@
         <a href="/listaProductos">Seguir Comprando</a>
               <?php $suma = 0; ?>
       @foreach($detalles as $detalle)
-      <div class="row col-lg-10 mx-auto text-center">
+      <div class="row col-lg-10 mx-auto text-center mar-sm">
       
       <form class="col-lg-1 bor-carrito" action="/carrito/sacarCarrito" method="post">
           @csrf
